@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: rest/access_ontap_cli.html 
+keywords: cli, ontap cli, cli passthrough 
+summary: Para ayudar a los usuarios de la interfaz de línea de comandos y la API ONTAP en su transición a la API DE REST de ONTAP, ONTAP proporciona un extremo DE REST para acceder a la interfaz de línea de comandos. Puede usar esta función de paso a través para ejecutar cualquier comando de la CLI. 
+---
+= Acceda a la interfaz de línea de comandos de ONTAP a través de la API DE REST
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para ayudar a los usuarios de la interfaz de línea de comandos y la API ONTAP en su transición a la API DE REST de ONTAP, ONTAP proporciona un extremo DE REST para acceder a la interfaz de línea de comandos. Puede usar esta función de paso a través para ejecutar cualquier comando de la CLI. El uso del extremo DE REST se devuelve en los datos de AutoSupport, de modo que NetApp pueda identificar lagunas en la API DE REST y realizar mejoras en versiones futuras.
+
+Para emitir un comando de la CLI, debe realizar una llamada a la API DE REST que se haya formado correctamente según las reglas relacionadas con:
+
+* Rutas de recursos
+* Nombres de campo
+* Métodos HTTP
+
+
+La ruta de recursos base para acceso a la CLI es `/private/cli`. Consulte la página de documentación en línea de API de ONTAP para obtener detalles sobre el acceso a la CLI a través de la API DE REST.
+
+
+NOTE: NetApp mantiene un repositorio de GitHub que contiene muestras de código y otra información útil. Puede acceder al repositorio para obtener ejemplos de cómo utilizar la instalación de paso a través de la CLI.
+
+.Enlaces relacionados
+https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["Repositorio de GitHub DE REST de ONTAP: Muestras de paso a través de la CLI"^]

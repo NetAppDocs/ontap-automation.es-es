@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: get-started/first_call.html 
+keywords: simple API call 
+summary: Puede emitir un comando curl simple en la interfaz de línea de comandos para comenzar a usar la API DE REST de ONTAP y confirmar su disponibilidad. 
+---
+= Su primera llamada API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede emitir un comando curl simple en la interfaz de línea de comandos para comenzar a usar la API DE REST de ONTAP y confirmar su disponibilidad.
+
+.Antes de empezar
+La utilidad curl debe estar disponible en su estación de trabajo. Además, debe tener lo siguiente:
+
+* La dirección IP o el nombre de host de la LIF de gestión de clústeres de ONTAP
+* Nombre de usuario y contraseña para una cuenta con autoridad para acceder a la API DE REST de ONTAP (recurso del clúster).
+
+
+
+NOTE: Si sus credenciales incluyen caracteres especiales, debe formatearlos de una forma que sea aceptable para Curl en función del shell que esté utilizando. Por ejemplo, puede insertar una barra diagonal inversa antes de cada carácter especial o envolver la totalidad `username:password` cadena entre comillas simples.
+
+.Pasos
+. En la interfaz de línea de comandos de la estación de trabajo local, recupere la versión del software ONTAP:
++
+`curl -X GET -u username:password -k "https://<ip_address>/api/cluster?fields=version"`
+
++
+*ejemplo*
+
++
+`curl -X GET -u admin:password -k "https://10.222.81.101/api/cluster?fields=version"`
+
+
+
+.Después de terminar
+La información de la versión de ONTAP se muestra en formato JSON.

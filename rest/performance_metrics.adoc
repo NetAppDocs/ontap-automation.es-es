@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: rest/performance_metrics.html 
+keywords: performance, performance metrics 
+summary: ONTAP recopila métricas de rendimiento sobre los objetos y protocolos de almacenamiento de SVM seleccionados, e informa esta información a través de la API DE REST. Puede utilizar estos datos para supervisar el rendimiento de un sistema ONTAP. 
+---
+= Métricas de rendimiento para los recursos de almacenamiento
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP recopila métricas de rendimiento sobre los objetos y protocolos de almacenamiento de SVM seleccionados, e informa esta información a través de la API DE REST. Puede utilizar estos datos para supervisar el rendimiento de un sistema ONTAP.
+
+Para un objeto o protocolo de almacenamiento determinado, los datos de rendimiento se clasifican en tres categorías:
+
+* IOPS
+* Latencia
+* Rendimiento
+
+
+Dentro de cada categoría, se encuentran disponibles uno o varios de los siguientes tipos de datos:
+
+* Lectura (R)
+* Escritura (W)
+* Otro (o)
+* Total (T)
+
+
+La tabla siguiente resume los datos de rendimiento disponibles a través de la API REST de ONTAP, incluida la versión cuando se agregó. Consulte la página de documentación en línea de la API DE REST en su sistema ONTAP para obtener más información.
+
+|===
+| Objeto o protocolo de almacenamiento | IOPS | Latencia | Rendimiento | Versión de ONTAP 
+
+
+| Puerto Ethernet | No aplicable | No aplicable | TWT | 9.8 
+
+
+| Puerto FC | RUZOT | RUZOT | TWT | 9.8 
+
+
+| Interfaz de IP | No aplicable | No aplicable | TWT | 9.8 
+
+
+| Interfaz de FC | RUZOT | RUZOT | TWT | 9.8 
+
+
+| Espacio de nombres NVMe | RUZOT | RUZOT | RUZOT | 9.8 
+
+
+| Estadísticas de Qtree | RUZOT crudos | No aplicable | RUZOT crudos | 9.8 
+
+
+| FlexCache para volúmenes | RUZOT | RUZOT | TWT | 9.8 
+
+
+| Nodo: Utilización de procesos | Utilización del proceso como valor numérico | Utilización del proceso como valor numérico | Utilización del proceso como valor numérico | 9.8 
+
+
+| Volumen de cloud | RUZOT | RUZOT | No se puede aplicar | 9.7 
+
+
+| LUN | RUZOT | RUZOT | RUZOT | 9.7 
+
+
+| Agregado | RUZOT | RUZOT | RUZOT | 9.7 
+
+
+| Protocolo NFS SVM | RUZOT | RUZOT | TWT | 9.7 
+
+
+| Protocolo CIFS SVM | RUZOT | RUZOT | TWT | 9.7 
+
+
+| Protocolo FCP de SVM | RUZOT | RUZOT | TWT | 9.7 
+
+
+| Protocolo iSCSI de SVM | RUZOT | RUZOT | TWT | 9.7 
+
+
+| Protocolo NVMe de SVM | RUZOT | RUZOT | TWT | 9.7 
+
+
+| Clúster | RUZOT | RUZOT | RUZOT | 9.6 
+
+
+| Volúmenes | RUZOT | RUZOT | RUZOT | 9.6 
+|===

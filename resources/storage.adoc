@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: resources/storage.html 
+keywords: storage resources 
+summary: Puede usar estas llamadas API para gestionar el almacenamiento físico y lógico. 
+---
+= Reducida
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede usar estas llamadas API para gestionar el almacenamiento físico y lógico.
+
+.Métricas de agregados
+Puede recuperar los datos de métricas históricos de un agregado específico. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
+
+.Complejos agregados
+Una copia física del almacenamiento de WAFL dentro de un agregado. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Agregados
+Un agregado está formado por uno o varios grupos RAID. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Puentes
+Puede recuperar los puentes de un clúster. Este tipo de recurso se introdujo con ONTAP 9.9.
+
+.Discos
+Los discos físicos en el clúster. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7 y 9.8.
+
+.Clon de archivos
+Puede usar estos extremos para crear clones de archivos, recuperar estado de división y gestionar cargas divididas. Los recursos de extremo de clonado de archivos se introdujeron por primera vez con ONTAP 9.6 y se ampliaron con ONTAP 9.8. Se volvieron a ampliar significativamente con ONTAP 9.10.
+
+.Movimientos de archivos
+Es posible usar estos extremos de la API DE REST para mover un archivo entre dos volúmenes de FlexVol o dentro de un volumen de FlexGroup. Una vez aceptada la solicitud, puede supervisar el progreso y el estado. Este tipo de recurso se introdujo con ONTAP 9.11.1.
+
+.FlexCache
+Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
+
+.Orígenes de FlexCache
+FlexCache es una caché persistente de un volumen de origen. Este tipo de recurso se introdujo originalmente con ONTAP 9.6. Se ha mejorado la compatibilidad con la API DE REST de ONTAP 9.9 para admitir la modificación mediante el método de REVISIÓN HTTP.
+
+.Archivos supervisados
+Puede designar archivos específicos para una supervisión adicional. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Piscinas
+Es posible crear un pool de almacenamiento compartido y recuperar los pools de almacenamiento en un clúster. Este tipo de recurso se introdujo con ONTAP 9.11.1.
+
+.Puertos
+Puertos de almacenamiento del clúster. Este tipo de recurso se introdujo con ONTAP 9.6 y se mejoró con ONTAP 9.11.1.
+
+.Políticas de CALIDAD de servicio
+Configuración de políticas de calidad de servicio. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Cargas de trabajo de CALIDAD de servicio
+Una carga de trabajo DE CALIDAD de SERVICIO representa un objeto de almacenamiento cuyo seguimiento se realiza mediante LA CALIDAD de SERVICIO. Puede recuperar los flujos de trabajo de CALIDAD de SERVICIO. Este tipo de recurso se introdujo con ONTAP 9.10.
+
+.Qtrees
+Puede utilizar estas llamadas API a qtrees de gestión, un tipo de sistema de archivos dividido lógicamente. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Informes de cuotas
+Informe sobre cuotas, que es una técnica para restringir o realizar un seguimiento de archivos o uso del espacio. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Reglas de cuotas
+Reglas que se utilizan para aplicar las cuotas. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
+
+.Bandejas
+Las bandejas del clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Políticas de Snapshot
+Las copias Snapshot se crean en función de políticas. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Programaciones de Snapshot
+Se pueden controlar las programaciones de Snapshot. Este tipo de recurso se ha rediseñado recientemente con ONTAP 9.8.
+
+.Interruptores
+Puede recuperar los switches de un clúster. Este tipo de recurso se introdujo con ONTAP 9.9.
+
+.Dispositivos de cinta
+Puede recuperar los dispositivos de cinta en un clúster. Este tipo de recurso se introdujo con ONTAP 9.9.
+
+.Métricas más importantes
+Los extremos de métricas superiores permiten determinar la actividad de un volumen filtrado mediante una métrica específica. El filtrado se puede realizar en función de clientes, directorios, archivos y usuarios. Este tipo de recurso se introdujo con ONTAP 9.10.
+
+.Políticas de eficiencia de volúmenes
+Puede utilizar estas llamadas API para configurar las eficiencias aplicadas a un volumen completo. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Volúmenes
+Los contenedores lógicos se utilizan para servir datos a los clientes. Este tipo de recurso se introdujo originalmente con la API REST de ONTAP 9.6. Muchos de los valores de parámetros utilizados con la API se ampliaron significativamente con ONTAP 9.9, incluidos los que se utilizan con la gestión del espacio.
+
+.Archivos de volumen
+Puede recuperar una lista de archivos y directorios para un directorio específico de un volumen. Este tipo de recurso se introdujo con ONTAP 9.7 y se actualizó con ONTAP 9.8.
+
+.Snapshots para volúmenes
+Copias de Snapshot para un volumen. Este tipo de recurso se introdujo con ONTAP 9.6.

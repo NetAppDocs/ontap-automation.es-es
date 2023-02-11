@@ -1,0 +1,12 @@
+---
+section: migrate
+title: Migrar a la API DE REST
+entries:
+- title: Descripción general
+  url: "/migrate/overview.html"
+- title: Asignación de ONTAP A REST
+  url: "/migrate/mapping.html"
+- title: Contadores de rendimiento
+  url: "/migrate/performance-counters.html"
+- title: Blogs
+  url: "/migrate/blogs.html"

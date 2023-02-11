@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: automate/blogs.html 
+keywords: automation, automation blogs 
+summary: Hay disponibles varios artículos de blogs que le ayudarán a comprender mejor las diferentes tecnologías y métodos a la hora de automatizar una puesta en marcha de ONTAP. 
+---
+= Blogs sobre automatización de ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Hay disponibles varios artículos de blogs que le ayudarán a comprender mejor las diferentes tecnologías y métodos a la hora de automatizar una puesta en marcha de ONTAP.
+
+.Utilizando el traspaso de interfaz de línea de comandos privada con la API REST de ONTAP
+La conmutación desde la CLI proporciona una técnica para ejecutar comandos de la CLI de ONTAP mediante la API DE REST.
+
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["netapp.io/2020/11/09/private-cli-passthrough ontap-rest-api"^]
+
+.Introducción a NetApp y Ansible: Instale Ansible
+Si es nuevo en usar Ansible para la automatización de ONTAP, este es un buen lugar desde el que empezar.
+
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["netapp.io/2018/10/08/arrancada-con-netapp-and-ansible-install-ansible"^]

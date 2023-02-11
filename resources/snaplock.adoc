@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: resources/snaplock.html 
+keywords: snaplock resources 
+summary: Puede usar estas llamadas API para administrar la función SnapLock. 
+---
+= SnapLock
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapLock es una implantación basada en el almacenamiento de la solución óptica WORM (escritura única y lectura múltiple) tradicional, que permite la retención de datos a largo plazo. Puede usar estas llamadas API para administrar la función SnapLock.
+
+.Registro
+La estructura del registro de SnapLock se basa en directorios y archivos de un volumen específico que contiene los registros. Los archivos de registro se rellenan y archivan según su tamaño máximo. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Reloj de cumplimiento
+El reloj de cumplimiento de normativas determina el tiempo de caducidad de los objetos SnapLock. El reloj debe inicializarse fuera de la API DE REST y no se puede cambiar. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Retención de eventos
+Puede utilizar la característica de retención basada en eventos de SnapLock (EBR) para definir cuánto tiempo se retiene un archivo después de que se produzca un evento. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Retención de archivos y eliminación con privilegios
+Es posible gestionar el tiempo de retención de un archivo creado por SnapLock. Si es necesario, también puede eliminar archivos WORM no vencidos en un volumen empresarial de SnapLock. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+
+NOTE: El único rol integrado con autoridad para ejecutar la operación de eliminación es vsadmin-snaplock.
+
+.Huellas digitales de archivo
+Puede ver y gestionar la información de núcleo que describe los archivos y los volúmenes, como el tipo y la fecha de caducidad. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Conservación legal
+Puede utilizar estas llamadas API para administrar archivos que forman parte de un proceso de litigios. Este tipo de recurso se introdujo con ONTAP 9.7.

@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: resources/security.html 
+keywords:  
+summary:  
+---
+= Seguridad
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas llamadas API se pueden usar para gestionar la configuración de seguridad del clúster y de la SVM.
+
+.Cuentas
+Hay una colección de cuentas de usuario para el clúster y las SVM. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Nombre de cuentas
+La configuración de una cuenta de usuario con ámbito. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Proxy de Active Directory
+La información de la cuenta de SVM se puede administrar en el servidor de Active Directory. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Antiransomware
+ONTAP detecta archivos que potencialmente contienen una amenaza de ransomware. Existen varias categorías de extremos. Puede recuperar una lista de estos archivos sospechosos, así como eliminarlos de un volumen. Este tipo de recurso se introdujo con ONTAP 9.10.1.
+
+.Auditoría
+La configuración para determinar qué se registra en los archivos del registro de auditoría. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Destinos de auditoría
+Esta configuración controla la forma en que la información del registro de auditoría se envía a los sistemas remotos o a los servidores splunk. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Auditar mensajes
+Puede recuperar los mensajes del registro de auditoría. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.KMS DE AWS
+Amazon Web Services incluye un servicio de gestión de claves que proporciona almacenamiento seguro para claves y otros secretos. Puede acceder a este servicio a través de la API DE REST para permitir que ONTAP almacene sus claves de cifrado de forma segura en el cloud. Además, puede crear y enumerar las claves de autenticación usadas con el cifrado del almacenamiento de NetApp. Esto es algo nuevo en ONTAP 9.12.
+
+.Almacén de claves de Azure
+Este conjunto de llamadas API le permite utilizar el almacén de claves de Azure para almacenar las claves de cifrado de ONTAP. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Certificados
+Las llamadas API se pueden usar para instalar, mostrar y eliminar certificados que usa ONTAP. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Seguridad del clúster
+Puede recuperar detalles de la seguridad para todo el clúster y actualizar ciertos parámetros. Este tipo de recurso se introdujo con ONTAP 9.7 y se actualizó con ONTAP 9.8.
+
+.KMS PARA GCP
+Este conjunto de llamadas API le permite utilizar el servicio de gestión de claves de Google Cloud Platform para almacenar y gestionar las claves de cifrado ONTAP. Este tipo de recurso se introdujo inicialmente con la API DE REST de ONTAP 9.8. Sin embargo, esta función se ha rediseñado y, por lo tanto, se considera nueva, con nuevos tipos de recursos, en ONTAP 9.9.
+
+.IPSec
+Seguridad de protocolo de Internet (IPSec) es un conjunto de protocolos que proporcionan seguridad entre dos puntos finales a través de una red IP subyacente. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Certificados de CA IPSec
+Puede agregar, quitar y recuperar certificados de CA IPSec. Este tipo de recurso es nuevo en ONTAP 9.10.
+
+.Directivas IPSec
+Puede utilizar este conjunto de llamadas API para administrar las directivas en vigor para una implementación IPSec. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Asociaciones de seguridad IPSec
+Puede utilizar este conjunto de llamadas API para administrar las asociaciones de seguridad vigentes para una implementación IPSec. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Configuraciones del gestor de claves
+Estos extremos permiten recuperar y actualizar las configuraciones de los gestores de claves. Este tipo de recurso es nuevo en ONTAP 9.10.
+
+.Gestores de claves
+Un gestor de claves permite a los módulos cliente de ONTAP almacenar claves de forma segura. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó para ONTAP 9.7. Se realizó otra actualización con ONTAP 9.12 para admitir claves de autenticación.
+
+.Almacenes de claves
+Un almacén de claves describe el tipo de un administrador de claves. Este tipo de recurso es nuevo en ONTAP 9.10.
+
+.Autenticación LDAP
+Estas llamadas API se utilizan para recuperar y gestionar la configuración del servidor LDAP de clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Mensajes de inicio de sesión
+Se utiliza para mostrar y gestionar los mensajes de inicio de sesión que utiliza ONTAP. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Verificación de varios administradores
+La función de verificación de varios administradores proporciona un marco de autorización flexible para proteger el acceso a comandos u operaciones de ONTAP. Existen diecisiete nuevos extremos que admiten la definición, solicitud y aprobación del acceso en las siguientes áreas:
+
+* Bases de datos
+* Solicitudes
+* Grupos de aprobación
+
+
+Al ofrecer la opción de que varios administradores aprueben el acceso, se mejora la seguridad de los entornos ONTAP Y IT. Estos tipos de recursos se introdujeron con ONTAP 9.11.
+
+.Autenticación NIS
+Estos ajustes se utilizan para recuperar y gestionar la configuración del servidor NIS de clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Autenticación de contraseña
+Esto incluye la llamada API utilizada para cambiar la contraseña de una cuenta de usuario. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Privilegios para una instancia de función
+Gestione los privilegios para una función específica. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Autenticación de clave pública
+Puede usar estas llamadas API para configurar las claves públicas de las cuentas de usuario. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Funciones
+Los roles proporcionan una forma de asignar privilegios a las cuentas de usuario. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Instancia de funciones
+Instancia específica de un rol. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Proveedor de servicios SAML
+Puede mostrar y gestionar la configuración del proveedor de servicios SAML. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.SSH
+Estas llamadas permiten definir la configuración de SSH. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.SVM SSH
+Estos extremos permiten recuperar la configuración de seguridad SSH de todas las SVM. Este tipo de recurso se introdujo con ONTAP 9.10.

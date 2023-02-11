@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: python/prepare_pcl.html 
+keywords: python client library, prepare, pcl 
+summary: Debe preparar el entorno de tiempo de ejecución local antes de utilizar la biblioteca de clientes de Python. 
+---
+= Prepárese para utilizar la biblioteca de clientes de Python
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Debe preparar el entorno de tiempo de ejecución local antes de utilizar la biblioteca de clientes de Python.
+
+.Requisitos básicos
+Debe utilizar Python 3.5 o posterior. Además, se requieren los siguientes paquetes:
+
+* solicitudes 2.22.1 o posterior
+* pedido-correa de herramientas 0.9.1 o posterior
+* marshmallow 3.2.1 o posterior
+
+
+.Nombre y versión del paquete
+El nombre del paquete de biblioteca de clientes Python es *netapp-ontap*. La versión asociada al paquete es una combinación de los números de versión principal y secundario de ONTAP a partir de los que se generó la biblioteca, junto con una versión secundaria para el cliente en la versión ONTAP. Por ejemplo, los números de versión válidos son: 9.6.1, 9.6.2 y 9.7.1.
+
+.Instalación
+Debe utilizar pip para instalar el paquete netapp_ontap desde el sitio web de índice de paquetes Python (PyPI).
+
+.Documentación y recursos adicionales
+Consulte _NetApp Developer Network_ para obtener enlaces a documentación y otros recursos.
+
+.Información relacionada
+* https://pypi.org/project/netapp-ontap["PyPI: ONTAP de NetApp 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["Documentación de PCL de NetApp para 9.10.1"^]
+* https://devnet.netapp.com/restapi.php["Red de desarrolladores de NetApp: API RESTful de ONTAP"^]
+

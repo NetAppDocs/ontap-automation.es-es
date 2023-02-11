@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: resources/application.html 
+keywords: application resources 
+summary: Puede usar estas llamadas API para gestionar los recursos de la aplicación ONTAP. 
+---
+= Cliente más
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede usar estas llamadas API para gestionar los recursos de la aplicación ONTAP.
+
+.Snapshots de aplicaciones
+Las aplicaciones admiten copias Snapshot, que se pueden crear o restaurar en cualquier momento. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Más grandes
+Las aplicaciones ONTAP se organizan en función del tipo, incluidas: Plantillas, aplicaciones, componentes y copias Snapshot. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Grupos de consistencia
+Un grupo de coherencia es un conjunto de volúmenes que se agrupan cuando se ejecutan ciertas operaciones, como una Snapshot. Esta función extiende la misma coherencia de bloqueo e integridad de datos implícita con operaciones de un único volumen en un conjunto de volúmenes. Este tipo de recurso se introdujo con ONTAP 9.10 y se actualizó con 9.12.
+
+.Snapshots de grupos de consistencia
+Se pueden usar estos extremos para copiar, crear, inventariar y restaurar snapshots para un grupo de coherencia. Este tipo de recurso se introdujo con ONTAP 9.10.

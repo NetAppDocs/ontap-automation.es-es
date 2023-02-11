@@ -1,0 +1,282 @@
+---
+permalink: manage/dacl-sacl-rest-api.html 
+sidebar: sidebar 
+keywords: dacl, sacl, permissions, file, api, access, vserver, control, list, access control list, access control 
+summary: Puede gestionar los permisos de archivos DACL y SACL mediante la API DE REST de ONTAP. 
+---
+= Gestione los permisos de archivos DACL y SACL con la API DE REST de ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP utiliza las listas de control de acceso del sistema (SACL) y las listas de control de acceso discrecional (DACL) para asignar permisos a los objetos de archivo. A partir de ONTAP 9.9.1, la API DE REST de ONTAP incluye extremos para asignar permisos SACL y DACL para archivos y automatizar los permisos de seguridad de archivos. (Puede obtener más información acerca de las opciones para automatizar los permisos SACL y DACL antes de ONTAP 9.9.1 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["aquí"^]).
+
+A partir de ONTAP 9.9.1, puede utilizar una sola llamada a la API DE REST en lugar de varios comandos de la CLI o llamadas a ONAPI. Los siguientes ejemplos muestran cómo se puede usar la API DE REST de ONTAP para trabajar con los permisos de archivos. En cada ejemplo, asegúrese de proporcionar sus valores para la información entre paréntesis <> donde se indique.
+
+También puede hacer referencia a una muestra https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["Guión Python"^] Esto demuestra cómo automatizar una serie de actividades relacionadas con SACL y DACL.
+
+
+
+== Ver permisos efectivos
+
+Con el `GET /protocols/file-security/effective-permissions/` Llamada API, puede recuperar los permisos actuales para un archivo o directorio específico.
+
+.Solicitud de ejemplo:
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/protocols/file-security/effective-permissions/cf5f271a-1beb-11ea-8fad-005056bb645e/administrator/windows/%2F?share.name=sh1&return_records=true'
+----
+.Ejemplo de respuesta
+[source, json]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----
+
+
+== Ver toda la información de auditoría
+
+Con el `GET /protocols/file-security/permissions/` Llamada API, puede recuperar toda la información de auditoría de un archivo o directorio específico.
+
+.Solicitud de ejemplo:
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent'
+----
+.Ejemplo de respuesta
+[source, json]
+----
+{
+  "svm": {
+    "uuid": "9479099d-5b9f-11eb-9c4e-0050568e8682",
+    "name": "vs1"
+  },
+  "path": "/parent",
+  "owner": "BUILTIN\\Administrators",
+  "group": "BUILTIN\\Administrators",
+  "control_flags": "0x8014",
+  "acls": [
+    {
+      "user": "BUILTIN\\Administrators",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    },
+    {
+      "user": "BUILTIN\\Users",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    }
+  ],
+  "inode": 64,
+  "security_style": "mixed",
+  "effective_style": "ntfs",
+  "dos_attributes": "10",
+  "text_dos_attr": "----D---",
+  "user_id": "0",
+  "group_id": "0",
+  "mode_bits": 777,
+  "text_mode_bits": "rwxrwxrwx"
+}
+
+----
+
+
+== Aplicar nuevos permisos
+
+Con el `POST /protocols/file-security/permissions/` Llamada API, puede aplicar un nuevo descriptor de seguridad a un archivo o directorio.
+
+.Ejemplo de solicitud
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X POST -d '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'
+----
+.Ejemplo de respuesta
+[source, json]
+----
+{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== Actualice la información del descriptor de seguridad
+
+Con el `PATCH /protocols/file-security/permissions/` Llamada API, puede actualizar información de descriptor de seguridad específica para un archivo o directorio, como los indicadores de propietario, grupo o control primarios.
+
+.Ejemplo de solicitud
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X PATCH -d '{ \"control_flags\": \"32788\", \"group\": \"everyone\", \"owner\": \"user1\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'
+----
+.Ejemplo de respuesta
+[source, json]
+----
+{
+  "job": {
+    "uuid": "6f89e612-5bbd-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/6f89e612-5bbd-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== Eliminar una entrada de control de acceso (ACE) SACL/DACL existente
+
+Con el `DELETE /protocols/file-security/permissions/` Llamada API, puede eliminar una ACE existente de un archivo para directorio. En este ejemplo, se propaga el cambio a cualquier objeto secundario.
+
+.Ejemplo de solicitud
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X DELETE -d '{ \"access\": \"access_allow\", \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"ignore_paths\": [ \"/parent/child2\" ], \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent/acl/himanshu?return_timeout=0'
+----
+.Ejemplo de respuesta
+[source, json]
+----
+{
+  "job": {
+    "uuid": "e5683b61-5bbf-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/e5683b61-5bbf-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== API REST de ONTAP frente a comandos de la CLI de ONTAP
+
+La API REST de ONTAP le permite automatizar flujos de trabajo con menos comandos que la interfaz de línea de comandos de ONTAP para muchas tareas. Por ejemplo, puede utilizar un único método API DE POST para modificar un descriptor de seguridad de un archivo, en lugar de utilizar varios comandos de la CLI. La siguiente tabla muestra los comandos de la CLI que necesitaría completar tareas comunes de permisos del sistema de archivos frente a las llamadas API DE REST correspondientes:
+
+|===
+| API REST de ONTAP | CLI de ONTAP 
+
+
+| `GET /protocols/file-security/effective-permissions/`  a| 
+`vserver security file-directory show-effective-permissions`
+
+
+
+| `POST /protocols/file-security/permissions/`  a| 
+. `vserver security file-directory ntfs create`
+. `vserver security file-directory ntfs dacl add`
+. `vserver security file-directory ntfs sacl add`
+. `vserver security file-directory policy create`
+. `vserver security file-directory policy task add`
+. `vserver security file-directory apply`
+
+
+
+
+| `PATCH /protocols/file-security/permissions/`  a| 
+`vserver security file-directory ntfs modify`
+
+
+
+| `DELETE /protocols/file-security/permissions/`  a| 
+. `vserver security file-directory ntfs dacl remove`
+. `vserver security file-directory ntfs sacl remove`
+
+
+|===
+
+
+== Información relacionada
+
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["Ejemplo de permisos DACL/SACL de la API REST de ONTAP: Script Python"^]
+* https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/["Gestión simplificada de permisos de seguridad de archivos con API DE REST de ONTAP"^]
+* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["Uso de la interfaz de línea de comandos privada mediante la API REST de ONTAP (para versiones de ONTAP anteriores a la versión 9.9.1)"^]
+

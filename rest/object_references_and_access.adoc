@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: rest/object_references_and_access.html 
+keywords: objects, access paths, uuid, uuidv4, collections, object collection 
+summary: Es posible hacer referencia a las instancias o los objetos de recursos expuestos mediante la API DE REST de ONTAP y acceder a ellos de varias maneras diferentes. 
+---
+= Referencias de objeto y acceso
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible hacer referencia a las instancias o los objetos de recursos expuestos mediante la API DE REST de ONTAP y acceder a ellos de varias maneras diferentes.
+
+
+
+== Rutas de acceso a objetos
+
+En un nivel alto, hay dos tipos de ruta al acceder a un objeto:
+
+* Primario
++
+El objeto es el destino principal o directo de la llamada API.
+
+* Extranjero
++
+El objeto no es la referencia principal de la llamada API, sino que está vinculado desde el objeto principal. Por lo tanto, es un objeto externo o descendente y se hace referencia a través de un campo del objeto primario.
+
+
+
+
+
+== Acceder a un objeto mediante el UUID
+
+A cada objeto se le asigna un identificador único cuando se crea, que en la mayoría de los casos es un UUID de 128 bits. Los valores de UUID asignados son inmutables y se utilizan internamente en ONTAP para acceder a los recursos y gestionarlos. Por este motivo, el UUID generalmente proporciona la forma más rápida y estable de acceder a los objetos.
+
+Para muchos de los tipos de recursos, se puede proporcionar un valor de UUID como parte de la clave de ruta en la URL para acceder a un objeto específico. Por ejemplo, puede usar los siguientes métodos para acceder a una instancia del nodo: ``/cluster/nodes/{uuid}`
+
+
+
+== Obtener acceso a un objeto mediante una propiedad de objeto
+
+Además de un UUID, también puede tener acceso a un objeto mediante una propiedad de objeto. En la mayoría de los casos, es conveniente utilizar la propiedad name. Por ejemplo, puede utilizar el siguiente parámetro de consulta en la cadena URL para acceder a una instancia de nodo por su nombre: `/cluster/nodes?name=node_one`. Además de un parámetro de consulta, se puede tener acceso a un objeto extraño a través de una propiedad del objeto primario.
+
+Aunque puede utilizar el nombre u otra propiedad para tener acceso a un objeto en lugar del UUID, existen varias desventajas posibles:
+
+* El campo de nombre no es inmutable y se puede cambiar. Si se cambia el nombre de un objeto antes de acceder a un objeto, se devuelve el objeto incorrecto o se producirá un error de acceso al objeto.
++
+
+NOTE: Este problema puede ocurrir con un método POST o PATCH en un objeto extraño o con un método GET en un objeto principal.
+
+* ONTAP debe convertir el campo de nombre en el UUID correspondiente. Este es un tipo de acceso indirecto que puede convertirse en un problema de rendimiento.
+
+
+En concreto, es posible una degradación del rendimiento cuando se da alguna de las siguientes situaciones:
+
+* Se utiliza EL método GET
+* Se accede a una gran colección de objetos
+* Se utiliza una consulta compleja o elaborada
+
+
+
+
+== Contexto de clúster frente a SVM
+
+Existen varios extremos DE REST que admiten tanto un clúster como una SVM. Cuando se usa uno de estos extremos, se puede indicar el contexto de la llamada API a través de `scope=[svm|cluster]` valor. Entre los ejemplos de extremos que admiten un contexto doble se incluyen interfaces IP y roles de seguridad.
+
+
+NOTE: El valor de ámbito tiene un valor predeterminado base en las propiedades proporcionadas para cada llamada API.
+
+
+
+== Uso DE PATCH y DELETE en una colección de objetos
+
+Todos los extremos REST que admiten PARCHE o ELIMINACIÓN en una instancia de recurso también admiten el mismo método en una colección de objetos. El único requisito es que se debe proporcionar al menos un campo a través de un parámetro de consulta en la cadena URL. Al emitir UN PARCHE o ELIMINARLO sobre una colección, esto equivale a realizar lo siguiente internamente:
+
+* OBTENER basado en consultas para recuperar la colección
+* Secuencia en serie de LLAMADAS DE PARCHE o BORRADO en cada objeto de la colección
+
+
+Puede establecer el tiempo de espera de la operación `return_timeout` con un valor predeterminado de 15 segundos. Si no se ha completado antes del tiempo de espera, la respuesta incluye un vínculo al siguiente objeto. Debe volver a emitir el mismo método HTTP mediante el siguiente enlace para continuar con la operación.

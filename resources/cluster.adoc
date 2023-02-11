@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: resources/cluster.html 
+keywords: cluster resources 
+summary: Puede usar estas llamadas API para gestionar clústeres de ONTAP y los recursos relacionados. 
+---
+= Clúster
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede usar estas llamadas API para gestionar clústeres de ONTAP y los recursos relacionados.
+
+.Pools de capacidad
+El modelo de licencias de pools de capacidad permite obtener licencia de la capacidad de almacenamiento para cada nodo de clúster desde un pool compartido. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Chasis
+El chasis es el marco de hardware que admite un clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.De clúster
+Un clúster de ONTAP contiene uno o más nodos y los ajustes de configuración relacionados que definen el sistema de almacenamiento. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Tablas de contadores
+El subsistema Counter Manager captura diversa información estadística sobre ONTAP. Puede acceder a esta información para evaluar el rendimiento del sistema. Este tipo de recurso se introdujo con ONTAP 9.11.
+
+.Firmware
+Puede recuperar un historial de las solicitudes de actualización del firmware. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Trabajos
+Las solicitudes de API DE REST asíncrona se realizan mediante una tarea en segundo plano anclada por un trabajo. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Instancia de licencia
+Cada licencia se puede administrar como un paquete independiente. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Administradores de licencias
+Es posible gestionar la configuración y otra información relacionada con cada instancia de administrador de licencias asociada con un clúster de ONTAP. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Licencias
+Las licencias permiten implementar funciones y funcionalidades específicas de ONTAP. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Mediadores
+Puede administrar el mediador asociado a MetroCluster, lo que incluye agregar o eliminar la instancia del mediador. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.MetroCluster
+Puede crear y gestionar una puesta en marcha de MetroCluster, incluida la ejecución de operaciones de conmutación de sitios o conmutación de estado. Este tipo de recurso es nuevo en ONTAP 9.8 y se actualiza con 9.11.
+
+.Diagnóstico de MetroCluster
+Puede realizar una operación de diagnóstico en una implementación de MetroCluster y recuperar los resultados. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Grupos de recuperación ante desastres de MetroCluster
+Es posible realizar operaciones relacionadas con los grupos de DR de MetroCluster. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Interconexiones de MetroCluster
+Puede recuperar el estado de la interconexión de MetroCluster. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Nodos de MetroCluster
+Puede recuperar el estado de los nodos individuales en una implementación de MetroCluster. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Operaciones de MetroCluster
+Puede recuperar una lista de las operaciones ejecutadas recientemente para una configuración de MetroCluster. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.SVM de MetroCluster
+Puede recuperar información sobre todas las parejas de SVM de una configuración de MetroCluster. Este tipo de recurso se introdujo con ONTAP 9.11.1.
+
+.Nodos
+Los clústeres de ONTAP se componen de uno o varios nodos. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
+
+.Claves NTP
+El protocolo de tiempo de redes (NTP) puede configurarse para usar claves privadas compartidas entre ONTAP y los servidores de tiempo NTP externos de confianza. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Servidor NTP
+Puede usar estas llamadas API para configurar los ajustes del protocolo de tiempo de redes de ONTAP, incluidos los servidores NTP y las claves externas. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Compañeros
+Los objetos del mismo nivel representan extremos y admiten las relaciones de paridad de clústeres. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Contadores de rendimiento
+En versiones anteriores de ONTAP se había mantenido información estadística sobre las características de funcionamiento del sistema. Con el lanzamiento de la versión 9.11.1, la información se ha mejorado y ahora está disponible a través de la API DE REST. Con esta función, la API REST de ONTAP se acerca más a la paridad con la API de Data ONTAP (ONAPI o ZAPI). Este tipo de recurso se introdujo con ONTAP 9.11.1.
+
+.Programaciones
+Las programaciones se pueden utilizar para automatizar el proceso de realización de tareas. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Sensores
+Puede utilizar estos extremos para recuperar detalles sobre todos los sensores de entorno de la plataforma. Este tipo de recurso se introdujo con ONTAP 9.11.
+
+.De NetApp
+Un clúster de ONTAP incluye el perfil de software del clúster, la colección de paquetes de software y la colección de historial de software. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
+
+.Web
+Se pueden usar estos extremos para actualizar las configuraciones de servicios web y recuperar la configuración actual. Este tipo de recurso se introdujo con ONTAP 9.10.

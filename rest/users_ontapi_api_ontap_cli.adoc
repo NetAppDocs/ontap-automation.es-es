@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: rest/users_ontapi_api_ontap_cli.html 
+keywords: snapdiff, migrating to rest 
+summary: ONAPI es un conjunto de llamadas API que se proporcionan a través del SDK de capacidad de gestión de redes que se puede utilizar para administrar los sistemas de almacenamiento de ONTAP. Existen diferencias entre la API REST y las llamadas API ONAPI, así como entre la API REST y la CLI de ONTAP. 
+---
+= Usuarios de la API ONAPI y la interfaz de línea de comandos ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONAPI es un conjunto de llamadas API que se proporcionan a través del SDK de capacidad de gestión de redes que se puede utilizar para administrar los sistemas de almacenamiento de ONTAP. Existen diferencias entre la API REST y las llamadas API ONAPI, así como entre la API REST y la CLI de ONTAP. Debe comprender estas diferencias antes de usar la API DE REST en un entorno de producción.
+
+
+
+== Diferencias generales de diseño
+
+La API REST y la interfaz de línea de comandos de ONTAP tienen diseños fundamentalmente diferentes. Los comandos y los parámetros de la CLI no se asignan directamente a las llamadas de la API DE REST. E incluso donde puede haber una similitud, los detalles de los parámetros de entrada pueden ser diferentes. Por ejemplo, las unidades numéricas pueden especificarse en bytes o utilizando un sufijo (como KB). Usted debe revisar link:input_variables.html["Variables de entrada que controlan una solicitud API"] así como la link:../reference/api_reference.html["Referencia de API"] si quiere más información.
+
+
+
+== SVM de datos expuestas a través de la API DE REST
+
+ONTAP admite varios tipos de máquinas virtuales de almacenamiento (SVM). Sin embargo, solo las SVM de datos están expuestas directamente a través de la API DE REST de ONTAP. La información de configuración que describe el clúster y los nodos está disponible a través de la API REST. Sin embargo, el clúster y los nodos no se tratan como SVM independientes.
+
+
+
+== Migración de ONAPI A REST
+
+La API REST es la opción primaria y estratégica para automatizar la administración del sistema ONTAP. Si actualmente utiliza la API ONTAPI, debe considerar la posibilidad de migrar a la API DE REST. NetApp proporciona documentación de asignación para facilitar la migración de ONAPI al REST. Consulte link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"] si quiere más información.
+
+
+
+== Cambios en la disponibilidad de SnapDiff en ONAPI
+
+A partir de ONTAP 9.10.1, no se pueden invocar las llamadas a la API de SnapDiff v1 y v2. Cualquier aplicación de terceros que llame a SnapDiff v1 o a la API ONTv2 no funcionará a partir de ONTAP 9.10.1. Los usuarios de ONTAP deben verificar que su aplicación de backup admite las llamadas DE REST de SnapDiff v3 antes de actualizar a ONTAP 9.10.1.
+
+La disponibilidad de API de SnapDiff en versiones de ONTAP se define de la siguiente manera:
+
+* ONTAP 9.7 y versiones anteriores: v1 y v2 (solo ONTAP)
+* ONTAP 9.8 – 9.9.1: v1, v2 y v3 (tanto ONAPI como API REST)
+* ONTAP 9.10.1: Solo v3 (solo API REST)
+
+
+Para obtener más información, consulte link:../rn/whats_new.html["Notas de la versión de ONTAP"].
+
+.Información relacionada
+* link:../rest/input_variables.html["Variables de entrada que controlan una solicitud API"]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["Información de asignación de la API DE REST de ONAPI"^]
+

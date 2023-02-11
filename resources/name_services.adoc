@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: resources/name_services.html 
+keywords: name services resources 
+summary: Puede utilizar estas llamadas API para gestionar los servicios de nombres que admite ONTAP. 
+---
+= Servicios de nombres
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede utilizar estas llamadas API para gestionar los servicios de nombres que admite ONTAP.
+
+.Almacenamiento en caché
+Los servicios de nombres ONTAP admiten el almacenamiento en caché, lo que mejora el rendimiento y la resiliencia. La configuración de la caché de servicios de nombres ahora se puede acceder a través de la API DE REST. La configuración se puede aplicar a varios niveles, incluidos los siguientes: Hosts, usuarios unix, grupos unix y netgroups. Este tipo de recurso se introdujo con ONTAP 9.11.
+
+.DDNS
+Puede mostrar la información del DNS dinámico (DDNS) y administrar el subsistema DDNS. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.DNS
+El DNS admite la integración del clúster de ONTAP en la red. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Registro del host
+Estos extremos permiten mostrar la dirección IP de un nombre de host especificado así como el nombre de host de una dirección IP. Este tipo de recurso se introdujo con ONTAP 9.10.
+
+.LDAP
+Los servidores LDAP se pueden utilizar para mantener la información del usuario. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Esquemas LDAP
+Puede crear, modificar y enumerar los esquemas LDAP que utiliza ONTAP. Se incluyen cuatro esquemas predeterminados. Este tipo de recurso se introdujo con ONTAP 9.11.
+
+.Hosts locales
+Puede usar estos extremos para mostrar y administrar las asignaciones locales de nombres de host. Este tipo de recurso se introdujo con ONTAP 9.10.
+
+.Asignaciones de nombre
+Las asignaciones de nombres permiten asignar identidades de un dominio de nombres a otro. Por ejemplo, puede asignar identidades de CIFS a UNIX, de Kerberos a UNIX y de UNIX a CIFS. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Archivos de grupos de red
+Puede recuperar los detalles del archivo de grupo de redes y eliminar un archivo para una SVM. Este tipo de recurso se introdujo con ONTAP 9.11.
+
+.NIS
+Los servidores NIS pueden utilizarse para autenticar usuarios y estaciones de trabajo cliente. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Usuarios y grupos UNIX
+Los usuarios y grupos locales de UNIX han formado parte de versiones anteriores de ONTAP. Sin embargo, ahora se ha agregado soporte a la API DE REST para poder mostrar y gestionar los usuarios y grupos. Estos tipos de recursos DE REST se introdujeron con ONTAP 9.9 y se mejoraron significativamente con ONTAP 9.10.

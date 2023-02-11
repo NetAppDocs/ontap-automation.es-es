@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_1_update_cluster_contact.html 
+keywords: workflow 
+summary: Este flujo de trabajo actualiza la información de contacto del clúster. Dado que la solicitud se procesa de forma asíncrona, también ilustra cómo determinar si el trabajo en segundo plano se completa correctamente. 
+---
+= Flujo de trabajo 1: Actualice el contacto del clúster y compruebe el estado del trabajo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Este flujo de trabajo actualiza la información de contacto del clúster. Dado que la solicitud se procesa de forma asíncrona, también ilustra cómo determinar si el trabajo en segundo plano se completa correctamente.
+
+
+
+=== 1. Actualice la información de contacto del clúster
+
+Puede emitir una llamada API para actualizar la información de contacto. Dado que la solicitud se ejecuta de forma asíncrona, debe confirmar que el trabajo asociado se ha realizado correctamente.
+
+|===
+| Categoría | Método HTTP | Ruta 
+
+
+| Clúster | PARCHE | /cluster 
+|===
+.Tipo de procesamiento
+Asíncrona
+
+.Rizo
+[source, curl]
+----
+curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
+{
+  "contact": "support@company-demo.com"
+}
+----
+.Salida JSON
+Se devuelve un objeto de trabajo con el identificador asociado.
+
+[source, json]
+----
+{ "job": {
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+  }
+}
+----
+
+
+=== 2. Recuperar el estado del trabajo
+
+Debe recuperar el estado del trabajo para determinar si la solicitud asíncrona se ha completado correctamente.
+
+|===
+| Categoría | Método HTTP | Ruta 
+
+
+| Clúster | OBTENGA | /cluster/trabajos/{uuid} 
+|===
+.Tipo de procesamiento
+Síncrona
+
+.Rizo
+[source, curl]
+----
+curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
+----
+.Salida
+Se devuelve un objeto de trabajo con el estado y otros campos.
+
+[source, json]
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----

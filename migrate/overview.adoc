@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: migrate/overview.html 
+keywords: ONTAPI, migrate, migrate to REST API 
+summary: Si utiliza la API ONTAPI, se le recomienda que comience a migrar a la API DE REST de ONTAP. 
+---
+= Descripción general
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si utiliza la API ONTAPI, se le recomienda que comience a migrar a la API DE REST de ONTAP. Existen muchas herramientas y recursos útiles para ayudarle a realizar la migración.
+
+
+NOTE: NetApp introdujo por primera vez la API DE REST con ONTAP 9.6. Desde entonces, la API ha seguido expandiéndose y madurando. Ahora ofrece la alternativa estratégica y preferida a ONAPI al automatizar la administración de sus implementaciones de ONTAP.

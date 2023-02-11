@@ -1,0 +1,38 @@
+---
+section: resources
+title: Resumen de recursos DE REST
+entries:
+- title: Descripción general
+  url: "/resources/overview_categories.html"
+- title: Cliente más
+  url: "/resources/application.html"
+- title: Cloud
+  url: "/resources/cloud.html"
+- title: Clúster
+  url: "/resources/cluster.html"
+- title: Servicios de nombres
+  url: "/resources/name_services.html"
+- title: NAS
+  url: "/resources/nas.html"
+- title: NDMP
+  url: "/resources/ndmp.html"
+- title: Redes
+  url: "/resources/networking.html"
+- title: NVMe
+  url: "/resources/nvme.html"
+- title: Almacén de objetos
+  url: "/resources/object_store.html"
+- title: SAN
+  url: "/resources/san.html"
+- title: Seguridad
+  url: "/resources/security.html"
+- title: SnapLock
+  url: "/resources/snaplock.html"
+- title: SnapMirror
+  url: "/resources/snapmirror.html"
+- title: Reducida
+  url: "/resources/storage.html"
+- title: Soporte técnico
+  url: "/resources/support.html"
+- title: SVM
+  url: "/resources/svm.html"

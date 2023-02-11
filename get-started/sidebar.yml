@@ -1,0 +1,13 @@
+---
+section: get-started
+title: Manos a la obra
+url: "/getting_started_with_the_rest_api.html"
+entries:
+- title: Comprender las opciones de automatización
+  url: "/get-started/ontap_automation_options.html"
+- title: Prepare para usar la API DE REST
+  url: "/get-started/prepare.html"
+- title: Recupere la versión de software del clúster
+  url: "/get-started/retrieve_cluster_software_version.html"
+- title: Su primera llamada API
+  url: "/get-started/first_call.html"

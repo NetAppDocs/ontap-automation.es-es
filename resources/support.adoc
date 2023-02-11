@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: resources/support.html 
+keywords: support resources 
+summary: Puede usar estas llamadas API para gestionar las funciones de ONTAP que se utilizan para admitir un clúster. 
+---
+= Soporte técnico
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede usar estas llamadas API para gestionar las funciones de ONTAP que se utilizan para admitir un clúster.
+
+.Registro de aplicaciones
+Una aplicación independiente puede registrar eventos EMS y paquetes AutoSupport generados opcionalmente en un sistema ONTAP emitiendo una solicitud POST. Este tipo de recurso se introdujo con ONTAP 9.11.1
+
+.Actualización automática
+La función de actualización automática mantiene sus sistemas ONTAP actualizados descargando y aplicando las últimas actualizaciones de software. Existen varias categorías de extremos que admiten la función, como el estado, las configuraciones y las actualizaciones. Estos tipos de recursos se introdujeron con ONTAP 9.10.
+
+.AutoSupport
+AutoSupport recopila los detalles de estado y configuración, y los errores, e informa de la información a NetApp. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Mensajes de AutoSupport
+Cada nodo mantiene mensajes de AutoSupport que se pueden generar y recuperar. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Backup de configuración
+Puede usar estas API para recuperar y actualizar la configuración de backup actual. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Configurar las operaciones de backup
+Puede crear, recuperar y eliminar archivos de copia de seguridad de configuración. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Volcado de memoria
+Puede utilizar estos extremos para recuperar y gestionar los volcados principales de memoria generados por un clúster o un nodo. Este tipo de recurso se introdujo con ONTAP 9.10.
+
+.SAL
+El sistema de gestión de eventos (EMS) recoge eventos y envía notificaciones a uno o más destinos. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Destinos EMS
+Los destinos EMS determinan cómo y dónde se envían las notificaciones. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Instancia de destinos EMS
+Una instancia de destino de EMS se define por tipo y ubicación. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Eventos de EMS
+Esta es una colección activa de eventos del sistema para el clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Filtros EMS
+Los filtros EMS identifican colectivamente los eventos que requieren procesamiento adicional. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Instancia de filtros EMS
+Una instancia de filtro EMS es una colección de reglas que se aplican a los eventos. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Mensajes EMS
+Proporciona acceso al catálogo de eventos de EMS. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Reglas EMS para la instancia de filtro
+Se puede gestionar una lista de reglas para una instancia específica de un filtro EMS. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Instancia de reglas EMS para instancia de filtro
+Regla individual para una instancia específica de un filtro EMS. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.SNMP
+Es posible habilitar y deshabilitar las operaciones de SNMP y capturas para el clúster. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Host de captura SNMP
+Un host de captura SNMP es un sistema que se configura para recibir capturas SNMP de ONTAP. Es posible recuperar y definir los hosts. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Instancia de host de captura SNMP
+Es posible gestionar hosts de captura SNMP específicos. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Usuarios SNMP
+Puede definir y administrar usuarios SNMP. Este tipo de recurso se introdujo con ONTAP 9.7.
+
+.Instancia de usuarios SNMP
+Puede administrar un usuario SNMP específico donde el ID del motor está asociado a la SVM administrativa o a una SVM de datos. Este tipo de recurso se introdujo con ONTAP 9.7.

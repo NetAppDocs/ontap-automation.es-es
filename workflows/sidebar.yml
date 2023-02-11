@@ -1,0 +1,8 @@
+---
+section: workflows
+title: Flujos de trabajo
+entries:
+- title: Prepárese para usar los flujos de trabajo
+  url: "/workflows/prepare_workflows.html"
+- title: 'Flujo de trabajo 1: Actualice el contacto del clúster y compruebe el estado'
+  url: "/workflows/wf_1_update_cluster_contact.html"

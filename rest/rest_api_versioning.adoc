@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: rest/rest_api_versioning.html 
+keywords: versioning, REST API versioning 
+summary: A la API DE REST incluida con ONTAP 9 se le asigna un número de versión independiente del número de versión de ONTAP. Debe conocer la versión de la API que se incluye con su versión de ONTAP y cómo esto puede afectar al uso que hace de la API. 
+---
+= Versionado de la API de REST de ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+A la API DE REST incluida con ONTAP 9 se le asigna un número de versión independiente del número de versión de ONTAP. Debe conocer la versión de la API que se incluye con su versión de ONTAP y cómo esto puede afectar al uso que hace de la API.
+
+
+NOTE: Todas las versiones de ONTAP 9 utilizan la misma versión de la API DE REST.
+
+De ONTAP 9.6 a ONTAP 9.10.1:: Versión 1
+
+
+.Enlaces relacionados
+* link:../rn/whats_new.html["Notas de la versión de ONTAP"]
+

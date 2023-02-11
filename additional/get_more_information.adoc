@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: additional/get_more_information.html 
+keywords: more information, additional resources 
+summary: Existen varios recursos adicionales a los que puede acceder para obtener ayuda y encontrar más información sobre cómo automatizar la implementación y la administración de sus sistemas de almacenamiento de ONTAP. 
+---
+= Obtenga más información
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Existen varios recursos adicionales a los que puede acceder para obtener ayuda y encontrar más información sobre cómo automatizar la implementación y la administración de sus sistemas de almacenamiento de ONTAP.
+
+
+
+== Recursos de ONTAP 9
+
+* https://docs.netapp.com/us-en/ontap-family/["Documentación de producto de ONTAP 9"^]
++
+Proporciona documentación para la familia de productos ONTAP 9.
+
+* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["Recursos de ONTAP y System Manager de ONTAP"^]
++
+Incluye documentación y otros enlaces útiles que necesita para planificar, administrar y prestar soporte a ONTAP 9.
+
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["Biblioteca de productos de ONTAP 9"^]
++
+Acceda a las notas de la versión y a otra documentación de las versiones anteriores de ONTAP.
+
+
+
+
+
+== Recursos para desarrolladores de ONTAP 9
+
+* link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"]
++
+Proporciona las llamadas principales ONTAPI y una asignación a las llamadas equivalentes de la API DE REST. Seleccione la versión de ONTAP que corresponda.
+
+* https://pypi.org/project/netapp-ontap["PyPI: ONTAP de NetApp"^]
++
+El paquete de la biblioteca de clientes Python de NetApp en PyPI.
+
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["Documentación de PCL de NetApp para 9.12.1"^]
++
+Documentación de la Biblioteca del cliente de Python de NetApp.
+
+* https://devnet.netapp.com/restapi.php["Red de desarrolladores de NetApp: API RESTful de ONTAP"^]
++
+Proporciona los recursos y la documentación necesarios para usar la API DE REST de ONTAP, incluida la biblioteca de clientes Python del ONTAP.
+
+
+
+
+
+== Vídeos
+
+* https://www.youtube.com/watch?v=Wws3SB5d9Ss["Introducción a la biblioteca de clientes ONTAP Python de NetApp"^]
++
+Buena introducción a la biblioteca del cliente Python de NetApp y a cómo empezar a escribir código con la biblioteca.
+
+
+
+
+
+== Recursos de NetApp
+
+* https://mysupport.netapp.com/["Soporte de NetApp"^]
++
+Acceda a herramientas de solución de problemas, documentación y asistencia de soporte técnico.
+
+* https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^]
++
+Requisitos de acceso e información de compatibilidad relacionados con ONTAP 9 y la API DE REST de ONTAP.
+
+* http://www.netapp.com/us/library/index.aspx["Biblioteca de informes técnicos y whitepapers de NetApp"^]
++
+Acceda a informes técnicos, whitepapers y otros documentos.
+
+
