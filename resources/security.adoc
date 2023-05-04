@@ -68,7 +68,7 @@ Puede utilizar este conjunto de llamadas API para administrar las asociaciones d
 Estos extremos permiten recuperar y actualizar las configuraciones de los gestores de claves. Este tipo de recurso es nuevo en ONTAP 9.10.
 
 .Gestores de claves
-Un gestor de claves permite a los módulos cliente de ONTAP almacenar claves de forma segura. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó para ONTAP 9.7. Se realizó otra actualización con ONTAP 9.12 para admitir claves de autenticación.
+Un gestor de claves permite a los módulos cliente de ONTAP almacenar claves de forma segura. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó para ONTAP 9.7. Se realizó otra actualización con ONTAP 9.12 para admitir claves de autenticación. Con ONTAP 9,13 se añadió una funcionalidad de restauración.
 
 .Almacenes de claves
 Un almacén de claves describe el tipo de un administrador de claves. Este tipo de recurso es nuevo en ONTAP 9.10.
@@ -115,3 +115,6 @@ Estas llamadas permiten definir la configuración de SSH. Este tipo de recurso s
 
 .SVM SSH
 Estos extremos permiten recuperar la configuración de seguridad SSH de todas las SVM. Este tipo de recurso se introdujo con ONTAP 9.10.
+
+.TOTPS
+Es posible usar la API de REST para configurar perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Este tipo de recurso se introdujo con ONTAP 9,13.

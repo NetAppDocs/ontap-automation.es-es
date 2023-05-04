@@ -18,6 +18,21 @@ NetApp actualiza periódicamente la API DE REST de ONTAP para ofrecerle nuevas f
 
 
 
+== ONTAP 9.13.1
+
+ONTAP 9.13.1 continúa ampliando las funcionalidades de la API DE REST DE ONTAP con más de dos docenas de nuevas llamadas a la API. Estos extremos admiten las nuevas funciones de ONTAP, así como mejoras en las funciones existentes. Esta versión se centra en mejoras en la seguridad, la gestión de recursos, las opciones de configuración de SVM mejoradas y las métricas de rendimiento.
+
+Etiquetado de recursos:: Puede usar etiquetas para agrupar los recursos de la API DE REST. Puede hacerlo para asociar recursos relacionados dentro de un proyecto o grupo organizativo específico. El uso de etiquetas puede ayudar a organizar y realizar un seguimiento de los recursos de manera más eficaz.
+Grupos de consistencia:: ONTAP 9.13.1 continúa ampliando la disponibilidad de los datos de contador de rendimiento. Ahora puede acceder a este tipo de información estadística para realizar un seguimiento del rendimiento histórico y la capacidad para los grupos de coherencia. Además, se han incluido mejoras que permiten configurar y gestionar las relaciones primario-secundario entre grupos de coherencia.
+Configuración de DNS por SVM:: Los extremos DNS existentes se han ampliado para permitir que se realice la configuración de servidor y dominio DNS para SVM individuales.
+Configuración de roles EMS:: La función de soporte EMS existente se ha ampliado para permitir la gestión de roles y la configuración de control de acceso asignada a los roles. Esto proporciona la capacidad de limitar o filtrar los eventos y mensajes según la configuración del rol.
+Seguridad:: Es posible usar la API de REST para configurar los perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Además, los extremos del gestor de claves se han ampliado para proporcionar una operación de restauración desde un servidor de gestión de claves especificado.
+Configuración de CIFS por SVM:: Los extremos de CIFS existentes se han expandido para permitir actualizar la configuración de un SVM específico.
+Reglas de bloques de S3:: Los S3 puntos finales de bloque existentes se han ampliado para incluir una definición de regla. Cada regla es una lista de objetos y define el conjunto de acciones que se van a realizar en un objeto dentro del depósito. Colectivamente, estas reglas le permiten administrar mejor el ciclo de vida de sus cubos S3.
+
+
+
+
 == ONTAP 9.12.1
 
 ONTAP 9.12.1 sigue ampliando las capacidades de la API REST de ONTAP con más de cuarenta nuevas llamadas API. Estos extremos admiten las nuevas funciones de ONTAP, así como mejoras en las funciones existentes. Esta versión se centra en las mejoras en la seguridad y las funciones NAS.

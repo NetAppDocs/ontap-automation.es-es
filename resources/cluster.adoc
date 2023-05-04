@@ -80,7 +80,10 @@ Puede usar estas llamadas API para configurar los ajustes del protocolo de tiemp
 Los objetos del mismo nivel representan extremos y admiten las relaciones de paridad de clústeres. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Contadores de rendimiento
-En versiones anteriores de ONTAP se había mantenido información estadística sobre las características de funcionamiento del sistema. Con el lanzamiento de la versión 9.11.1, la información se ha mejorado y ahora está disponible a través de la API DE REST. Con esta función, la API REST de ONTAP se acerca más a la paridad con la API de Data ONTAP (ONAPI o ZAPI). Este tipo de recurso se introdujo con ONTAP 9.11.1.
+En versiones anteriores de ONTAP se había mantenido información estadística sobre las características de funcionamiento del sistema. Con el lanzamiento de la versión 9.11.1, la información se ha mejorado y ahora está disponible a través de la API DE REST. Con esta función, la API REST de ONTAP se acerca más a la paridad con la API de Data ONTAP (ONAPI o ZAPI). Este tipo de recurso se introdujo con ONTAP 9.11.
+
+.Etiquetas de recursos
+Puede usar etiquetas para agrupar los recursos de la API DE REST. Puede hacerlo para asociar recursos relacionados dentro de un proyecto o grupo organizativo específico. El uso de etiquetas puede ayudar a organizar y realizar un seguimiento de los recursos de manera más eficaz. Este tipo de recurso se introdujo con ONTAP 9,13.
 
 .Programaciones
 Las programaciones se pueden utilizar para automatizar el proceso de realización de tareas. Este tipo de recurso se introdujo con ONTAP 9.6.

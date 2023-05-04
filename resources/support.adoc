@@ -58,6 +58,9 @@ Una instancia de filtro EMS es una colección de reglas que se aplican a los eve
 .Mensajes EMS
 Proporciona acceso al catálogo de eventos de EMS. Este tipo de recurso se introdujo con ONTAP 9.6.
 
+.Configuración de roles EMS
+La función de soporte EMS permite la gestión de roles y la configuración de control de acceso asignada a los roles. Esto proporciona la capacidad de limitar o filtrar los eventos y mensajes según la configuración del rol. Este tipo de recurso se introdujo con ONTAP 9,13.
+
 .Reglas EMS para la instancia de filtro
 Se puede gestionar una lista de reglas para una instancia específica de un filtro EMS. Este tipo de recurso se introdujo con ONTAP 9.6.
 

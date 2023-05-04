@@ -99,8 +99,6 @@
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">PyPI: ONTAP de NetApp</block>
   <block id="f1414234dbf1c874f89997d3c54bcfbc" category="list-text"><block ref="f1414234dbf1c874f89997d3c54bcfbc" category="inline-link-rx"></block></block>
   <block id="3c7d0c806ed3155c89dbd1e259689a6c" category="paragraph">El paquete de la biblioteca de clientes Python de NetApp en PyPI.</block>
-  <block id="1cc0729e83919e90c575ff14c0fce5fc" category="inline-link">Documentación de PCL de NetApp para 9.12.1</block>
-  <block id="84a1f9d4b229fd80b1a8e5bd8bf448f2" category="list-text"><block ref="84a1f9d4b229fd80b1a8e5bd8bf448f2" category="inline-link-rx"></block></block>
   <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">Documentación de la Biblioteca del cliente de Python de NetApp.</block>
   <block id="b597994ba1223810c3ac8977cffacb37" category="inline-link">Red de desarrolladores de NetApp: API RESTful de ONTAP</block>
   <block id="6228139d56297e6f87b517feae45bc99" category="list-text"><block ref="6228139d56297e6f87b517feae45bc99" category="inline-link-rx"></block></block>
@@ -412,7 +410,6 @@
   <block id="7e92cad37d54932d7be472286c10dad7" category="paragraph">Puede usar estas llamadas API para configurar los ajustes del protocolo de tiempo de redes de ONTAP, incluidos los servidores NTP y las claves externas. Este tipo de recurso se introdujo con ONTAP 9.7.</block>
   <block id="20a07d06a4b1bc423793cd5bc530bb3d" category="paragraph-title">Compañeros</block>
   <block id="1478901a98af45e1095839fa3df30322" category="paragraph">Los objetos del mismo nivel representan extremos y admiten las relaciones de paridad de clústeres. Este tipo de recurso se introdujo con ONTAP 9.6.</block>
-  <block id="67e3defb688be7685ce637d90e158565" category="paragraph">En versiones anteriores de ONTAP se había mantenido información estadística sobre las características de funcionamiento del sistema. Con el lanzamiento de la versión 9.11.1, la información se ha mejorado y ahora está disponible a través de la API DE REST. Con esta función, la API REST de ONTAP se acerca más a la paridad con la API de Data ONTAP (ONAPI o ZAPI). Este tipo de recurso se introdujo con ONTAP 9.11.1.</block>
   <block id="ccdb7bf9d93e5652b57cabcc8c41e061" category="paragraph-title">Programaciones</block>
   <block id="62ab609b605a05f43f98599818f46170" category="paragraph">Las programaciones se pueden utilizar para automatizar el proceso de realización de tareas. Este tipo de recurso se introdujo con ONTAP 9.6.</block>
   <block id="af29aa178ae43211319e28f627e96590" category="paragraph-title">Sensores</block>
@@ -453,7 +450,6 @@
   <block id="f2be2bb6f022a2ec208f7b9ce6a2c155" category="paragraph-title">Conexiones CIFS</block>
   <block id="292b052ce2719671eb57c58f83562861" category="paragraph">Es posible recuperar una lista de las conexiones CIFS establecidas. Este tipo de recurso se introdujo con ONTAP 9.11.1.</block>
   <block id="31e39608982442406853c159bf64d7ea" category="paragraph-title">Dominios CIFS</block>
-  <block id="772ba71e6aaaa5e3a9d9cdecd907e2e2" category="paragraph">La compatibilidad con dominios CIFS se ha añadido en el nivel de clúster y SVM con varias categorías de extremos. Puede recuperar la configuración de dominio, así como crear y eliminar controladores de dominio preferidos. Este tipo de recurso es nuevo en ONTAP 9.10.</block>
   <block id="2ecd3889e0a68a0400a41f58115e2ca9" category="paragraph">Se han añadido extremos para admitir la creación y gestión de políticas de grupos CIFS. La información de configuración se encuentra disponible y se administra mediante objetos de política de grupo que se aplican a todas las SVM o a determinadas. Esta compatibilidad se ha añadido con ONTAP 9.12.</block>
   <block id="ae8f54c516c1e697ca7e99fc7d868bda" category="paragraph-title">Rutas de búsqueda de directorios iniciales CIFS</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">Se pueden crear directorios iniciales para usuarios de SMB en un servidor CIFS sin crear un recurso compartido SMB individual para cada usuario. La ruta de búsqueda del directorio inicial es un conjunto de rutas absolutas desde la raíz de una SVM. Este tipo de recurso se introdujo con ONTAP 9.6.</block>
@@ -540,7 +536,6 @@
   <block id="b075b481f21fbb627e5042d98a2e27c9" category="paragraph-title">DDNS</block>
   <block id="83df374f1b14e7e892413b9679071d0f" category="paragraph">Puede mostrar la información del DNS dinámico (DDNS) y administrar el subsistema DDNS. Este tipo de recurso es nuevo en ONTAP 9.8.</block>
   <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="paragraph-title">DNS</block>
-  <block id="f97bb8cb9c33354ac4515053dad458e0" category="paragraph">El DNS admite la integración del clúster de ONTAP en la red. Este tipo de recurso se introdujo con ONTAP 9.6.</block>
   <block id="bd267bd12514496474e44b08af357845" category="paragraph-title">Registro del host</block>
   <block id="47ef31c7170557cd8b99e608cdfb0001" category="paragraph">Estos extremos permiten mostrar la dirección IP de un nombre de host especificado así como el nombre de host de una dirección IP. Este tipo de recurso se introdujo con ONTAP 9.10.</block>
   <block id="2363dee608bcd9f6ce7f980bfdad5789" category="paragraph-title">LDAP</block>
@@ -661,7 +656,6 @@
   <block id="a4c782a0e5bd7be239b96d4d35ffe4fb" category="paragraph-title">Configuraciones del gestor de claves</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">Estos extremos permiten recuperar y actualizar las configuraciones de los gestores de claves. Este tipo de recurso es nuevo en ONTAP 9.10.</block>
   <block id="5e2f9eab3699a50f20260789850a272c" category="paragraph-title">Gestores de claves</block>
-  <block id="5457b382c48b43492d6c476d117cac17" category="paragraph">Un gestor de claves permite a los módulos cliente de ONTAP almacenar claves de forma segura. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó para ONTAP 9.7. Se realizó otra actualización con ONTAP 9.12 para admitir claves de autenticación.</block>
   <block id="afcd6712bee083e0a41753fd140a0495" category="paragraph-title">Almacenes de claves</block>
   <block id="8e534dc2397390aadbe32ec748d96a3d" category="paragraph">Un almacén de claves describe el tipo de un administrador de claves. Este tipo de recurso es nuevo en ONTAP 9.10.</block>
   <block id="a49c9c380ec2e13191e995f949a1c440" category="paragraph-title">Autenticación LDAP</block>
@@ -727,7 +721,6 @@
   <block id="1ddf333c6654f7f89c739dddfb4cc429" category="paragraph-title">Más grandes</block>
   <block id="6c5dba7ca23cbe6a8f7fba0f3ffae13c" category="paragraph">Las aplicaciones ONTAP se organizan en función del tipo, incluidas: Plantillas, aplicaciones, componentes y copias Snapshot. Este tipo de recurso se introdujo con ONTAP 9.6.</block>
   <block id="6165c4352e1504dbaeef34d0cc50c187" category="paragraph-title">Grupos de consistencia</block>
-  <block id="d00ae1caddb315563889c10b5aab0c13" category="paragraph">Un grupo de coherencia es un conjunto de volúmenes que se agrupan cuando se ejecutan ciertas operaciones, como una Snapshot. Esta función extiende la misma coherencia de bloqueo e integridad de datos implícita con operaciones de un único volumen en un conjunto de volúmenes. Este tipo de recurso se introdujo con ONTAP 9.10 y se actualizó con 9.12.</block>
   <block id="a3b7af87c74d80ecedac76f490bfc38a" category="paragraph-title">Snapshots de grupos de consistencia</block>
   <block id="000c4dd933d539d502d855e482ad30ed" category="paragraph">Se pueden usar estos extremos para copiar, crear, inventariar y restaurar snapshots para un grupo de coherencia. Este tipo de recurso se introdujo con ONTAP 9.10.</block>
   <block id="5d715f632f7a3e61ffcbef7a0fab4e08" category="summary">Puede usar estas llamadas API para gestionar el almacenamiento físico y lógico.</block>
@@ -1126,7 +1119,6 @@
   <block id="9929e2b53efd5ebe9b5548b705552bf0" category="paragraph">Un rol es un conjunto de privilegios que definen colectivamente qué acciones puede realizar el usuario. Cada privilegio identifica una ruta de acceso específica y el nivel de acceso asociado. Los roles se asignan a cuentas de usuario y ONTAP los aplica cuando se toman decisiones sobre el control de acceso.</block>
   <block id="062c6b1332887634d0f4ba9bb07e2408" category="section-title">Tipos de roles</block>
   <block id="b0ad3654895321cb1caaae438045af81" category="paragraph">Hay dos tipos de roles. Se introdujeron y se adaptaron a diferentes entornos a medida que ONTAP ha evolucionado.</block>
-  <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">Hay ventajas y desventajas cuando se usa cada tipo de rol. Consulte <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">Tipo</block>
   <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">DESCANSO</block>
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">Los roles DE REST se introdujeron con ONTAP 9.6 y se aplican generalmente a los usuarios que acceden a ONTAP a través de la API DE REST. La creación de un rol REST crea automáticamente un rol tradicional _mapping_.</block>
@@ -1416,10 +1408,6 @@
   <block id="85ca39724867fb05bf4fd74b5fcac448" category="paragraph">Debe utilizar pip para instalar el paquete netapp_ontap desde el sitio web de índice de paquetes Python (PyPI).</block>
   <block id="9526c4af8cb7f4cacf6131573eda8be8" category="paragraph-title">Documentación y recursos adicionales</block>
   <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">Consulte _NetApp Developer Network_ para obtener enlaces a documentación y otros recursos.</block>
-  <block id="09b968a9a3d2c3977d1e4ac1ccd11b75" category="inline-link">PyPI: ONTAP de NetApp 9.10.1</block>
-  <block id="4be092006953c35749a0846e4734167a" category="list-text"><block ref="4be092006953c35749a0846e4734167a" category="inline-link-rx"></block></block>
-  <block id="52c1911015b514cf96a78c24068ce96a" category="inline-link">Documentación de PCL de NetApp para 9.10.1</block>
-  <block id="dd0ebea31107f6302bac45e38cca3b1d" category="list-text"><block ref="dd0ebea31107f6302bac45e38cca3b1d" category="inline-link-rx"></block></block>
   <block id="cb92722e64f82db47ee23f2328dab4f8" category="summary">Hay varios artículos de blog disponibles para ayudarle a comprender mejor cómo migrar de ONAPI a la API DE REST de ONTAP.</block>
   <block id="9f7558c50053f5f3c517edc21e6e7af0" category="doc">Blogs sobre la migración a la API DE REST de ONTAP</block>
   <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">Asignación de ONTAP a REST</block>
@@ -1524,8 +1512,6 @@
   <block id="0aeaf5f6b15f47a8487668e4d5e041f2" category="paragraph">Es posible usar esta llamada de API DE REST para ver valores de contadores de rendimiento para una instancia de gestor de contadores específica de la tabla. En este ejemplo, se solicitan los datos de rendimiento de uno de los adaptadores de host.</block>
   <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">Si utiliza la API ONTAPI, se le recomienda que comience a migrar a la API DE REST de ONTAP.</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">Descripción general</block>
-  <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">Si utiliza la API ONTAPI, se le recomienda que comience a migrar a la API DE REST de ONTAP. Existen muchas herramientas y recursos útiles para ayudarle a realizar la migración.</block>
-  <block id="b3a25dcbc5dbce2ff68dbfa04004bcf8" category="admonition">NetApp introdujo por primera vez la API DE REST con ONTAP 9.6. Desde entonces, la API ha seguido expandiéndose y madurando. Ahora ofrece la alternativa estratégica y preferida a ONAPI al automatizar la administración de sus implementaciones de ONTAP.</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">La referencia de la API contiene los detalles sobre todas las llamadas API DE REST de ONTAP, incluidos los métodos HTTP, los parámetros de entrada y las respuestas. Esta referencia completa es útil cuando se desarrollan aplicaciones de automatización mediante la API DE REST.</block>
   <block id="485855357f10b438740d2ed039caaa84" category="admonition">Puede acceder al contenido de referencia de API en línea en el sistema ONTAP local o a una copia estática de la documentación que mantiene NetApp.</block>
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">Acceda a la página de documentación de la API de ONTAP</block>
@@ -1580,5 +1566,67 @@
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">Script para recuperar la configuración del clúster</block>
   <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">Migrar a la API DE REST</block>
   <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">Asignación de ONTAP A REST</block>
-  <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">Blogs</block>
+  <block id="19a9062545fe4aec02e4bb9d69d9e65d" category="inline-link">Documentación PCL de NetApp para 9.13.1</block>
+  <block id="99984697846692a3881d97799a42681d" category="list-text"><block ref="99984697846692a3881d97799a42681d" category="inline-link-rx"></block></block>
+  <block id="963d435d638b3d71d80951dc73d9e301" category="paragraph">Un grupo de coherencia es un conjunto de volúmenes que se agrupan cuando se ejecutan ciertas operaciones, como una Snapshot. Esta función extiende la misma coherencia de bloqueo e integridad de datos implícita con operaciones de un único volumen en un conjunto de volúmenes. Este tipo de recurso se introdujo con ONTAP 9.10 y se actualizó con 9.12. Con ONTAP 9,13, se añadió un extremo para recuperar datos de rendimiento y capacidad métricos.</block>
+  <block id="a8b23618c319cee164fb5e3f52338ae8" category="paragraph">Un gestor de claves permite a los módulos cliente de ONTAP almacenar claves de forma segura. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó para ONTAP 9.7. Se realizó otra actualización con ONTAP 9.12 para admitir claves de autenticación. Con ONTAP 9,13 se añadió una funcionalidad de restauración.</block>
+  <block id="f677f9a733e2a55d249253e8ee3e8921" category="paragraph-title">TOTPS</block>
+  <block id="0e5fb54a649ae9d2dadb9308dc2d69b4" category="paragraph">Es posible usar la API de REST para configurar perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Este tipo de recurso se introdujo con ONTAP 9,13.</block>
+  <block id="6f54f32be84451ac2f476ef54a9e35d8" category="paragraph">El DNS admite la integración del clúster de ONTAP en la red. Este tipo de recurso se introdujo con ONTAP 9,6 y se mejoró con ONTAP 9,13.</block>
+  <block id="0268691e0c9875a7d64cf190b57d3c19" category="paragraph">La compatibilidad con dominios CIFS se ha añadido en el nivel de clúster y SVM con varias categorías de extremos. Puede recuperar la configuración de dominio, así como crear y eliminar controladores de dominio preferidos. Este tipo de recurso se introdujo con ONTAP 9,10 y se mejoró con ONTAP 9,13.</block>
+  <block id="fc00b2aa4aec9f5df16272d4a62b16d0" category="paragraph-title">Configuración de roles EMS</block>
+  <block id="25ee47e7f366103a7fb621883886a827" category="paragraph">La función de soporte EMS permite la gestión de roles y la configuración de control de acceso asignada a los roles. Esto proporciona la capacidad de limitar o filtrar los eventos y mensajes según la configuración del rol. Este tipo de recurso se introdujo con ONTAP 9,13.</block>
+  <block id="6fa0e3b9545e1804391d8a9ceffb4a38" category="paragraph">En versiones anteriores de ONTAP se había mantenido información estadística sobre las características de funcionamiento del sistema. Con el lanzamiento de la versión 9.11.1, la información se ha mejorado y ahora está disponible a través de la API DE REST. Con esta función, la API REST de ONTAP se acerca más a la paridad con la API de Data ONTAP (ONAPI o ZAPI). Este tipo de recurso se introdujo con ONTAP 9.11.</block>
+  <block id="e277905409f479c9f7d224d59ca24ef1" category="paragraph-title">Etiquetas de recursos</block>
+  <block id="718f01f530b26a630c97ea9d3dabf463" category="paragraph">Puede usar etiquetas para agrupar los recursos de la API DE REST. Puede hacerlo para asociar recursos relacionados dentro de un proyecto o grupo organizativo específico. El uso de etiquetas puede ayudar a organizar y realizar un seguimiento de los recursos de manera más eficaz. Este tipo de recurso se introdujo con ONTAP 9,13.</block>
+  <block id="6e35f32cbbb6f9e4f935f3e9092771f0" category="paragraph-title">Reglas de bloques de S3</block>
+  <block id="6bc2fc1d1d82b40d53835f8a9db33179" category="paragraph">Los bloques S3 pueden incluir una definición de regla. Cada regla es una lista de objetos y define el conjunto de acciones que se van a realizar en un objeto dentro del depósito. Este tipo de recurso se introdujo con ONTAP 9,13.</block>
+  <block id="5f6bf2fac8af69fcf38f9b1b785e910e" category="inline-link">Pypi: ONTAP 9.13.1 de NetApp</block>
+  <block id="1d6690c7f751b90aee685c57c28ea355" category="list-text"><block ref="1d6690c7f751b90aee685c57c28ea355" category="inline-link-rx"></block></block>
+  <block id="3d1c384a3746b6aef27889dab20ca2a0" category="doc">Herramientas y software</block>
+  <block id="0a88f9e4d64baf56329012472f2f7f1c" category="paragraph">NetApp proporciona scripts de Python de ejemplo y otro software relacionado para dar soporte a la migración de ONTAPI a la API de REST DE ONTAP. La más importante de estas muestras se describe a continuación.</block>
+  <block id="2025f1a4ba0e95c1bd1bd27f08690087" category="inline-link">Python REST DE ONTAP de NetApp</block>
+  <block id="122b5178f05cbf36001150787ae34516" category="admonition">Todas las muestras de código Python están disponibles en el<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> Repositorio de GitHub.</block>
+  <block id="5d22b30ce5603c5346d7b65cbcf3433f" category="paragraph-title">Herramienta de generación de informes de uso de ONTAPI</block>
+  <block id="7842d4d8803b176c1b2259dec8456d2e" category="paragraph">La herramienta de informes de uso de ONTAPI está diseñada para ayudar a los servicios profesionales, clientes y partners de NetApp a identificar el uso de ONTAPI en su entorno de ONTAP. Los scripts se proporcionan para tres casos de uso diferentes, como se describe en la tabla siguiente.</block>
+  <block id="f907e651164789346ae0a1e257c462d8" category="cell">Guión</block>
+  <block id="acd8e1efb3d4b4812a351b944b20ca37" category="cell">apache_scraper.py</block>
+  <block id="d58b4e0daf558695b856954865d329b0" category="cell">Un raspador de registro de Apache para encontrar las llamadas de ONTAPI que se emiten en los nodos de ONTAP</block>
+  <block id="0efaaee27c17eb790ee7383ad12ff286" category="cell">session_stats.py</block>
+  <block id="95ec10ffbde5e94edc43ebffd44f7347" category="cell">Un script de CLI para recuperar datos de estadísticas de sesión de ONTAP</block>
+  <block id="3282e0ae607e974457c339eff19c2619" category="cell">zapi_to_rest.py</block>
+  <block id="72af54bf44f3d8ee9be1e4f34a09378e" category="cell">Script para extraer los detalles de REST de las llamadas y atributos de ONTAPI transferidos</block>
+  <block id="6d35e073768c520486a8f6583b2367dd" category="paragraph">Consulte<block ref="10e3da19ba49cdfd167b1f3dae41bc1c" category="inline-link-rx"></block> si quiere más información.</block>
+  <block id="065b1ca8f53a1fbcdf87961fdd9cf9b2" category="paragraph-title">Traspaso de CLI privado</block>
+  <block id="0446fa4ca147c362e3712c199d31f607" category="paragraph">La API de REST ofrece una amplia cobertura de las funciones e instalaciones disponibles con ONTAP. Sin embargo, es posible que haya instancias en las que el acceso directo a la interfaz de línea de comandos de ONTAP a través de la API DE REST pueda ser útil.</block>
+  <block id="4dee1eb90de4bde1248e4896c4dc4381" category="inline-link">Ejemplos de transferencia de la CLI de REST</block>
+  <block id="dfd00e91a832f40b6d730ced03aa0c44" category="paragraph">Para obtener una introducción a esta función, consulte <block ref="430c6d579ad9ddc178e54d66821e7597" category="inline-link-macro-rx"></block>. Para las muestras de Python, consulte<block ref="93e4c8d6cc1dc72ab5e25d8c76e6620b" category="inline-link-rx"></block>.</block>
+  <block id="5b6f04d9b27dfe7b2a32885119050b9f" category="paragraph">La biblioteca de cliente de Python es un paquete que puede instalar y utilizar para acceder a la API de REST DE ONTAP con Python. Le permite desarrollar rápidamente un código sólido para la automatización de sus puestas en marcha de ONTAP.</block>
+  <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Ejemplos de bibliotecas cliente de Python</block>
+  <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">Para obtener una introducción a la biblioteca cliente de Python, consulte <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>. Para las muestras de Python, consulte<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>.</block>
+  <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">Inhabilitación de ONTAPI</block>
+  <block id="7f2d7d67765d2784e59992625f3b9f8e" category="paragraph">La API de ONTAPI (ZAPI) es el conjunto original de llamadas exclusivas que se incluyen con el software ONTAP de NetApp para admitir la automatización de las tareas de administración y gestión del almacenamiento de datos. La interfaz ONTAPI se deshabilitará en futuras versiones de ONTAP. Si utiliza ONTAPI, debe planificar la migración a la API DE REST DE ONTAP.</block>
+  <block id="89bbd9a5e14ece77e8729df33cc56559" category="paragraph">NetApp introdujo por primera vez la API DE REST con ONTAP 9.6. Desde entonces, la API REST ha continuado expandiéndose y madurando. Ahora ofrece la opción preferida y estratégica al automatizar la administración de sus implementaciones de ONTAP. Existen muchas herramientas y recursos útiles para ayudarle a realizar la migración.</block>
+  <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410 Fin de la disponibilidad: ONTAPI</block>
+  <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
+  <block id="43b4a2745f58846c59587466ca441f41" category="inline-link">DevNet de NetApp: API de REST DE ONTAP</block>
+  <block id="d5925e110eea01252505453208400570" category="list-text"><block ref="d5925e110eea01252505453208400570" category="inline-link-rx"></block></block>
+  <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">Asignación de contador de rendimiento de ONTAP 9.13.1</block>
+  <block id="8673c6516e8e00de96b96886974e6eb6" category="list-text"><block ref="8673c6516e8e00de96b96886974e6eb6" category="inline-link-rx"></block></block>
+  <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13.1</block>
+  <block id="b41840dcdd390cc23a6e04dde600cf7b" category="list-text"><block ref="b41840dcdd390cc23a6e04dde600cf7b" category="inline-link-rx"></block></block>
+  <block id="cbec0159857226b0512b2b18211eca44" category="paragraph">ONTAP 9.13.1 continúa ampliando las funcionalidades de la API DE REST DE ONTAP con más de dos docenas de nuevas llamadas a la API. Estos extremos admiten las nuevas funciones de ONTAP, así como mejoras en las funciones existentes. Esta versión se centra en mejoras en la seguridad, la gestión de recursos, las opciones de configuración de SVM mejoradas y las métricas de rendimiento.</block>
+  <block id="aecbf8e5ebbb6b089493eac6cb71ca69" category="list-text">Etiquetado de recursos</block>
+  <block id="593fee19f1d4b1b19620fdf80753a276" category="list-text">Puede usar etiquetas para agrupar los recursos de la API DE REST. Puede hacerlo para asociar recursos relacionados dentro de un proyecto o grupo organizativo específico. El uso de etiquetas puede ayudar a organizar y realizar un seguimiento de los recursos de manera más eficaz.</block>
+  <block id="6c8636b0093a2d3302f979cb09b7bd7d" category="list-text">ONTAP 9.13.1 continúa ampliando la disponibilidad de los datos de contador de rendimiento. Ahora puede acceder a este tipo de información estadística para realizar un seguimiento del rendimiento histórico y la capacidad para los grupos de coherencia. Además, se han incluido mejoras que permiten configurar y gestionar las relaciones primario-secundario entre grupos de coherencia.</block>
+  <block id="3910f0fe54e915b906f2c1c1b3fa478e" category="list-text">Configuración de DNS por SVM</block>
+  <block id="a5c0a51954c4e8af84ce524380e56477" category="list-text">Los extremos DNS existentes se han ampliado para permitir que se realice la configuración de servidor y dominio DNS para SVM individuales.</block>
+  <block id="444e0808a8a39a0403934928133d05a6" category="list-text">La función de soporte EMS existente se ha ampliado para permitir la gestión de roles y la configuración de control de acceso asignada a los roles. Esto proporciona la capacidad de limitar o filtrar los eventos y mensajes según la configuración del rol.</block>
+  <block id="526beab4a02389a85e7476e42b82f603" category="list-text">Es posible usar la API de REST para configurar los perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Además, los extremos del gestor de claves se han ampliado para proporcionar una operación de restauración desde un servidor de gestión de claves especificado.</block>
+  <block id="77e3b4a2a04eafcaa392a8fb92b8b98b" category="list-text">Configuración de CIFS por SVM</block>
+  <block id="2a448fcc25cf428d2769919718ce218b" category="list-text">Los extremos de CIFS existentes se han expandido para permitir actualizar la configuración de un SVM específico.</block>
+  <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">Los S3 puntos finales de bloque existentes se han ampliado para incluir una definición de regla. Cada regla es una lista de objetos y define el conjunto de acciones que se van a realizar en un objeto dentro del depósito. Colectivamente, estas reglas le permiten administrar mejor el ciclo de vida de sus cubos S3.</block>
+  <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">Hay ventajas y desventajas cuando se usa cada tipo de rol. Consulte <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> si quiere más información.</block>
+  <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
+  <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">Artículos de blog</block>
 </blocks>

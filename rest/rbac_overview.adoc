@@ -32,7 +32,7 @@ Un rol es un conjunto de privilegios que definen colectivamente qué acciones pu
 Hay dos tipos de roles. Se introdujeron y se adaptaron a diferentes entornos a medida que ONTAP ha evolucionado.
 
 
-NOTE: Hay ventajas y desventajas cuando se usa cada tipo de rol. Consulte link:../rest/work_roles_users.html#comparing-the-role-types["Comparación de los tipos de funciones"] si quiere más información.
+NOTE: Hay ventajas y desventajas cuando se usa cada tipo de rol. Consulte link:../rest/rbac_roles_users.html#comparing-the-role-types["Comparación de los tipos de funciones"] si quiere más información.
 
 [cols="20,80"]
 |===

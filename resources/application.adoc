@@ -23,7 +23,7 @@ Las aplicaciones admiten copias Snapshot, que se pueden crear o restaurar en cua
 Las aplicaciones ONTAP se organizan en función del tipo, incluidas: Plantillas, aplicaciones, componentes y copias Snapshot. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Grupos de consistencia
-Un grupo de coherencia es un conjunto de volúmenes que se agrupan cuando se ejecutan ciertas operaciones, como una Snapshot. Esta función extiende la misma coherencia de bloqueo e integridad de datos implícita con operaciones de un único volumen en un conjunto de volúmenes. Este tipo de recurso se introdujo con ONTAP 9.10 y se actualizó con 9.12.
+Un grupo de coherencia es un conjunto de volúmenes que se agrupan cuando se ejecutan ciertas operaciones, como una Snapshot. Esta función extiende la misma coherencia de bloqueo e integridad de datos implícita con operaciones de un único volumen en un conjunto de volúmenes. Este tipo de recurso se introdujo con ONTAP 9.10 y se actualizó con 9.12. Con ONTAP 9,13, se añadió un extremo para recuperar datos de rendimiento y capacidad métricos.
 
 .Snapshots de grupos de consistencia
 Se pueden usar estos extremos para copiar, crear, inventariar y restaurar snapshots para un grupo de coherencia. Este tipo de recurso se introdujo con ONTAP 9.10.

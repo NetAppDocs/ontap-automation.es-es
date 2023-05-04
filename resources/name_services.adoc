@@ -23,7 +23,7 @@ Los servicios de nombres ONTAP admiten el almacenamiento en caché, lo que mejor
 Puede mostrar la información del DNS dinámico (DDNS) y administrar el subsistema DDNS. Este tipo de recurso es nuevo en ONTAP 9.8.
 
 .DNS
-El DNS admite la integración del clúster de ONTAP en la red. Este tipo de recurso se introdujo con ONTAP 9.6.
+El DNS admite la integración del clúster de ONTAP en la red. Este tipo de recurso se introdujo con ONTAP 9,6 y se mejoró con ONTAP 9,13.
 
 .Registro del host
 Estos extremos permiten mostrar la dirección IP de un nombre de host especificado así como el nombre de host de una dirección IP. Este tipo de recurso se introdujo con ONTAP 9.10.

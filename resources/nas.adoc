@@ -29,7 +29,7 @@ Puede redirigir los eventos de auditoría de NAS a una SVM específica. Este tip
 Es posible recuperar una lista de las conexiones CIFS establecidas. Este tipo de recurso se introdujo con ONTAP 9.11.1.
 
 .Dominios CIFS
-La compatibilidad con dominios CIFS se ha añadido en el nivel de clúster y SVM con varias categorías de extremos. Puede recuperar la configuración de dominio, así como crear y eliminar controladores de dominio preferidos. Este tipo de recurso es nuevo en ONTAP 9.10.
+La compatibilidad con dominios CIFS se ha añadido en el nivel de clúster y SVM con varias categorías de extremos. Puede recuperar la configuración de dominio, así como crear y eliminar controladores de dominio preferidos. Este tipo de recurso se introdujo con ONTAP 9,10 y se mejoró con ONTAP 9,13.
 
 .Políticas de grupos CIFS
 Se han añadido extremos para admitir la creación y gestión de políticas de grupos CIFS. La información de configuración se encuentra disponible y se administra mediante objetos de política de grupo que se aplican a todas las SVM o a determinadas. Esta compatibilidad se ha añadido con ONTAP 9.12.

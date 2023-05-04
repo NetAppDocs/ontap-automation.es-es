@@ -25,6 +25,9 @@ Es posible crear y gestionar la configuración de ONTAP S3, incluidos los servid
 .Cubos de servicio
 Un bucket es un contenedor de objetos y está estructurado mediante un espacio de nombres de objeto. Puede gestionar los bloques para un servidor S3 específico. Este tipo de recurso se introdujo con ONTAP 9.7.
 
+.Reglas de bloques de S3
+Los bloques S3 pueden incluir una definición de regla. Cada regla es una lista de objetos y define el conjunto de acciones que se van a realizar en un objeto dentro del depósito. Este tipo de recurso se introdujo con ONTAP 9,13.
+
 .Grupos de S3
 Es posible crear grupos de usuarios de S3 y gestionar el control de acceso en el nivel de los grupos. Este tipo de recurso es nuevo en ONTAP 9.8.
 
