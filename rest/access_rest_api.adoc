@@ -30,7 +30,7 @@ Es posible conectarse a la API DE REST a través de las siguientes interfaces:
 La LIF que elija utilizar debe estar configurada para admitir el protocolo de gestión HTTPS. Además, la configuración del firewall en la red debe permitir el tráfico HTTPS.
 
 
-TIP: Utilice siempre la LIF de gestión de clústeres. De este modo, se equilibrarán las solicitudes de API en todos los nodos y se evitarán los nodos que estén sin conexión o que experimenten problemas de conectividad.
+TIP: Siempre debe utilizar una LIF de gestión de clúster. Esto equilibrará la carga de las solicitudes de API en todos los nodos y evitará que los nodos estén desconectados o tengan problemas de conectividad. Si tiene configuradas varias LIF de gestión de clústeres, todas son equivalentes en cuanto al acceso a la API DE REST.
 
 
 
