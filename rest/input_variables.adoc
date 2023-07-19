@@ -91,7 +91,7 @@ Además de una coincidencia exacta, hay otros operadores disponibles para devolv
 | > | Mayor que 
 
 
-| <= | Menor o igual que 
+| \<= | Menor o igual que 
 
 
 | >= | Mayor o igual que 
@@ -180,7 +180,7 @@ El número de objetos realmente devueltos puede ser menor que el máximo en efec
 Reducción del conjunto de resultados:: Si es necesario, puede combinar estos dos parámetros con parámetros de consulta adicionales para restringir el conjunto de resultados. Por ejemplo, el siguiente devuelve hasta 10 eventos de ems generados después de la hora especificada:
 +
 --
-`time=> 2018-04-04T15:41:29.140265Z&max_records=10`
+`time\=> 2018-04-04T15:41:29.140265Z&max_records=10`
 
 Puede emitir varias solicitudes para desplazarse por los objetos. Cada llamada API posterior debe utilizar un nuevo valor de tiempo basado en el último evento del último conjunto de resultados.
 

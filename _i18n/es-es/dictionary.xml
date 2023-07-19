@@ -1245,7 +1245,6 @@
   <block id="ad647e4ae904c7ed54ee93040d8298c7" category="cell">Menor que</block>
   <block id="cedf8da05466bb54708268b3c694a78f" category="cell">&gt;</block>
   <block id="05824b7be006782aaefd1fdb97c71e06" category="cell">Mayor que</block>
-  <block id="a7eeaea90b4e8312b88abcd178019929" category="cell">&lt;=</block>
   <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">Menor o igual que</block>
   <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">&gt;=</block>
   <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">Mayor o igual que</block>
@@ -1287,7 +1286,6 @@
   <block id="d803d2dd2f39605b0bc879d0532fc5ba" category="paragraph">El número de objetos realmente devueltos puede ser menor que el máximo en efecto, basándose en la restricción relacionada en el número de objetos así como en el número total de objetos del sistema.</block>
   <block id="2dadc767979da8ab1576ee0aa8da5e21" category="list-text">Reducción del conjunto de resultados</block>
   <block id="317480d31248a2b7b399c7ddbecbf74a" category="list-text">Si es necesario, puede combinar estos dos parámetros con parámetros de consulta adicionales para restringir el conjunto de resultados. Por ejemplo, el siguiente devuelve hasta 10 eventos de ems generados después de la hora especificada:</block>
-  <block id="89163f6e2498a9f894e7813e6de46b08" category="paragraph"><block ref="3a4009b6b07614ee155d4af5ecfaf8bc" prefix="" category="inline-code"></block></block>
   <block id="5394a0e51a0e30e195e0299ede162a02" category="paragraph">Puede emitir varias solicitudes para desplazarse por los objetos. Cada llamada API posterior debe utilizar un nuevo valor de tiempo basado en el último evento del último conjunto de resultados.</block>
   <block id="050a8c11f48cd555f6e5e6bab96225d6" category="section-title">Propiedades de tamaño</block>
   <block id="721165b216d0f852ad3d9fd6e430dbe1" category="paragraph">Los valores de entrada utilizados con algunas llamadas API, así como ciertos parámetros de consulta son numéricos. En lugar de proporcionar un entero en bytes, puede usar de manera opcional un sufijo como se muestra en la siguiente tabla.</block>
@@ -1629,4 +1627,6 @@
   <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">Artículos de blog</block>
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">Siempre debe utilizar una LIF de gestión de clúster. Esto equilibrará la carga de las solicitudes de API en todos los nodos y evitará que los nodos estén desconectados o tengan problemas de conectividad. Si tiene configuradas varias LIF de gestión de clústeres, todas son equivalentes en cuanto al acceso a la API DE REST.</block>
+  <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">\&lt;=</block>
+  <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
 </blocks>
