@@ -227,15 +227,11 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Derechos de autor</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marcas comerciales</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, el logotipo de NETAPP y las marcas enumeradas en la página de marcas comerciales de NetApp son marcas comerciales de NetApp, Inc. Los demás nombres de empresas y productos son marcas comerciales de sus respectivos propietarios.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Estadounidenses</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Puede encontrar una lista actual de las patentes propiedad de NetApp en:</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidad</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="748bf9f08649deb2201e70da703c7de8" category="summary">A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporciona la base para automatizar la puesta en marcha y la administración de sus sistemas de almacenamiento. Puede acceder a la API DE REST directamente o a través de la biblioteca de clientes Python de NetApp.</block>
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">Conozca las opciones de automatización de ONTAP</block>
   <block id="09b61c4c135233e31eb7b12d4a296b18" category="paragraph">A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporciona la base para automatizar la puesta en marcha y la administración de sus sistemas de almacenamiento. Puede acceder a la API DE REST directamente o a través de la biblioteca de clientes Python de NetApp. Además, NetApp admite la automatización de ONTAP mediante Ansible, así como otras abstracciones de software de alto nivel.</block>
@@ -1629,4 +1625,15 @@
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">Siempre debe utilizar una LIF de gestión de clúster. Esto equilibrará la carga de las solicitudes de API en todos los nodos y evitará que los nodos estén desconectados o tengan problemas de conectividad. Si tiene configuradas varias LIF de gestión de clústeres, todas son equivalentes en cuanto al acceso a la API DE REST.</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">\&lt;=</block>
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
+  <block id="2b86317cf346d1bf47abc8c04df6f353" category="section-title">Catálogo de automatización de BlueXP</block>
+  <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">Automatización de NetApp</block>
+  <block id="8e21735532a19050ed5ad15f3404f1c3" category="paragraph">La solución de NetApp<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> Está disponible a través de la interfaz de usuario web de BlueXP. El catálogo ofrece acceso a soluciones que pueden ayudarle con la implementación e integración automatizadas de ONTAP y otros productos NetApp. Consulte<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> documentación para obtener una descripción de las soluciones de automatización.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
