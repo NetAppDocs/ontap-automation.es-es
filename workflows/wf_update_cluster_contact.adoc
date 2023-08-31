@@ -20,7 +20,7 @@ Este flujo de trabajo actualiza la información de contacto del clúster. Debido
 
 == Paso 1: Actualice la información de contacto del clúster
 
-Puede emitir una llamada API para actualizar la información de contacto.
+Puede emitir una llamada API para actualizar la información de contacto del clúster.
 
 .Método HTTP y punto final
 Esta llamada a la API de REST utiliza el siguiente método y extremo.
@@ -53,9 +53,9 @@ curl --location --include \
 }
 ----
 .Ejemplo de resultado JSON
-Se devuelve el identificador del objeto de trabajo. Debe guardar el valor de ID para utilizarlo en el siguiente paso como variable $JOB_ID.
+Se devuelve el objeto de trabajo. Debe guardar el identificador de trabajo para utilizarlo en el siguiente paso como variable $JOB_ID.
 
-[source, json]
+[listing]
 ----
 { "job": {
     "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",

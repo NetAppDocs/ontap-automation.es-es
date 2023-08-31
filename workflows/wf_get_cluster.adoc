@@ -37,7 +37,7 @@ Además de los parámetros comunes con todas las llamadas a la API REST, los sig
 | campos | Consulta | No | Seleccione los valores que desea devolver. Los ejemplos incluyen `contact` y.. `version`. 
 |===
 .Ejemplo de curl: Recupere la información de contacto del clúster
-En este ejemplo se ilustra cómo recuperar un solo campo. Para obtener toda la configuración del clúster, debe eliminar el `fields` parámetro de consulta.
+En este ejemplo se ilustra cómo recuperar un solo campo. Para obtener todo el objeto del clúster y la configuración, debe eliminar el `fields` parámetro de consulta.
 
 [source, curl]
 ----

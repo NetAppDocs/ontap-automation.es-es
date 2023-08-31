@@ -14,7 +14,7 @@ summary: Es posible emitir un comando curl para empezar a usar la API de REST DE
 
 
 [role="lead"]
-Es posible emitir un comando curl para empezar a usar la API de REST DE ONTAP y confirmar su disponibilidad.
+Es posible emitir un comando curl sencillo para comenzar a usar la API de REST DE ONTAP y confirmar su disponibilidad.
 
 .Antes de empezar
 Además de tener la utilidad cURL disponible en su estación de trabajo, necesita lo siguiente:

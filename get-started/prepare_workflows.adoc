@@ -92,6 +92,18 @@ Estas son algunas de las palabras clave de variable común. Esta lista no es exh
 |===
 
 
+=== Ejemplos de entrada JSON
+
+Algunas de las llamadas a la API REST, como las que usan POST o PATCH, requieren una entrada JSON para el cuerpo de la solicitud. Los ejemplos de entrada JSON se presentan por separado de los ejemplos de rizo para mayor claridad. Puede utilizar los ejemplos de entrada JSON con una de las técnicas descritas a continuación.
+
+.Guardar en archivo local
+Puede copiar el ejemplo JSON en un archivo y guardarlo localmente. El comando cURL hace referencia al archivo que utiliza `--data` parámetro con el valor que indica el nombre de archivo con a. `@` prefijo.
+
+.Pegue en el terminal después del ejemplo de cURL
+Primero debe copiar y pegar el ejemplo de cURL en el shell de terminal. A continuación, edite el ejemplo para eliminar completamente el `--data` parámetro al final y sustitúyalo por el `--data-raw` parámetro. Por último, copie y pegue en el ejemplo JSON para que siga el comando cURL y el parámetro actualizado.
+
+
+
 == Opciones de autenticación
 
 El método de autenticación primario disponible para la API de REST mediante ONTAP 9.13.1 es la autenticación básica.
@@ -130,7 +142,7 @@ Debe sustituir las credenciales adecuadas para su entorno. Al ejecutar el comand
 
 
 
-== Uso de ejemplos de curvatura con el shell Bash
+== Usando los ejemplos con Bash
 
 Si utiliza los ejemplos de cURL de flujo de trabajo directamente, debe actualizar las variables que contienen con los valores adecuados para su entorno. Puede editar manualmente los ejemplos o confiar en el shell Bash para realizar la sustitución por usted como se describe a continuación.
 
