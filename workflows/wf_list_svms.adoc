@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_list_svms.html 
+keywords: workflow, list SVMs 
+summary: 'Puede mostrar las máquinas virtuales de almacenamiento (SVM) definidas en un clúster de ONTAP. Puede hacerlo como parte de la búsqueda del identificador de una SVM específica o para garantizar la singularidad de los nombres antes de crear una nueva SVM.' 
+---
+= Enumere las SVM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede mostrar las máquinas virtuales de almacenamiento (SVM) definidas en un clúster de ONTAP. Puede hacerlo como parte de la búsqueda del identificador de una SVM específica o para garantizar la singularidad de los nombres antes de crear una nueva SVM.
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | OBTENGA 
+
+
+| OBTENGA | /svm/svm 
+|===
+.Ejemplo de curl
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/svm/svms" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Ejemplo de resultado JSON
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "71bd74f8-40dc-11ee-b51a-005056aee9fa",
+      "name": "vs0",
+      "_links": {
+          "self": {
+            "href": "/api/svm/svms/71bd74f8-40dc-11ee-b51a-005056aee9fa"
+          }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/svm/svms"
+    }
+  }
+}
+----

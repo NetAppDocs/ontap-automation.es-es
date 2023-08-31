@@ -49,13 +49,24 @@ NOTE: No todos los métodos HTTP están disponibles en cada extremo DE REST. Ade
 |===
 
 
+== Variables de ruta
+
+La ruta de punto final que se usa con cada llamada API DE REST puede incluir varios identificadores. Cada ID corresponde a una instancia de recurso específica. Entre los ejemplos se incluyen el ID del clúster y el ID de SVM.
+
+
+
 == Solicitar encabezados
 
 Debe incluir varios encabezados en la solicitud HTTP.
 
 Tipo de contenido:: Si el cuerpo de la solicitud incluye JSON, este encabezado debe estar establecido en `application/json`.
 Acepte:: Este encabezado debe estar configurado en `application/hal+json`. Si en su lugar está establecido en `application/json` No se devolverá ninguno de los enlaces HAL excepto un enlace necesario para recuperar el siguiente lote de registros. Si el encabezado está separado de estos dos valores, el valor predeterminado de `content-type` la cabecera en la respuesta será `application/hal+json`.
-Autorización:: La autenticación básica se debe establecer con el nombre de usuario y la contraseña codificados como una cadena base64.
+Autorización:: La autenticación básica se debe establecer con el nombre de usuario y la contraseña codificados como una cadena base64. Por ejemplo:
++
+--
+`Authorization: Basic YWRtaW46cGV0ZXJzb24=`.
+
+--
 
 
 

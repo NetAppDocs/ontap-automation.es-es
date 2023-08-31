@@ -1,0 +1,153 @@
+---
+sidebar: sidebar 
+permalink: get-started/prepare_workflows.html 
+keywords: workflows, preparation, prepare to use workflows 
+summary: Debe estar familiarizado con la estructura y el formato de los flujos de trabajo de ONTAP antes de utilizarlos con una implementación en directo. 
+---
+= Prepárese para usar los flujos de trabajo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Debe estar familiarizado con la estructura y el formato de los flujos de trabajo de ONTAP antes de utilizarlos con una implementación en directo.
+
+
+
+== Introducción
+
+Un _Workflow_ es una secuencia de uno o más pasos necesarios para llevar a cabo una tarea o un objetivo administrativos específicos. Los flujos de trabajo de ONTAP incluyen los pasos y los parámetros esenciales necesarios para llevar a cabo cada tarea. Proporcionan un punto de inicio para personalizar el entorno de automatización de ONTAP.
+
+.Tipos de paso
+Cada paso de un flujo de trabajo de ONTAP es uno de los siguientes tipos:
+
+* Llamada a API REST (con detalles como ejemplos curl y JSON)
+* Ejecute o llame a otro flujo de trabajo de ONTAP
+* Tareas relacionadas varias (como tomar una decisión de configuración)
+
+
+.Llamadas a la API de REST
+La mayoría de los pasos del flujo de trabajo son llamadas a la API de REST. Estos pasos utilizan un formato común que incluye un ejemplo de cURL y otra información. Consulte link:../reference/api_reference.html["Referencia de API"] Para obtener más detalles sobre las llamadas a la API de REST.
+
+.Flujos de trabajo en un solo paso
+Un flujo de trabajo sólo puede contener un paso. Estos _flujos de trabajo de un solo paso_ tienen un formato ligeramente diferente al de los flujos de trabajo que contienen varios pasos. Por ejemplo, se elimina el nombre explícito del paso. La acción de flujo de trabajo debe ser clara en función del título.
+
+
+
+== Variables de entrada
+
+Los flujos de trabajo están diseñados para ser lo más general posible para poder utilizarlos en cualquier entorno ONTAP. Con esto en mente, las llamadas a la API REST utilizan variables en los ejemplos de curl y otras entradas. Las llamadas API DE REST se pueden adaptar fácilmente a distintos entornos de ONTAP.
+
+
+
+=== Formato de URL base
+
+Puede acceder a la API de REST DE ONTAP directamente mediante curl o un lenguaje de programación como Python. En este caso, la URL base es diferente de la URL que utiliza al acceder a la documentación en línea de ONTAP o al Administrador del sistema.
+
+Al acceder a la API directamente, debe agregar *api* al dominio o la dirección IP. Por ejemplo:
+
+`https://ontap.demo-example.com/api`
+
+Consulte link:../rest/access_rest_api.html["Cómo acceder a la API de ONTAP"] Para obtener más información sobre cómo acceder a la API de REST DE ONTAP.
+
+
+
+=== Parámetros de entrada comunes
+
+Hay varios parámetros de entrada que se utilizan comúnmente con la mayoría de las llamadas a la API REST. Estos parámetros normalmente no se describen en los flujos de trabajo individuales. Debe estar familiarizado con los parámetros. Consulte link:../rest/input_variables.html["Variables de entrada que controlan una solicitud API"] si quiere más información.
+
+Si se necesitan parámetros adicionales para un ejemplo de curl específico, se incluyen en la sección *Parámetros de entrada adicionales para el ejemplo de curl* para cada flujo de trabajo.
+
+
+
+=== Formato de variable
+
+Los valores de ID y otras variables que se utilizan con los ejemplos de flujos de trabajo son opacos y pueden variar con cada clúster de ONTAP. Para mejorar la legibilidad de los ejemplos, no se utilizan los valores reales. En su lugar, se utilizan variables. Este enfoque, basado en un formato consistente y un conjunto de nombres reservados, tiene varias ventajas:
+
+* Las muestras de curl y JSON son más legibles y fáciles de entender.
+* Debido a que todas las palabras clave utilizan el mismo formato, puede identificarlas rápidamente.
+* No hay exposición de seguridad porque los valores no se pueden copiar ni reutilizar.
+
+
+Las variables se formatean para ser utilizadas en un entorno de shell Bash. Cada variable comienza con un signo de dólar y está encerrada entre comillas dobles según sea necesario. Esto los hace reconocibles a Bash. Las mayúsculas se utilizan sistemáticamente para los nombres.
+
+Estas son algunas de las palabras clave de variable común. Esta lista no es exhaustiva y se utilizan palabras clave adicionales según sea necesario. Su significado debe ser obvio basado en el contexto.
+
+[cols="25,15,60"]
+|===
+| Palabra clave | Tipo | Descripción 
+
+
+| $FQDN_IP | URL | El nombre de dominio completo o la dirección IP de la LIF de gestión del clúster de ONTAP. 
+
+
+| $CLUSTER_ID | Ruta | El valor UUIDv4 identifica el clúster de ONTAP donde se ejecutan las operaciones de API. 
+
+
+| $BASIC_AUTH | Encabezado | Cadena de credenciales utilizada para la autenticación básica HTTP. 
+|===
+
+
+== Opciones de autenticación
+
+El método de autenticación primario disponible para la API de REST mediante ONTAP 9.13.1 es la autenticación básica.
+
+
+
+=== Autenticación básica HTTP
+
+Cuando se utiliza la autenticación básica, las credenciales de usuario deben incluirse con cada solicitud HTTP. Hay dos opciones para enviar las credenciales.
+
+.Cree la cabecera de solicitud HTTP
+Puede crear manualmente la cabecera Autorización e incluirla con las solicitudes HTTP. Esto se puede hacer cuando se utiliza un comando curl en la CLI o un lenguaje de programación con su código de automatización. Los pasos en un nivel alto incluyen:
+
+. Concatenar los valores de usuario y contraseña con dos puntos:
++
+`admin:david123`
+
+. Convierta toda la cadena a base64:
++
+`YWRtaW46ZGF2aWQxMjM=`
+
+. Construya la cabecera de solicitud:
++
+`Authorization: Basic YWRtaW46ZGF2aWQxMjM=`
+
+
+
+Los ejemplos de curl de flujo de trabajo incluyen este encabezado con la variable *$BASIC_AUTH* que debe actualizar antes de usar.
+
+.Utilice un parámetro cURL
+Otra opción cuando se usa curl es quitar el encabezado de Autorización y usar el parámetro curl *user* en su lugar. Por ejemplo:
+
+`--user username:password`
+
+Debe sustituir las credenciales adecuadas para su entorno. Al ejecutar el comando cURL con este parámetro, se genera la cabecera de autorización.
+
+
+
+== Uso de ejemplos de curvatura con el shell Bash
+
+Si utiliza los ejemplos de cURL de flujo de trabajo directamente, debe actualizar las variables que contienen con los valores adecuados para su entorno. Puede editar manualmente los ejemplos o confiar en el shell Bash para realizar la sustitución por usted como se describe a continuación.
+
+
+NOTE: Una ventaja del uso de Bash es que puede establecer los valores de variable una vez en una sesión de shell en lugar de una vez por comando cURL.
+
+.Pasos
+. Abra el shell Bash proporcionado con Linux o un sistema operativo similar.
+. Establezca los valores de variable incluidos en el ejemplo de cURL que ejecutará. Por ejemplo:
++
+`CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
+
+. Copie el ejemplo cURL de la página de flujo de trabajo y péguelo en el terminal del shell.
+. Pulse *ENTER* que hará lo siguiente:
++
+.. Sustituya los valores de variable establecidos
+.. Ejecute el comando cURL
+
+
+

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/first_call.html 
-keywords: simple API call 
-summary: Puede emitir un comando curl simple en la interfaz de línea de comandos para comenzar a usar la API DE REST de ONTAP y confirmar su disponibilidad. 
+keywords: first REST API call, test REST API 
+summary: Es posible emitir un comando curl para empezar a usar la API de REST DE ONTAP y confirmar su disponibilidad. 
 ---
 = Su primera llamada API
 :hardbreaks:
@@ -14,28 +14,32 @@ summary: Puede emitir un comando curl simple en la interfaz de línea de comando
 
 
 [role="lead"]
-Puede emitir un comando curl simple en la interfaz de línea de comandos para comenzar a usar la API DE REST de ONTAP y confirmar su disponibilidad.
+Es posible emitir un comando curl para empezar a usar la API de REST DE ONTAP y confirmar su disponibilidad.
 
 .Antes de empezar
-La utilidad curl debe estar disponible en su estación de trabajo. Además, debe tener lo siguiente:
+Además de tener la utilidad cURL disponible en su estación de trabajo, necesita lo siguiente:
 
-* La dirección IP o el nombre de host de la LIF de gestión de clústeres de ONTAP
-* Nombre de usuario y contraseña para una cuenta con autoridad para acceder a la API DE REST de ONTAP (recurso del clúster).
+* La dirección IP o el FQDN de la LIF de administración del clúster de ONTAP
+* Credenciales de ONTAP para una cuenta con autoridad para acceder a la API de REST DE ONTAP
 
 
 
-NOTE: Si sus credenciales incluyen caracteres especiales, debe formatearlos de una forma que sea aceptable para Curl en función del shell que esté utilizando. Por ejemplo, puede insertar una barra diagonal inversa antes de cada carácter especial o envolver la totalidad `username:password` cadena entre comillas simples.
+NOTE: Si sus credenciales incluyen caracteres especiales, debe formatearlos de una manera que sea aceptable para curl según el shell que esté utilizando. Por ejemplo, puede insertar una barra diagonal inversa antes de cada carácter especial o ajustar toda la cadena de credenciales entre comillas dobles.
 
 .Pasos
-. En la interfaz de línea de comandos de la estación de trabajo local, recupere la versión del software ONTAP:
+. En la interfaz de línea de comandos de la estación de trabajo local, ejecute el siguiente comando:
 +
-`curl -X GET -u username:password -k "https://<ip_address>/api/cluster?fields=version"`
-
+[source, curl]
+----
+curl --request GET \
+--user username:password \
+"https://$FQDN_IP/api/cluster?fields=version"
+----
 +
 *ejemplo*
 
 +
-`curl -X GET -u admin:password -k "https://10.222.81.101/api/cluster?fields=version"`
+`curl --request GET --user admin:david123 "https://10.222.81.101/api/cluster?fields=version"`
 
 
 

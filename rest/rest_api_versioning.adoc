@@ -19,7 +19,7 @@ A la API DE REST incluida con ONTAP 9 se le asigna un número de versión indepe
 
 NOTE: Todas las versiones de ONTAP 9 utilizan la misma versión de la API DE REST.
 
-De ONTAP 9.6 a ONTAP 9.10.1:: Versión 1
+ONTAP 9,6 a ONTAP 9.13.1:: Versión 1
 
 
 .Enlaces relacionados
