@@ -29,8 +29,9 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 .Ejemplo de curl
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/svm/svms" \
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----

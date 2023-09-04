@@ -38,8 +38,9 @@ Asíncrona
 .Ejemplo de curl
 [source, curl]
 ----
-curl --location --include \
---request PATCH "https://$FQDN_IP/api/cluster" \
+curl --request PATCH \
+--location "https://$FQDN_IP/api/cluster" \
+--include \
 --header "Content-Type: application/json" \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
@@ -89,8 +90,9 @@ Síncrona
 .Ejemplo de curl
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -112,3 +114,8 @@ El valor de estado y otros campos se incluyen en el objeto de trabajo devuelto.
   }
 }
 ----
+
+
+== Paso 3: Confirme la información de contacto del clúster
+
+Realice el flujo de trabajo link:../workflows/wf_get_cluster.html["Obtener la configuración del clúster"]. Debe configurar la `fields` parámetro de consulta a. `contact`.
