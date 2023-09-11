@@ -5,10 +5,10 @@ entries:
 - title: Clúster
   entries:
   - title: Obtener la configuración del clúster
-    url: "/workflows/wf_get_cluster.html"
+    url: "/workflows/wf_cls_get_cluster.html"
   - title: Actualice el contacto del clúster
-    url: "/workflows/wf_update_cluster_contact.html"
+    url: "/workflows/wf_cls_update_contact.html"
 - title: SVM
   entries:
   - title: Enumere las SVM
-    url: "/workflows/wf_list_svms.html"
+    url: "/workflows/wf_svm_list_svms.html"

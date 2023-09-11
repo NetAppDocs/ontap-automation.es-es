@@ -284,7 +284,6 @@
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">Ruta</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Enlaces relacionados</block>
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">Resumen de recursos DE REST</block>
-  <block id="7de269085c4e23e4ff26c31b7122144d" category="summary">Este flujo de trabajo actualiza la información de contacto del clúster. Dado que la solicitud se procesa de forma asíncrona, también ilustra cómo determinar si el trabajo en segundo plano se completa correctamente.</block>
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">PARCHE</block>
   <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/cluster</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">Tipo de procesamiento</block>
@@ -1660,8 +1659,6 @@
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">Pulse *ENTER* que hará lo siguiente:</block>
   <block id="198b3154f73c4a62a05f7a0089ea4f3a" category="list-text">Sustituya los valores de variable establecidos</block>
   <block id="9a6c9ba6963e8edb0564d74a05262568" category="list-text">Ejecute el comando cURL</block>
-  <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">Actualice el contacto del clúster y confirme el estado del trabajo</block>
-  <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">Este flujo de trabajo actualiza la información de contacto del clúster. Debido a que la solicitud se procesa de forma asíncrona, también ilustra cómo determinar si el trabajo en segundo plano asociado se ha completado correctamente.</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">Paso 1: Actualice la información de contacto del clúster</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">Método HTTP y punto final</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">Esta llamada a la API de REST utiliza el siguiente método y extremo.</block>
@@ -1685,7 +1682,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">La ruta de punto final que se usa con cada llamada API DE REST puede incluir varios identificadores. Cada ID corresponde a una instancia de recurso específica. Entre los ejemplos se incluyen el ID del clúster y el ID de SVM.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">La autenticación básica se debe establecer con el nombre de usuario y la contraseña codificados como una cadena base64. Por ejemplo:</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>.</block>
-  <block id="8e69453af156d83ee85c0320efa52ea2" category="list-text"><block ref="8e69453af156d83ee85c0320efa52ea2" category="inline-link-macro-rx"></block></block>
   <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9,6 a ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">Obtener la configuración del clúster</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">Actualice el contacto del clúster</block>
@@ -1715,4 +1711,8 @@
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">Establezca los valores de variable incluidos en el ejemplo de cURL que desea ejecutar. Por ejemplo:</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">Paso 3: Confirme la información de contacto del clúster</block>
   <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">Realice el flujo de trabajo <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>. Debe configurar la<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parámetro de consulta a.<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
+  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">Actualice el contacto del clúster y confirme el estado del trabajo</block>
+  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
+  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">Puede actualizar la información de contacto de un clúster de. Debido a que la solicitud se procesa de forma asíncrona, este flujo de trabajo también ilustra cómo determinar si el trabajo en segundo plano asociado se ha completado correctamente.</block>
+  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Resumen de recursos REST</block>
 </blocks>
