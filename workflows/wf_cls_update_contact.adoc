@@ -118,4 +118,4 @@ El valor de estado y otros campos se incluyen en el objeto de trabajo devuelto.
 
 == Paso 3: Confirme la información de contacto del clúster
 
-Realice el flujo de trabajo link:../workflows/wf_get_cluster.html["Obtener la configuración del clúster"]. Debe configurar la `fields` parámetro de consulta a. `contact`.
+Realice el flujo de trabajo link:../workflows/wf_cls_get_cluster.html["Obtener la configuración del clúster"]. Debe configurar la `fields` parámetro de consulta a. `contact`.
