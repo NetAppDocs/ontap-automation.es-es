@@ -4,6 +4,8 @@ title: Manos a la obra
 entries:
 - title: Comprender las opciones de automatización
   url: "/get-started/ontap_automation_options.html"
+- title: Cómo acceder a la API de REST
+  url: "/get-started/access_rest_api.html"
 - title: Recupere la versión de software del clúster
   url: "/get-started/retrieve_cluster_software_version.html"
 - title: Su primera llamada API
