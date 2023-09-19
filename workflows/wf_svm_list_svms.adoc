@@ -21,10 +21,10 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 
 [cols="25,75"]
 |===
-| Método HTTP | OBTENGA 
+| Método HTTP | Ruta 
 
 
-| OBTENGA | /svm/svm 
+| OBTENGA | /api/svm/svm 
 |===
 .Ejemplo de curl
 [source, curl]

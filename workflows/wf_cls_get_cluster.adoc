@@ -21,10 +21,10 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 
 [cols="25,75"]
 |===
-| Método HTTP | OBTENGA 
+| Método HTTP | Ruta 
 
 
-| OBTENGA | /cluster 
+| OBTENGA | /api/clúster 
 |===
 .Parámetros de entrada adicionales para ejemplos de cURL
 Además de los parámetros comunes con todas las llamadas a la API REST, los siguientes parámetros también se utilizan en el ejemplo curl de este paso.

@@ -271,11 +271,9 @@
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Enlaces relacionados</block>
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">Resumen de recursos DE REST</block>
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">PARCHE</block>
-  <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/cluster</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">Tipo de procesamiento</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">Asíncrona</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">OBTENGA</block>
-  <block id="98dbba5c9ef16c64ae0471156940f706" category="cell">/cluster/trabajos/{uuid}</block>
   <block id="2fe4167817733fec8e6ba1afddf78f1b" category="paragraph">Síncrona</block>
   <block id="0a8c7e3119e88aeff2340fed8ee9d7e6" category="summary">Puede usar estas llamadas API para gestionar recursos SAN.</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">Puede usar estas llamadas API para gestionar recursos de red de área de almacenamiento (SAN).</block>
@@ -762,10 +760,7 @@
   <block id="10cb31045b1e0319cad9e10cb17e7d7f" category="section-title">Recursos de desarrollo</block>
   <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">Soluciones de DevOps de Ansible de NetApp</block>
   <block id="8b328188cce263fb3b3c747dfca835f3" category="paragraph">Consulte <block ref="0edd4b40b713849ac51dc73d6ee2b46b" category="inline-link-macro-rx"></block> Para obtener ayuda para empezar a usar Ansible en un entorno de DevOps.</block>
-  <block id="80f5621e734bd116c58617e6c799fd18" category="summary">Puede usar el flujo de trabajo descrito a continuación para crear un usuario con un rol DE REST asociado. Antes de revisar el flujo de trabajo, debe estar familiarizado con los pasos generales de preparación.</block>
   <block id="7341eaad1796dcd6268b71a308240243" category="doc">Crear un usuario con un rol</block>
-  <block id="4615b675487f476dd46329e196d46e0b" category="section-title">Prepare para crear un usuario de ONTAP con el rol asignado</block>
-  <block id="d725670416fda4a95c9a41cae84b3730" category="paragraph">Antes de crear un rol y asignarlo a una cuenta de usuario de ONTAP, primero debe prepararse revisando los requisitos y opciones de seguridad principales.</block>
   <block id="6215c70dd9ed027468957f47be27bee7" category="paragraph-title">¿Qué versión de ONTAP utiliza?</block>
   <block id="379385ed06cff6b981e905026b8488d8" category="paragraph">La versión de ONTAP determina qué extremos DE REST y las funciones RBAC están disponibles.</block>
   <block id="1dd5dc2d82e64f070277b01c3a7d2fb8" category="paragraph-title">Identificar los recursos y el alcance protegidos</block>
@@ -778,33 +773,20 @@
   <block id="cd749c0b40175f0f7a3e7f752af73d13" category="paragraph">Es más conveniente utilizar una función integrada existente, pero se puede crear una nueva función personalizada si es necesario.</block>
   <block id="531201515c1ec0bfadb1f37e57c2222d" category="paragraph-title">¿Qué tipo de rol es necesario?</block>
   <block id="e3a373c3aac05fcefd1b150a9d565c2a" category="paragraph">En función de los requisitos de seguridad y del acceso a ONTAP, debe elegir si desea crear UN rol tradicional o DE REST.</block>
-  <block id="b09037a5d82613adb22bd86bae1b60d5" category="section-title">Cree un usuario con un rol personalizado</block>
-  <block id="3182bd07058520c0846c3336ad09822d" category="paragraph">El flujo de trabajo descrito a continuación incluye los pasos típicos necesarios para crear una función de REST personalizada y asociarla con una nueva cuenta de usuario. Tanto el usuario como el rol tienen un ámbito de SVM y están asociados con una SVM de datos específica.</block>
-  <block id="004e30de2ba3d00309416614b821bc90" category="admonition">El flujo de trabajo tiene como objetivo ilustrar el proceso completo. Puede que algunos de los pasos sean opcionales o que deban cambiarse en función de su entorno.</block>
-  <block id="c8a5cb28fdf2598f85711cd98aaf6739" category="section-title">1. Enumere las SVM de datos del clúster</block>
-  <block id="c67d7f573196794910d284fa2b59abec" category="paragraph">Realice la siguiente llamada de API REST para enumerar las SVM en el clúster. El UUID y el nombre de cada SVM se proporcionan en la salida.</block>
   <block id="9c52661d131f07face38ff3baa271d09" category="cell">/api/svm/svm</block>
-  <block id="dc9f2e350dc3b2372ce00503e56fe71d" category="listing-title">ejemplo de curl</block>
   <block id="65dc659f4320656f47afc3226f3349b1" category="paragraph">Seleccione la SVM deseada en la lista donde va a crear el usuario y el rol nuevos.</block>
-  <block id="77dc514382ed988f07bcd3331cb777ce" category="section-title">2. Enumere los usuarios definidos para la SVM</block>
   <block id="545f01dc5fb27b5a00252c1ab276b8f4" category="paragraph">Realice la siguiente llamada de API de REST para enumerar los usuarios definidos en la SVM seleccionada. Se puede identificar la SVM mediante el parámetro owner.</block>
   <block id="137ef7229d434ea827c18ad48fbf2401" category="cell">/api/seguridad/cuentas</block>
   <block id="d28041a03685d6dbdc892dce400d3d28" category="paragraph">Según los usuarios ya definidos en la SVM, elija un nombre único para el nuevo usuario.</block>
-  <block id="5f992f28a3b95601a69cc4fd3acdef79" category="section-title">3. Enumere los roles DE REST definidos para la SVM</block>
   <block id="79848c3f39849323eb07dde9ce0b5b68" category="paragraph">Realice la siguiente llamada de API de REST para enumerar los roles definidos en la SVM seleccionada. Se puede identificar la SVM mediante el parámetro owner.</block>
   <block id="d2163229a8bdac1e61c4788472dbacd3" category="cell">/api/seguridad/roles</block>
   <block id="f8b939ec213ead9efd60e86f833e8fbf" category="paragraph">Según los roles ya definidos en la SVM, elija un nombre único para el nuevo rol.</block>
-  <block id="28e273c48ad039c702e69f06f8455422" category="section-title">4. Crear un rol de REST personalizado</block>
   <block id="55fe93e61e9a7bd2f633f326a5e96290" category="paragraph">Realice la siguiente llamada de API DE REST para crear un rol de REST personalizado en la SVM. El rol tiene inicialmente sólo un privilegio que establece un acceso por defecto de *ninguno* para que se deniegue todo acceso.</block>
   <block id="a02439ec229d8be0e74b0c1602392310" category="cell">PUBLICAR</block>
   <block id="0577bbabd0439eea401a8ec18491d1a6" category="listing-title">Ejemplo de entrada JSON</block>
   <block id="13914e64af0bb44e86cd3e7e8a6db903" category="paragraph">De manera opcional, vuelva a ejecutar el paso 3 para mostrar el nuevo rol. También puede mostrar los roles en la interfaz de línea de comandos de ONTAP.</block>
-  <block id="9f47490b035163018ad57664ebd4231e" category="section-title">5. Actualice la función agregando más privilegios</block>
   <block id="3556b68f25f496c1b49d7a04a2b8db5a" category="paragraph">Realice la siguiente llamada a la API de REST para modificar el rol, añadiendo privilegios según sea necesario.</block>
   <block id="44616b081f16df6bb249edd608d22f26" category="cell">/api/seguridad/roles/{owner.uuid}/{name}/privilegios</block>
-  <block id="425449fc9249e100beb709a52ce09d93" category="section-title">6. Cree un usuario</block>
-  <block id="ddb5039e238e533f2698aca2a0cad69a" category="paragraph">Realice la siguiente llamada a la API DE REST para crear una cuenta de usuario. El rol<block ref="6348293814ac751dee6d02b12635cc12" prefix=" " category="inline-code"></block> creado anteriormente está asociado con el nuevo usuario.</block>
-  <block id="41840c66a2790635e8d2e99b8901a85e" category="admonition">Puede incluir el usuario sin un rol. En este caso, deberá modificar el usuario para asignar un rol.</block>
   <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">Puede iniciar sesión en la interfaz de gestión de SVM con las credenciales del nuevo usuario.</block>
   <block id="27aa538dd8ea48453b7b9cda60cec170" category="summary">Después de comprender las funcionalidades básicas de RBAC, es posible empezar a trabajar con los roles y usuarios de ONTAP.</block>
   <block id="61d21be565a36251bbca59c0ffb7571d" category="doc">Trabajar con roles y usuarios</block>
@@ -1116,23 +1098,11 @@
   <block id="99efb2d280df5dfb88ff3974d6ba377a" category="list-text">OBTENER basado en consultas para recuperar la colección</block>
   <block id="b493da72818f74a4523850f1316fabdc" category="list-text">Secuencia en serie de LLAMADAS DE PARCHE o BORRADO en cada objeto de la colección</block>
   <block id="d42ef5aeeeac3bae2faf89cff30ba1b2" category="paragraph">Puede establecer el tiempo de espera de la operación<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> con un valor predeterminado de 15 segundos. Si no se ha completado antes del tiempo de espera, la respuesta incluye un vínculo al siguiente objeto. Debe volver a emitir el mismo método HTTP mediante el siguiente enlace para continuar con la operación.</block>
-  <block id="ca10180cdf4edf15996acffd8fddb307" category="summary">La funcionalidad de control de acceso basado en roles de ONTAP se puede usar de diferentes maneras en función de su entorno. A continuación se presentan algunos escenarios comunes. En cada caso, el enfoque se centra en un objetivo específico de seguridad y administración con un ejemplo de la definición de función correspondiente.</block>
-  <block id="1fbfc491e444abd15b879cf0b296f868" category="doc">Definiciones de rol de ejemplo</block>
-  <block id="c1489037f7a15d27fe055dbc42244578" category="admonition">Todos los ejemplos crean y modifican roles con<block ref="d2163229a8bdac1e61c4788472dbacd3" prefix=" " category="inline-code"></block> Y los extremos DE REST derivados. Para mayor claridad, cada uno de los comandos curl se refiere a un archivo de entrada JSON independiente.</block>
   <block id="6e4ad51ed0c9f59ca29ccce216f868b1" category="section-title">Limite el acceso a las operaciones de volumen de SVM</block>
-  <block id="ceb8d53ccfbc6f286a28418188fb0b36" category="paragraph">Puede que desee restringir la administración del volumen de almacenamiento dentro de una SVM. En el siguiente ejemplo, se ilustra esta función con una función que se crea primero y, a continuación, se actualiza opcionalmente.</block>
-  <block id="b63872fa53e17ff08ed6b0991c97a083" category="section-title">Crear el rol inicial</block>
-  <block id="e01c59d9614a8f8bfe415754e544d4c2" category="paragraph">Se crea un rol tradicional para permitir inicialmente el acceso a todas las funciones de administración de volúmenes principales, excepto el clonado. La función que se presenta a continuación se define con las siguientes características específicas:</block>
   <block id="44b825cf5bc9349a15a7ed51954ce076" category="list-text">Es capaz de realizar todas las operaciones de volumen CRUD, incluidos Get, CREATE, Modify y DELETE</block>
   <block id="0a98788f622c9b8a786424f59d6f073f" category="list-text">No se puede crear un clon de volumen</block>
-  <block id="65c74070d0b2394b81c796bb60240324" category="section-title">Actualice el rol</block>
-  <block id="add6cb38f2c78e28a0302df3df6de165" category="paragraph">El mismo rol puede modificarse para permitir al usuario también crear un clon de volumen.</block>
-  <block id="7f8d84e7d0adb2682a7102214e49dee2" category="section-title">Administración de la protección de datos</block>
-  <block id="b3698327f3342304d1a28edbf87cf3d4" category="paragraph">En determinadas situaciones, puede que desee ofrecer a un usuario funcionalidades de protección de datos limitadas. La función tradicional que se presenta a continuación se define con las siguientes características:</block>
   <block id="91b8fb1bf628880e8b9a3976c3a032ab" category="list-text">Es posible crear y eliminar copias Snapshot, así como actualizar las relaciones de SnapMirror</block>
   <block id="76a4694d3323882a13252de3b8c66853" category="list-text">No se pueden crear ni modificar objetos de nivel superior como volúmenes o SVM</block>
-  <block id="b36e61796997ee2c786f4fa3ed101f1c" category="section-title">Generando informes de ONTAP</block>
-  <block id="b35f8291d357a94153e63c0665fa6521" category="paragraph">Puede crear un rol DE REST para proporcionar a los usuarios la capacidad de generar informes de ONTAP. La función que se presenta a continuación se define con las siguientes características:</block>
   <block id="3afdfc4bb62414921598f2f4531aaca1" category="list-text">Se puede recuperar toda la información sobre objetos de almacenamiento relacionada con la capacidad y el rendimiento (como volumen, qtree, LUN, agregados, nodo, Y las relaciones de SnapMirror)</block>
   <block id="9a97a4c8ef433f35c821ef57f10aa45d" category="list-text">No se pueden crear ni modificar objetos de nivel superior (como volúmenes o SVM).</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">Cómo acceder a la API de REST de ONTAP</block>
@@ -1647,7 +1617,6 @@
   <block id="4044a674901deb07947f235775f9654d" category="paragraph">El valor de estado y otros campos se incluyen en el objeto de trabajo devuelto.</block>
   <block id="1e6808f43cf2da1acd44c6e982792490" category="summary">Puede mostrar las máquinas virtuales de almacenamiento (SVM) definidas en un clúster de ONTAP. Puede hacerlo como parte de la búsqueda del identificador de una SVM específica o para garantizar la singularidad de los nombres antes de crear una nueva SVM.</block>
   <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">Enumere las SVM</block>
-  <block id="e713e270523baa8c3aca351e280ceba0" category="cell">/svm/svm</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">Puede recuperar la configuración de un clúster de ONTAP, incluidos los campos específicos. Es posible que lo haga como parte de la evaluación del estado del clúster o antes de actualizar la configuración.</block>
   <block id="0510f6e6bd78b2ec3d88fb42187ae328" category="paragraph-title">Parámetros de entrada adicionales para ejemplos de cURL</block>
   <block id="a9ea431a49179a653fb353a3d8027b29" category="paragraph">Además de los parámetros comunes con todas las llamadas a la API REST, los siguientes parámetros también se utilizan en el ejemplo curl de este paso.</block>
@@ -1697,4 +1666,48 @@
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">Notas de la versión de ONTAP 9 con información sobre la versión actual.</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">Consulte <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> si quiere más información.</block>
+  <block id="9b516c95369c98e15389e58383128a9e" category="inline-link-macro">Flujos de trabajo de RBAC</block>
+  <block id="d0ae4474b926ded595a7a12cdb4fa9ca" category="admonition">Consulte <block ref="08b1cfcbf90aa340f0ccb33fbb4649b8" category="inline-link-macro-rx"></block> Para obtener ejemplos de cómo crear y utilizar roles con la API de REST DE ONTAP.</block>
+  <block id="f561aaf6ef0bf14d4208bb46a4ccb3ad" category="summary">xxx</block>
+  <block id="e5811d257020368f5a717692e3698c8c" category="doc">Permita la administración de la protección de datos</block>
+  <block id="869ae78f992efbe089f3f3904e3d608e" category="paragraph">En determinadas situaciones, puede que desee ofrecer a un usuario funcionalidades de protección de datos limitadas.</block>
+  <block id="a6812db2442ae325a9ccd39373bbd9dd" category="paragraph-title">Acerca de este flujo de trabajo</block>
+  <block id="daba4fa4643f88029966b062423e8d20" category="paragraph">El rol tradicional creado se define con las siguientes características:</block>
+  <block id="d48b8c7902dee00442e14d9b1af3af1b" category="cell">/api/clúster</block>
+  <block id="55f6ed7d3e8d7db85cce4c886f3636b4" category="summary">Es posible utilizar este flujo de trabajo para crear un usuario con un rol DE REST asociado.</block>
+  <block id="cc18f325069725989c0b6751dcbafc4d" category="paragraph">Este flujo de trabajo incluye los pasos típicos necesarios para crear un rol REST personalizado y asociarlo con una nueva cuenta de usuario. Tanto el usuario como el rol tienen un ámbito de SVM y están asociados con una SVM de datos específica. Es posible que algunos de los pasos sean opcionales o que deban cambiar según tu entorno.</block>
+  <block id="b8803ca7df0b1c82bf7f1fcaacb12965" category="section-title">Paso 1: Enumere las SVM de datos en el clúster</block>
+  <block id="e374d53eafbeb5c15d2f988954ade623" category="paragraph">Realice la siguiente llamada de API REST para enumerar las SVM en el clúster. El UUID y el nombre de cada SVM se proporcionan en la salida.</block>
+  <block id="af095be4e13f22db1a07d4eb788be96e" category="section-title">Paso 2: Enumere los usuarios definidos para la SVM</block>
+  <block id="19e7b3c36d47d11e1766b54090999067" category="section-title">Paso 3: Enumera los roles REST definidos para la SVM</block>
+  <block id="8d3cd1f07e4df9a16901577bda7c0a05" category="section-title">Paso 4: Crear un rol REST personalizado</block>
+  <block id="76cc78c80e26dbc1516ea13f39f9add7" category="section-title">Paso 5: Actualice el rol agregando más privilegios</block>
+  <block id="ad59b6c3ca840c6480f634b7f404bdf8" category="cell">$SVM_ID</block>
+  <block id="e6c69c4e7432d43764aec8233cf6b257" category="cell">El UUID de la SVM que contiene la definición de rol.</block>
+  <block id="81b635ea7a8ab9f00d576d064f11f04b" category="cell">$ROLE_NAME</block>
+  <block id="18a5ea643c715c0e45aa53077e8f1429" category="cell">El nombre del rol dentro de la SVM que se va a actualizar.</block>
+  <block id="4fa346713b0e13aa5afd8dc51d0ddecb" category="section-title">Paso 6: Crear un usuario</block>
+  <block id="3c597ed3165c87f6539fd81a53a11876" category="paragraph">Realice la siguiente llamada a la API DE REST para crear una cuenta de usuario. El rol *dprole1* creado arriba está asociado con el nuevo usuario.</block>
+  <block id="a2268d991f8aa28dc9e9d9d830cfcd50" category="admonition">Puede incluir el usuario sin un rol. En este caso, deberá modificar el usuario para asignar un rol.</block>
+  <block id="e3abdda2fcce71a97b7507b852418cf4" category="doc">Permitir la generación de informes de ONTAP</block>
+  <block id="c6ef9b731f6fad8f77a915b2ed739e76" category="paragraph">Puede crear un rol DE REST para proporcionar a los usuarios la capacidad de generar informes de ONTAP.</block>
+  <block id="fddc78544f7292e6a6fd31d26110db0d" category="paragraph">El rol creado se define con las siguientes características:</block>
+  <block id="05da6cc99ce87a708e1db8445633412e" category="doc">Prepárese para el uso de RBAC</block>
+  <block id="e0c54c558fb0d0e86e14533cede69e31" category="paragraph">Es posible usar la funcionalidad de control de acceso basado en roles de ONTAP de varias formas diferentes, según el entorno. En esta sección se presentan algunos escenarios comunes como flujos de trabajo. En cada caso, el enfoque se centra en un objetivo administrativo y de seguridad específico.</block>
+  <block id="566834f64494da40ac7fe1e125279b26" category="paragraph">Antes de crear cualquier rol y asignar un rol a una cuenta de usuario de ONTAP, debe prepararse revisando los requisitos y opciones de seguridad principales que se presentan a continuación. También asegúrese de revisar los conceptos generales del flujo de trabajo en <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>.</block>
+  <block id="b7e08313ce4a135773e5f8729bb3668e" category="summary">Puede definir un rol para restringir la administración de volúmenes de almacenamiento dentro de una SVM.</block>
+  <block id="e4971dcab563bd01ed439526b8da3d6c" category="paragraph">Se crea en primer lugar un rol tradicional para permitir inicialmente el acceso a todas las funciones principales de administración de volúmenes, excepto la clonación. El rol se define con las siguientes características:</block>
+  <block id="9258fb6c7073990636544dc25689b463" category="paragraph">A continuación, puede actualizar opcionalmente el rol según sea necesario. En este flujo de trabajo, se cambia el rol en el segundo paso para que el usuario pueda crear un clon de volumen.</block>
+  <block id="6423937e50f8c189d611fa1f0bca2119" category="section-title">Paso 1: Crear el rol</block>
+  <block id="1b48a082cdbde8619ef5f3ad9e0d6c49" category="paragraph">Puede emitir una llamada API para crear el rol de RBAC.</block>
+  <block id="72900513d2cddc3e0dd2b34b49f51c89" category="section-title">Paso 2: Actualice el rol</block>
+  <block id="6356dddf694491834509bb76e9460668" category="paragraph">Puede emitir una llamada API para actualizar el rol existente.</block>
+  <block id="f6e41e2ad42fbeff1733bde2c6b28581" category="cell">Este es el UUID de la SVM que contiene la definición de rol.</block>
+  <block id="10cb9641d08bd45a4a16a11d04b33d5d" category="cell">Es el nombre del rol dentro de la SVM que se va a actualizar.</block>
+  <block id="00ba69a4d8d18761b937f8c79517ded2" category="cell">/api/cluster/jobs/{uuid}</block>
+  <block id="fad878b0757bccd8aab5fd94e81ff694" category="sidebar">RBAC</block>
+  <block id="b48ab7db016af5a706fed2257dca5317" category="sidebar">Crear roles</block>
+  <block id="79a64e91efbdc6837abaf1d324269070" category="sidebar">Limite las operaciones de volumen de SVM</block>
+  <block id="5379ed2904fea688a27b53224909e1fe" category="sidebar">Habilite la protección de datos</block>
+  <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">Permitir la generación de informes de ONTAP</block>
 </blocks>

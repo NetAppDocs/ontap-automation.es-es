@@ -10,6 +10,20 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: Actualice el contacto del clúster
     url: "/workflows/wf_cls_update_contact.html"
+- title: RBAC
+  entries:
+  - title: Prepárese para el uso de RBAC
+    url: "/workflows/wf_rbac_prepare.html"
+  - title: Crear roles
+    entries:
+    - title: Limite las operaciones de volumen de SVM
+      url: "/workflows/wf_rbac_limit_svm.html"
+    - title: Habilite la protección de datos
+      url: "/workflows/wf_rbac_data_protection.html"
+    - title: Permitir la generación de informes de ONTAP
+      url: "/workflows/wf_rbac_ontap_reports.html"
+  - title: Crear usuario con un rol
+    url: "/workflows/wf_rbac_user_role.html"
 - title: SVM
   entries:
   - title: Enumere las SVM

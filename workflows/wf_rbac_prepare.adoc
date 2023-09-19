@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_prepare.html 
+keywords:  
+summary: xxx 
+---
+= Prepárese para el uso de RBAC
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Es posible usar la funcionalidad de control de acceso basado en roles de ONTAP de varias formas diferentes, según el entorno. En esta sección se presentan algunos escenarios comunes como flujos de trabajo. En cada caso, el enfoque se centra en un objetivo administrativo y de seguridad específico.
+
+Antes de crear cualquier rol y asignar un rol a una cuenta de usuario de ONTAP, debe prepararse revisando los requisitos y opciones de seguridad principales que se presentan a continuación. También asegúrese de revisar los conceptos generales del flujo de trabajo en link:../workflows/prepare_workflows.html["Prepárese para usar los flujos de trabajo"].
+
+.¿Qué versión de ONTAP utiliza?
+La versión de ONTAP determina qué extremos DE REST y las funciones RBAC están disponibles.
+
+.Identificar los recursos y el alcance protegidos
+Debe identificar los recursos o comandos que se van a proteger y el alcance (clúster o SVM).
+
+.¿Qué acceso debería tener el usuario?
+Después de identificar los recursos y el ámbito, debe determinar el nivel de acceso que se concederá.
+
+.¿Cómo accederán los usuarios a ONTAP?
+El usuario puede acceder a ONTAP a través de la API de REST o la interfaz de línea de comandos o ambos.
+
+.¿Es suficiente uno de los roles integrados o se necesita un rol personalizado?
+Es más conveniente utilizar una función integrada existente, pero se puede crear una nueva función personalizada si es necesario.
+
+.¿Qué tipo de rol es necesario?
+En función de los requisitos de seguridad y del acceso a ONTAP, debe elegir si desea crear UN rol tradicional o DE REST.

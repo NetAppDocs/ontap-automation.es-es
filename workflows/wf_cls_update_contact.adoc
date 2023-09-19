@@ -30,7 +30,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 | Método HTTP | Ruta 
 
 
-| PARCHE | /cluster 
+| PARCHE | /api/clúster 
 |===
 .Tipo de procesamiento
 Asíncrona
@@ -82,7 +82,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 | Método HTTP | Ruta 
 
 
-| OBTENGA | /cluster/trabajos/{uuid} 
+| OBTENGA | /api/cluster/jobs/{uuid} 
 |===
 .Tipo de procesamiento
 Síncrona

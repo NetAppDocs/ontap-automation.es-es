@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_data_protection.html 
+keywords:  
+summary: xxx 
+---
+= Permita la administración de la protección de datos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En determinadas situaciones, puede que desee ofrecer a un usuario funcionalidades de protección de datos limitadas.
+
+.Acerca de este flujo de trabajo
+El rol tradicional creado se define con las siguientes características:
+
+* Es posible crear y eliminar copias Snapshot, así como actualizar las relaciones de SnapMirror
+* No se pueden crear ni modificar objetos de nivel superior como volúmenes o SVM
+
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | Ruta 
+
+
+| PUBLICAR | /api/seguridad/roles 
+|===
+.Ejemplo de curl
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Ejemplo de entrada JSON
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "volume snapshot create", "access": "all"},
+      {"path": "volume snapshot delete", "access": "all"},
+      {"path": "volume show", "access": "readonly"},
+      {"path": "vserver show", "access": "readonly"},
+      {"path": "snapmirror show", "access": "readonly"},
+      {"path": "snapmirror update", "access": "all"}
+  ]
+}
+----

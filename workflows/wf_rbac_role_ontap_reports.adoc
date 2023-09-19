@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_ontap_reports.html 
+keywords:  
+summary: xxx 
+---
+= Permitir la generación de informes de ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede crear un rol DE REST para proporcionar a los usuarios la capacidad de generar informes de ONTAP.
+
+.Acerca de este flujo de trabajo
+El rol creado se define con las siguientes características:
+
+* Se puede recuperar toda la información sobre objetos de almacenamiento relacionada con la capacidad y el rendimiento (como volumen, qtree, LUN, agregados, nodo, Y las relaciones de SnapMirror)
+* No se pueden crear ni modificar objetos de nivel superior (como volúmenes o SVM).
+
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | Ruta 
+
+
+| PUBLICAR | /api/seguridad/roles 
+|===
+.Ejemplo de curl
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Ejemplo de entrada JSON
+[source, curl]
+----
+{
+  "name": "rest_role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api/storage/volumes", "access": "readonly"},
+      {"path": "/api/storage/qtrees", "access": "readonly"},
+      {"path": "/api/storage/luns", "access": "readonly"},
+      {"path": "/api/storage/aggregates", "access": "readonly"},
+      {"path": "/api/cluster/nodes", "access": "readonly"},
+      {"path": "/api/snapmirror/relationships", "access": "readonly"},
+      {"path": "/api/svm/svms", "access": "readonly"}
+  ]
+}
+----

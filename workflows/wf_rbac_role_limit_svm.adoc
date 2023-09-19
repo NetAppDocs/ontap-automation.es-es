@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_limit_svm.html 
+keywords:  
+summary: Puede definir un rol para restringir la administración de volúmenes de almacenamiento dentro de una SVM. 
+---
+= Limite el acceso a las operaciones de volumen de SVM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede definir un rol para restringir la administración de volúmenes de almacenamiento dentro de una SVM.
+
+.Acerca de este flujo de trabajo
+Se crea en primer lugar un rol tradicional para permitir inicialmente el acceso a todas las funciones principales de administración de volúmenes, excepto la clonación. El rol se define con las siguientes características:
+
+* Es capaz de realizar todas las operaciones de volumen CRUD, incluidos Get, CREATE, Modify y DELETE
+* No se puede crear un clon de volumen
+
+
+A continuación, puede actualizar opcionalmente el rol según sea necesario. En este flujo de trabajo, se cambia el rol en el segundo paso para que el usuario pueda crear un clon de volumen.
+
+
+
+== Paso 1: Crear el rol
+
+Puede emitir una llamada API para crear el rol de RBAC.
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | Ruta 
+
+
+| PUBLICAR | /api/seguridad/roles 
+|===
+.Ejemplo de curl
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Ejemplo de entrada JSON
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+----
+
+
+== Paso 2: Actualice el rol
+
+Puede emitir una llamada API para actualizar el rol existente.
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | Ruta 
+
+
+| PUBLICAR | /api/seguridad/roles 
+|===
+.Parámetros de entrada adicionales para ejemplos de cURL
+Además de los parámetros comunes con todas las llamadas a la API REST, los siguientes parámetros también se utilizan en el ejemplo curl de este paso.
+
+[cols="25,10,10,55"]
+|===
+| Parámetro | Tipo | Obligatorio | Descripción 
+
+
+| $SVM_ID | Ruta | Sí | Este es el UUID de la SVM que contiene la definición de rol. 
+
+
+| $ROLE_NAME | Ruta | Sí | Es el nombre del rol dentro de la SVM que se va a actualizar. 
+|===
+.Ejemplo de curl
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Ejemplo de entrada JSON
+[source, curl]
+----
+{
+  "path": "volume clone",
+  "access": "all"
+}
+----
