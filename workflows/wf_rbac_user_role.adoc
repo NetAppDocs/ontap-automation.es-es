@@ -40,7 +40,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 ----
 curl --request GET \
 --location "https://$FQDN_IP/api/svm/svms?order_by=name" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -68,7 +68,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 ----
 curl --request GET \
 --location "https://$FQDN_IP/api/security/accounts?owner.name=dmp" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -96,7 +96,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 ----
 curl --request GET \
 --location "https://$FQDN_IP/api/security/roles?owner.name=dmp" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -125,7 +125,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -180,8 +180,8 @@ Además de los parámetros comunes con todas las llamadas a la API REST, los sig
 [source, curl]
 ----
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
--- include \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -204,7 +204,7 @@ De manera opcional, vuelva a ejecutar el paso 3 para mostrar el nuevo rol. Tambi
 Realice la siguiente llamada a la API DE REST para crear una cuenta de usuario. El rol *dprole1* creado arriba está asociado con el nuevo usuario.
 
 
-TIP: Puede incluir el usuario sin un rol. En este caso, deberá modificar el usuario para asignar un rol.
+TIP: Es posible crear el usuario sin un rol. En este caso, se asigna al usuario un rol predeterminado (ya sea `admin` o. `vsadmin`) En función de si el usuario está definido con el ámbito del clúster o de SVM. Tendrás que modificar el usuario para asignar un rol diferente.
 
 .Método HTTP y punto final
 Esta llamada a la API de REST utiliza el siguiente método y extremo.
@@ -221,7 +221,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/accounts" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput

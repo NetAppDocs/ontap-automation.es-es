@@ -17,6 +17,9 @@ summary: Debe estar familiarizado con la estructura y el formato de los flujos d
 Debe estar familiarizado con la estructura y el formato de los flujos de trabajo antes de utilizarlos con una implementación de ONTAP en directo.
 
 
+TIP: Debe asegurarse de que la versión de ONTAP sea compatible con todas las llamadas API de los flujos de trabajo que planea utilizar. Consulte link:../reference/api_reference.html["Referencia de API"] si quiere más información.
+
+
 
 == Introducción
 

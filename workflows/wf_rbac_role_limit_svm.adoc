@@ -46,7 +46,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -100,7 +100,7 @@ Además de los parámetros comunes con todas las llamadas a la API REST, los sig
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
