@@ -1711,11 +1711,11 @@
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">Permitir la generación de informes de ONTAP</block>
   <block id="0819bf309b404c2690cae22900701126" category="admonition">Es posible crear el usuario sin un rol. En este caso, se asigna al usuario un rol predeterminado (ya sea<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> o.<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>) En función de si el usuario está definido con el ámbito del clúster o de SVM. Tendrás que modificar el usuario para asignar un rol diferente.</block>
   <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">Es posible enumerar los certificados instalados en el clúster de ONTAP. Puede hacer esto para ver si hay un certificado en particular disponible o para obtener el ID de un certificado específico para poder recuperar el certificado completo.</block>
-  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">Enumere los certificados</block>
   <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">Es posible enumerar los certificados instalados en el clúster de ONTAP. Puede hacer esto para ver si hay un certificado en particular disponible o para obtener el ID de un certificado específico.</block>
   <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/api/seguridad/certificados</block>
   <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">Ejemplo de curl: Devuelve tres certificados</block>
   <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">Debe asegurarse de que la versión de ONTAP sea compatible con todas las llamadas API de los flujos de trabajo que planea utilizar. Consulte <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">Certificados y claves</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">Enumerar los certificados</block>
+  <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">Enumere los certificados instalados</block>
 </blocks>
