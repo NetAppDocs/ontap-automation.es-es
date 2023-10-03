@@ -26,6 +26,16 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 
 | OBTENGA | /api/seguridad/certificados 
 |===
+.Parámetros de entrada adicionales para ejemplos de cURL
+Además de los parámetros comunes con todas las llamadas a la API REST, los siguientes parámetros también se utilizan en el ejemplo curl de este paso.
+
+[cols="25,10,10,55"]
+|===
+| Parámetro | Tipo | Obligatorio | Descripción 
+
+
+| max_records | Consulta | No | Especifique el Núm. De registros que desea devolver. 
+|===
 .Ejemplo de curl: Devuelve tres certificados
 [source, curl]
 ----
