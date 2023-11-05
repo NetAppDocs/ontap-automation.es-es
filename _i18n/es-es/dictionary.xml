@@ -1115,13 +1115,10 @@
   <block id="649819179ab6bae8f5294207b4462523" category="section-title">Página de documentación en línea sobre la API de ONTAP</block>
   <block id="424fc80aa929edad9729b9b006049584" category="paragraph">La página de documentación en línea de la API de ONTAP proporciona un punto de acceso cuando se utiliza un explorador web. Además de proporcionar una forma de ejecutar directamente llamadas API individuales, la página incluye una descripción detallada de la API, incluidos los parámetros de entrada y otras opciones para cada llamada. Las llamadas API se organizan en categorías funcionales. Consulte <block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">El formato de la URL que se usa para acceder a la página de documentación de la versión más reciente de la API es:</block>
-  <block id="5577746582bcb9358092e3471e9dbcbb" category="paragraph"><block ref="64baf5b68009adfd742e090cc99cca9d" prefix="" category="inline-code"></block></block>
   <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">Herramientas y software personalizados</block>
   <block id="6e70b7cc1cd3e6a65b37dbcdde8ecd4a" category="paragraph">Puede acceder a la API de ONTAP utilizando cualquiera de los diferentes lenguajes y herramientas de programación. Entre las opciones más populares se incluyen Python, Java, Curl y PowerShell. Programa, script o herramienta que usa la API actúa como cliente DE servicios web REST. El uso de un lenguaje de programación permite comprender mejor la API y ofrece la oportunidad de automatizar la administración de ONTAP.</block>
   <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">El formato de la URL básica que se usa para acceder directamente a la versión más reciente de la API es:</block>
-  <block id="eb58b311b3cd61c57c1148d0c5ba0129" category="paragraph"><block ref="44358b16e5bf8ae53005ffa8233bc55a" prefix="" category="inline-code"></block></block>
   <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">Para acceder a una versión específica de la API en la que se admiten varias versiones, el formato de la URL es:</block>
-  <block id="8b27cc8fdbb4b1dea164580b7fa49b37" category="paragraph"><block ref="b1a74a394cef9d41c5a45a7ba9074068" prefix="" category="inline-code"></block></block>
   <block id="fc004b0a2e525fdc279e93342807a662" category="summary">Puede controlar cómo se procesa una llamada API mediante parámetros y variables definidas en la solicitud HTTP.</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">Métodos HTTP</block>
   <block id="1ca197be3e0d7fcd720e84d7a6a700e2" category="paragraph">En la siguiente tabla, se muestran los métodos HTTP compatibles con la API DE REST de ONTAP.</block>
@@ -1729,4 +1726,7 @@
   <block id="f6c0383d899dc40b8c8d016d4b5f85de" category="section-title">Paso 2: Confirme que se ha instalado el certificado</block>
   <block id="5b3cfccbac20b0363f1d4e2d4431ab0e" category="paragraph">Realice el flujo de trabajo <block ref="cf365ce6cd35c6dbd8b87fe3303f2226" category="inline-link-macro-rx"></block> y confirme que el certificado está disponible.</block>
   <block id="1346018f60bf3711f3e704204dc2db96" category="sidebar">Instalar el certificado</block>
+  <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
+  <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
+  <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
 </blocks>
