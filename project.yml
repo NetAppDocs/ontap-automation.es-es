@@ -11,7 +11,8 @@ sidebar:
   entries:
   - title: Documentos de automatización de ONTAP
     url: "/index.html"
-  - section: rn
+  - title: Novedades
+    url: "/whats_new.html"
   - section: get-started
   - section: rest
   - section: workflows
