@@ -46,6 +46,9 @@ Este conjunto de llamadas API le permite utilizar el almacén de claves de Azure
 .Certificados
 Las llamadas API se pueden usar para instalar, mostrar y eliminar certificados que usa ONTAP. Este tipo de recurso se introdujo con ONTAP 9.7.
 
+.Cisco Duo
+Duo proporciona autenticación de dos factores para inicios de sesión SSH. Puede configurar Duo para que funcione a nivel de clúster de ONTAP o SVM. Este tipo de recurso se introdujo con ONTAP 9,14.
+
 .Seguridad del clúster
 Puede recuperar detalles de la seguridad para todo el clúster y actualizar ciertos parámetros. Este tipo de recurso se introdujo con ONTAP 9.7 y se actualizó con ONTAP 9.8.
 
@@ -71,7 +74,7 @@ Estos extremos permiten recuperar y actualizar las configuraciones de los gestor
 Un gestor de claves permite a los módulos cliente de ONTAP almacenar claves de forma segura. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó para ONTAP 9.7. Se realizó otra actualización con ONTAP 9.12 para admitir claves de autenticación. Con ONTAP 9,13 se añadió una funcionalidad de restauración.
 
 .Almacenes de claves
-Un almacén de claves describe el tipo de un administrador de claves. Este tipo de recurso es nuevo en ONTAP 9.10.
+Un almacén de claves describe el tipo de un administrador de claves. Este tipo de recurso es nuevo en ONTAP 9,10. Con ONTAP 9,14 se agregaron puntos finales adicionales que admitieron un control mejorado.
 
 .Autenticación LDAP
 Estas llamadas API se utilizan para recuperar y gestionar la configuración del servidor LDAP de clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -91,6 +94,9 @@ Al ofrecer la opción de que varios administradores aprueben el acceso, se mejor
 
 .Autenticación NIS
 Estos ajustes se utilizan para recuperar y gestionar la configuración del servidor NIS de clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.OAuth 2,0
+La autorización abierta (OAuth 2,0) es un marco basado en tokens que se puede utilizar para restringir el acceso a sus recursos de almacenamiento de ONTAP. Puede usarlo con clientes que acceden a ONTAP a través de la API DE REST. La configuración se puede realizar con cualquiera de las interfaces administrativas de ONTAP, incluida la API de REST. Este tipo de recurso se introdujo con ONTAP 9,14.
 
 .Autenticación de contraseña
 Esto incluye la llamada API utilizada para cambiar la contraseña de una cuenta de usuario. Este tipo de recurso se introdujo con ONTAP 9.6.

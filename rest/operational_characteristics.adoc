@@ -80,20 +80,23 @@ NOTE: La `return_timeout` El parámetro de consulta está disponible con llamada
 
 La seguridad proporcionada con la API DE REST se basa principalmente en las funciones de seguridad existentes disponibles con ONTAP. La API utiliza la siguiente seguridad:
 
-* Seguridad de la capa de transporte
+Seguridad de la capa de transporte:: Todo el tráfico enviado a través de la red entre el cliente y el LIF de ONTAP se cifra normalmente con TLS, según los ajustes de configuración de ONTAP.
+Autentificación de clientes:: Las mismas opciones de autenticación disponibles con ONTAP System Manager y el SDK de gestión de red también se pueden usar con la API de REST de ONTAP.
+Autenticación HTTP:: En un nivel HTTP, por ejemplo, cuando se accede a la API de REST DE ONTAP directamente, hay dos opciones de autenticación como se describe a continuación. En cada caso, debe crear un encabezado de autorización HTTP e incluirlo con cada solicitud.
 +
-Por lo general, todo el tráfico enviado por la red entre el LIF de ONTAP y el cliente se cifra con TLS, según las opciones de configuración de ONTAP.
+--
+[cols="25,75"]
+|===
+| Opción | Descripción 
 
-* Autentificación de clientes
-+
-Las mismas opciones de autenticación disponibles con ONTAP System Manager y el SDK de gestión de red también se pueden usar con la API de REST de ONTAP.
 
-* Autenticación HTTP
-+
-En un nivel HTTP, se utiliza la autenticación básica para las transacciones de API. A cada solicitud se agrega un encabezado HTTP con el nombre de usuario y la contraseña en una cadena base64.
+| Autenticación básica HTTP | El nombre de usuario y la contraseña de ONTAP se concatenan con dos puntos. La cadena se convierte a base64 y se incluye en la cabecera de solicitud. 
 
-* Autorización de ONTAP
-+
-ONTAP implementa un modelo de autorización basado en roles. La cuenta que utilice al acceder a la API DE REST de ONTAP o a la página de documentación de API deben tener la autoridad adecuada.
 
+| OAuth 2,0 | A partir de ONTAP 9,14, puede solicitar un token de acceso desde un servidor de autorización externo e incluirlo como un token portador en el encabezado de la solicitud. 
+|===
+Para obtener más detalles sobre OAuth 2,0 y cómo se implementa en ONTAP, consulte https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["Descripción general de la implementación de ONTAP OAuth 2,0"^]. Consulte también link:../workflows/prepare_workflows.html["Prepárese para usar los flujos de trabajo"] abajo en este sitio.
+
+--
+Autorización de ONTAP:: ONTAP implementa un modelo de autorización basado en roles. La cuenta que utilice al acceder a la API DE REST de ONTAP o a la página de documentación de API deben tener la autoridad adecuada.
 

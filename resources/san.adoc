@@ -20,7 +20,7 @@ Puede usar estas llamadas API para gestionar recursos de red de área de almacen
 Los inicios de sesión de Fibre Channel representan conexiones formadas por iniciadores de Fibre Channel que han iniciado sesión en ONTAP. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Servicios de protocolo Fibre Channel
-Un servicio de protocolo Fibre Channel (FCP) define las propiedades de un destino Fibre Channel para una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
+Un servicio de protocolo Fibre Channel (FCP) define las propiedades de un destino Fibre Channel para una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Alias de WWPN de Fibre Channel
 Un nombre de puerto WWPN es un valor de 64 bits que identifica de forma única un puerto Fibre Channel. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -30,11 +30,14 @@ Un iGroup es una colección de WWPN de Fibre Channel (nombres de puerto WWPN par
 
 Los iGroups anidados es una nueva función con ONTAP 9.9 y también se ha añadido compatibilidad a la API DE REST. Este tipo de recurso REST se introdujo con ONTAP 9.9.
 
+.Iniciadores
+Un iniciador es un nombre de puerto a nivel mundial (WWPN) de Fibre Channel (FC), un nombre completo de iSCSI (IQN) o un EUI (identificador único extendido) de iSCSI que identifica un extremo de host. Puede recuperar los iniciadores del clúster o de una SVM específica. Este tipo de recurso se introdujo con ONTAP 9,14.
+
 .Credenciales de iSCSI
 El objeto de credenciales de iSCSI contiene credenciales de autenticación que usan un iniciador y ONTAP. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Servicios iSCSI
-Un servicio iSCSI define las propiedades del destino iSCSI para una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
+Un servicio iSCSI define las propiedades del destino iSCSI para una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Sesiones iSCSI
 Una sesión iSCSI es una o varias conexiones TCP que vinculan un iniciador iSCSI con un destino iSCSI. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -49,7 +52,7 @@ Una asignación de LUN es una asociación entre una LUN y un iGroup. Este tipo d
 Los nodos de generación de informes son los nodos de clúster desde los que se anuncian las rutas de red a un LUN asignado mediante los protocolos SAN como parte de la función de asignación selectiva de LUN (SLM) de ONTAP. Los nuevos extremos permiten añadir, quitar y detectar los nodos de informes de un mapa de LUN. Este tipo de recurso se introdujo con ONTAP 9.10.
 
 .LUN
-Una LUN es la representación lógica del almacenamiento en una red de área de almacenamiento (SAN). Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
+Una LUN es la representación lógica del almacenamiento en una red de área de almacenamiento (SAN). Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Conjuntos de puertos
 Un conjunto de puertos es una recogida de interfaces de red Fibre Channel o iSCSI asociadas con la máquina virtual _portset_ Storage. Aunque esta función ya existía con las versiones anteriores de ONTAP, ahora se había añadido soporte a la API DE REST. Este tipo de recurso REST se introdujo con ONTAP 9.9.

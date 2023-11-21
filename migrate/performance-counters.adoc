@@ -100,6 +100,7 @@ NetApp proporciona un amplio soporte para migrar el código de automatización d
 
 Consulte la documentación de asignación adecuada en función de la versión de ONTAP que utilice:
 
+* https://docs.netapp.com/us-en/ontap-pcmap-9141/["Asignación de contador de rendimiento de ONTAP 9.14.1"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9131/["Asignación de contador de rendimiento de ONTAP 9.13.1"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9121/["Asignación de contadores de rendimiento de ONTAP 9.12.1"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9111/["Asignación de contadores de rendimiento de ONTAP 9.11.1"^]

@@ -109,13 +109,13 @@ Primero debe copiar y pegar el ejemplo de cURL en un shell de terminal. A contin
 
 == Opciones de autenticación
 
-El método de autenticación primario disponible para la API de REST mediante ONTAP 9.13.1 es la autenticación básica.
+La técnica de autenticación principal disponible para la API de REST es la autenticación básica HTTP. A partir de ONTAP 9,14, también tiene la opción de usar el marco de autorización abierta (OAuth 2,0) con autenticación y autorización basadas en tokens.
 
 
 
 === Autenticación básica HTTP
 
-Cuando se utiliza la autenticación básica, las credenciales de usuario deben incluirse con cada solicitud HTTP. Hay dos opciones para enviar las credenciales.
+Cuando se utiliza la autenticación básica, las credenciales de usuario se deben incluir con cada solicitud HTTP. Hay dos opciones para enviar las credenciales.
 
 .Cree la cabecera de solicitud HTTP
 Puede crear manualmente la cabecera Autorización e incluirla con las solicitudes HTTP. Esto se puede hacer cuando se utiliza un comando curl en la CLI o un lenguaje de programación con su código de automatización. Los pasos de alto nivel incluyen:
@@ -142,6 +142,30 @@ Otra opción cuando se usa curl es quitar el encabezado de Autorización y usar 
 `--user username:password`
 
 Debe sustituir las credenciales adecuadas para su entorno. Las credenciales no están codificadas en base64. Al ejecutar el comando curl con este parámetro, la cadena se codifica y se genera la cabecera de autorización.
+
+
+
+=== OAuth 2,0
+
+Al utilizar OAuth 2,0, es necesario solicitar un token de acceso desde un servidor de autorización externo e incluirlo con cada solicitud HTTP. Los pasos básicos de alto nivel se describen a continuación. Consulte también https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["Descripción general de la implementación de ONTAP OAuth 2,0"^] Para obtener más detalles sobre OAuth 2,0 y cómo usarlo con ONTAP.
+
+.Preparar el entorno ONTAP
+Antes de usar la API de REST para acceder a ONTAP, debe preparar y configurar el entorno de ONTAP. En un nivel alto, los pasos incluyen:
+
+* Identificar los clientes y los recursos protegidos por ONTAP
+* Revise las definiciones de usuario y el rol REST DE ONTAP existentes
+* Instale y configure el servidor de autorización
+* Diseñar y configurar las definiciones de autorización del cliente
+* Configure ONTAP y habilite OAuth 2,0
+
+
+.Solicitar un token de acceso
+Con ONTAP y el servidor de autorización definido y activo, puede realizar una llamada a la API REST mediante un token OAuth 2,0. El primer paso es solicitar un token de acceso desde el servidor de autorización. Esto se realiza fuera de ONTAP usando una de las diversas técnicas diferentes basadas en el servidor. ONTAP no emite tokens de acceso ni realiza redirecciones.
+
+.Cree la cabecera de solicitud HTTP
+Después de obtener un token de acceso, puede crear una cabecera de autorización e incluirla con las solicitudes HTTP. Independientemente de si usa curl o un lenguaje de programación para acceder a la API REST, debe incluir el encabezado con cada solicitud del cliente. Puede construir la cabecera de la siguiente manera:
+
+`Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSld ...`
 
 
 

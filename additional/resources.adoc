@@ -50,7 +50,7 @@ Proporciona las llamadas principales ONTAPI y una asignación a las llamadas equ
 +
 El paquete de la biblioteca de clientes Python de NetApp en PyPI.
 
-* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["Documentación PCL de NetApp para 9.13.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["Documentación PCL de NetApp para 9.14.1"^]
 +
 Documentación de la Biblioteca del cliente de Python de NetApp.
 

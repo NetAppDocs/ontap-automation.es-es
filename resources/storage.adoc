@@ -55,6 +55,9 @@ Puertos de almacenamiento del clúster. Este tipo de recurso se introdujo con ON
 .Políticas de CALIDAD de servicio
 Configuración de políticas de calidad de servicio. Este tipo de recurso se introdujo con ONTAP 9.6.
 
+.Opciones de CALIDAD DE servicio
+Se han introducido extremos para permitirle recuperar y establecer opciones de QOS para el clúster. Por ejemplo, puede reservar un porcentaje de los recursos de procesamiento del sistema disponibles para las tareas en segundo plano. Este tipo de recurso se introdujo con ONTAP 9,14.
+
 .Cargas de trabajo de CALIDAD de servicio
 Una carga de trabajo DE CALIDAD de SERVICIO representa un objeto de almacenamiento cuyo seguimiento se realiza mediante LA CALIDAD de SERVICIO. Puede recuperar los flujos de trabajo de CALIDAD de SERVICIO. Este tipo de recurso se introdujo con ONTAP 9.10.
 

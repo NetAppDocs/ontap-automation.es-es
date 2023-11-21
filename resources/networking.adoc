@@ -35,10 +35,10 @@ Es posible recuperar o modificar la configuración de los switches Ethernet util
 Puede usar los extremos de la API DE REST de estructura Fibre Channel (FC) para recuperar información acerca de la red de FC. Esto incluye las conexiones entre el clúster ONTAP y la estructura FC, los switches que conforman la estructura y las zonas de la zona activa de las zonas. Este tipo de recurso se introdujo con ONTAP 9.11.
 
 .Interfaces Fibre Channel
-Una interfaz de Fibre Channel es un extremo lógico asociado a una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
+Una interfaz de Fibre Channel es un extremo lógico asociado a una SVM. Este tipo de recurso se introdujo con ONTAP 9,6 y se actualizó con ONTAP 9,8. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Puertos Fibre Channel
-Un puerto Fibre Channel es un adaptador físico de un nodo ONTAP que se usa para conectarse a la red Fibre Channel. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
+Un puerto Fibre Channel es un adaptador físico de un nodo ONTAP que se usa para conectarse a la red Fibre Channel. Este tipo de recurso se introdujo con ONTAP 9,6 y se actualizó con ONTAP 9,8. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Proxy HTTP
 Puede configurar un proxy HTTP para una SVM o el espacio IP de un clúster. Este tipo de recurso se introdujo con ONTAP 9.7.

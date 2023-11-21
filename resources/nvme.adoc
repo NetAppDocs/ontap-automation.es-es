@@ -20,13 +20,13 @@ Es posible usar estas llamadas API para gestionar recursos que admiten memoria n
 Los inicios de sesión de Fibre Channel representan conexiones formadas por iniciadores de Fibre Channel que han iniciado sesión en ONTAP. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Espacios de nombres
-Un espacio de nombres NVMe es una colección de bloques lógicos direccionables presentados a los hosts conectados a la SVM mediante el protocolo NVMe over Fabrics. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
+Un espacio de nombres NVMe es una colección de bloques lógicos direccionables presentados a los hosts conectados a la SVM mediante el protocolo NVMe over Fabrics. Este tipo de recurso se introdujo con ONTAP 9,6 y se actualizó con ONTAP 9,8. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Interfaces NVMe
 Las interfaces NVMe son las interfaces de red configuradas para admitir el protocolo NVMe over Fabrics (NVMe-of). Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Servicios NVMe
-Un servicio NVMe define las propiedades del destino de la controladora NVMe para una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
+Un servicio NVMe define las propiedades del destino de la controladora NVMe para una SVM. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7. Con ONTAP 9,14 se ha añadido soporte para la recuperación de datos de métricas de rendimiento.
 
 .Controladoras del subsistema NVMe
 Las controladoras del subsistema NVMe representan conexiones dinámicas entre hosts y una solución de almacenamiento. Este tipo de recurso se introdujo con ONTAP 9.6.
