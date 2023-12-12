@@ -78,5 +78,6 @@ Puede utilizar el siguiente procedimiento de alto nivel para completar una llama
 
 
 .Información relacionada
-* link:../workflows/wf_cls_update_contact.html["Actualice el contacto del clúster y confirme el estado del trabajo"]
+* link:../workflows/wf_cls_update_contact.html["Actualice el contacto del clúster"]
+* link:../workflows/wf_jobs_get_job.html["Obtener instancia de trabajo"]
 

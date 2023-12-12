@@ -69,7 +69,7 @@ Procesamiento asíncrono:: Si una solicitud asíncrona es válida, ONTAP crea un
 Las solicitudes que utilizan los métodos POST, PATCH y DELETE están diseñadas para ejecutarse de manera asincrónica si se espera que tardan más de dos segundos en completarse.
 
 
-NOTE: La `return_timeout` El parámetro de consulta está disponible con llamadas API asíncronas y puede convertir una llamada asíncrona a completado de forma síncrona. Consulte `How asynchronous processing works using the Job object` si quiere más información.
+NOTE: La `return_timeout` El parámetro de consulta está disponible con llamadas API asíncronas y puede convertir una llamada asíncrona a completado de forma síncrona. Consulte link:../rest/asynchronous_processing.html["Procesamiento asíncrono mediante el objeto Job"] si quiere más información.
 
 --
 
