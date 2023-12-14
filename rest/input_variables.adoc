@@ -108,9 +108,6 @@ Además de una coincidencia exacta, hay otros operadores disponibles para devolv
 | >= | Mayor o igual que 
 
 
-| ACTUALIZAR | O. 
-
-
 | ! | No es igual a. 
 
 
