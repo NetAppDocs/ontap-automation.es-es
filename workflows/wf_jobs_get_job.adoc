@@ -32,6 +32,16 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 .Tipo de procesamiento
 Síncrona
 
+.Parámetros de entrada adicionales para los ejemplos de Curl
+Además de los parámetros comunes con todas las llamadas API DE REST, en los ejemplos curl de este paso se incluyen los siguientes parámetros.
+
+[cols="25,10,10,55"]
+|===
+| Parámetro | Tipo | Obligatorio | Descripción 
+
+
+| $JOB_ID | Ruta | Sí | Necesario para identificar el trabajo que se solicita. 
+|===
 .Ejemplo de curl
 [source, curl]
 ----

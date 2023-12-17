@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_aggrs.html 
+keywords: workflow, storage, aggregates, list aggregates 
+summary:  
+---
+= Enumere los agregados
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede recuperar una lista de agregados en el clúster. Puede hacerlo para evaluar la utilización y el rendimiento.
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | Ruta 
+
+
+| OBTENGA | /api/storage/disks 
+|===
+.Tipo de procesamiento
+Síncrona
+
+.Parámetros de entrada adicionales para los ejemplos de Curl
+Además de los parámetros comunes con todas las llamadas API DE REST, en los ejemplos curl de este paso se incluyen los siguientes parámetros.
+
+[cols="25,10,10,55"]
+|===
+| Parámetro | Tipo | Obligatorio | Descripción 
+
+
+| node.name | Consulta | No | Se puede utilizar para identificar el nodo al que está conectado cada agregado. 
+|===
+.Ejemplo de curl: Devuelve todos los agregados con los valores de configuración predeterminados
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Ejemplo de curl: Devuelve todos los agregados con un valor de configuración específico
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Ejemplo de resultado JSON
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/storage/aggregates?fields=node.name"
+    }
+  }
+}
+----
+====

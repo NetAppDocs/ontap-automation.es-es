@@ -83,13 +83,28 @@ El contenido del cuerpo de la solicitud varía en función de la llamada especí
 
 == Filtrando objetos
 
-Al emitir una llamada API que utilice GET, puede limitar o filtrar los objetos devueltos en función de cualquier atributo. Por ejemplo, puede especificar un valor exacto para que coincida:
+Al emitir una llamada a la API con el método GET, puede limitar o filtrar los objetos devueltos en función de cualquier atributo mediante un parámetro de consulta.
 
-`<field>=<query value>`
+.Análisis e interpretación de parámetros de consulta
+Se puede agregar un conjunto de uno o más parámetros a la cadena de URL a partir del `?` carácter. Si se proporciona más de un parámetro, los parámetros de consulta se dividen en función del `&` carácter. Cada clave y valor del parámetro se dividen en el `=` carácter.
 
-Además de una coincidencia exacta, hay otros operadores disponibles para devolver un conjunto de objetos sobre un rango de valores. La API REST de ONTAP es compatible con los operadores de filtrado que se muestran en la tabla siguiente.
+Por ejemplo, puede especificar un valor exacto para que coincida utilizando el signo igual:
+
+`<field>=<value>`
+
+Para una consulta más compleja, el operador adicional se coloca después del signo igual. Por ejemplo, para seleccionar el juego de objetos basado en un campo específico que sea mayor o igual que algún valor, la consulta sería:
+
+`<field>\=>=<value>`
+
+.Operadores de filtrado
+Además de los ejemplos proporcionados anteriormente, hay operadores adicionales disponibles para devolver objetos en un rango de valores. En la siguiente tabla se muestra un resumen de los operadores de filtrado compatibles con la API de REST DE ONTAP.
+
+
+NOTE: Los campos que no están configurados generalmente se excluyen de consultas coincidentes.
 
 |===
+
+
 | Operador | Descripción 
 
 
@@ -115,8 +130,14 @@ Además de una coincidencia exacta, hay otros operadores disponibles para devolv
 |===
 También puede devolver un conjunto de objetos basándose en si se ha establecido o no un campo específico mediante el `null` palabra clave o su negación `!null` como parte de la consulta.
 
+.Ejemplos de flujos de trabajo
+A continuación se incluyen algunos ejemplos desde los flujos de trabajo de la API de REST en este sitio.
 
-NOTE: Los campos que no están configurados generalmente se excluyen de consultas coincidentes.
+* link:../workflows/wf_stor_list_disks.html["Enumere los discos"]
++
+Filtrar según el `state` variable para seleccionar los discos de repuesto.
+
+
 
 
 

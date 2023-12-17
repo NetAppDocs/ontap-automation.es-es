@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: workflows/wf_stor_list_disks.html 
 keywords: workflow, storage, disks, list disks 
-summary:  
+summary: Puede recuperar una lista de discos en el clúster. Puede hacerlo para localizar uno o varios repuestos para usar como parte de la creación de un agregado. 
 ---
 = Enumere los discos
 :hardbreaks:

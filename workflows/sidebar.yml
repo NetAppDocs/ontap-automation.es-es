@@ -18,6 +18,10 @@ entries:
     url: "/workflows/wf_net_list_ip_lifs.html"
 - title: Seguridad
   entries:
+  - title: Cuentas
+    entries:
+    - title: Enumerar las cuentas
+      url: "/workflows/wf_sec_list_accounts.html"
   - title: Certificados y claves
     entries:
     - title: Enumerar los certificados
@@ -40,6 +44,8 @@ entries:
       url: "/workflows/wf_rbac_user_role.html"
 - title: Reducida
   entries:
+  - title: Enumere los agregados
+    url: "/workflows/wf_stor_list_aggrs.html"
   - title: Enumere los discos
     url: "/workflows/wf_stor_list_disks.html"
 - title: SVM
