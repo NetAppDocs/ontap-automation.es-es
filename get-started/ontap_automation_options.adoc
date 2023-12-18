@@ -29,7 +29,7 @@ Puede acceder a la API DE REST de ONTAP directamente desde cualquier lenguaje de
 
 == Adapte el código ONTAAPI heredado para utilizar EL RESTO
 
-Si tiene código existente a través de la API ONTAPI, NetApp le ofrece soporte para convertir su código para utilizar la más reciente API DE REST de ONTAP. Consulte https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["Información de asignación de la API DE REST de ONAPI"^] Para obtener información acerca de cómo asignar las llamadas de ONTAPI a las llamadas de la API DE REST equivalentes.
+Si tiene código existente a través de la API ONTAPI, NetApp le ofrece soporte para convertir su código para utilizar la más reciente API DE REST de ONTAP. Consulte link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"] Para obtener información acerca de cómo asignar las llamadas de ONTAPI a las llamadas de la API DE REST equivalentes.
 
 
 
