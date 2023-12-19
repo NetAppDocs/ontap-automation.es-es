@@ -14,27 +14,27 @@ summary: Existen varios recursos adicionales a los que puede acceder para obtene
 
 
 [role="lead"]
-Existen varios recursos adicionales a los que puede acceder para obtener ayuda y encontrar más información sobre cómo automatizar la implementación y la administración de sus sistemas de almacenamiento de ONTAP.
+Existen varios recursos adicionales disponibles para ayudarle a automatizar la implementación y la administración de sus sistemas de almacenamiento de ONTAP.
 
 
 
 == Recursos de ONTAP 9
 
-* https://docs.netapp.com/us-en/ontap-family/["Documentación de producto de ONTAP 9"^]
+* Proporciona documentación para la familia de productos ONTAP 9.
 +
-Proporciona documentación para la familia de productos ONTAP 9.
+https://docs.netapp.com/us-en/ontap-family/["Documentación de producto de ONTAP 9"^]
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^]
+* Notas de la versión de ONTAP 9 con información sobre la versión actual.
 +
-Notas de la versión de ONTAP 9 con información sobre la versión actual.
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^]
 
-* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["Recursos de ONTAP y System Manager de ONTAP"^]
+* Incluye documentación y otros enlaces útiles que necesita para planificar, administrar y prestar soporte a ONTAP 9.
 +
-Incluye documentación y otros enlaces útiles que necesita para planificar, administrar y prestar soporte a ONTAP 9.
+https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["Recursos de ONTAP y System Manager de ONTAP"^]
 
-* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["Biblioteca de productos de ONTAP 9"^]
+* Acceda a las notas de la versión y a otra documentación de las versiones anteriores de ONTAP.
 +
-Acceda a las notas de la versión y a otra documentación de las versiones anteriores de ONTAP.
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["Biblioteca de productos de ONTAP 9"^]
 
 
 
@@ -42,21 +42,39 @@ Acceda a las notas de la versión y a otra documentación de las versiones anter
 
 == Recursos para desarrolladores de ONTAP 9
 
-* link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"]
+* Ayuda a empezar a usar Ansible en un entorno de DevOps.
 +
-Proporciona las llamadas principales ONTAPI y una asignación a las llamadas equivalentes de la API DE REST. Seleccione la versión de ONTAP que corresponda.
+https://www.netapp.com/devops-solutions/ansible/["Soluciones de DevOps de Ansible de NetApp"^]
 
-* https://pypi.org/project/netapp-ontap["PyPI: ONTAP de NetApp"^]
+* Proporciona las llamadas principales ONTAPI y una asignación a las llamadas equivalentes de la API DE REST. Seleccione la versión de ONTAP que corresponda.
 +
-El paquete de la biblioteca de clientes Python de NetApp en PyPI.
+link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"]
 
-* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["Documentación PCL de NetApp para 9.14.1"^]
+* El paquete de la biblioteca de clientes Python de NetApp en PyPI.
 +
-Documentación de la Biblioteca del cliente de Python de NetApp.
+https://pypi.org/project/netapp-ontap["PyPI: ONTAP de NetApp"^]
 
-* https://devnet.netapp.com/restapi.php["Red de desarrolladores de NetApp: API RESTful de ONTAP"^]
+* Documentación de la Biblioteca del cliente de Python de NetApp.
 +
-Proporciona los recursos y la documentación necesarios para usar la API DE REST de ONTAP, incluida la biblioteca de clientes Python del ONTAP.
+https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["Documentación PCL de NetApp para 9.14.1"^]
+
+* Proporciona los recursos y la documentación necesarios para usar la API de REST DE ONTAP.
++
+https://devnet.netapp.com/restapi.php["Red de desarrolladores de NetApp: API RESTful de ONTAP"^]
+
+
+
+
+
+== Artículos de blog
+
+* La conmutación desde la CLI proporciona una técnica para ejecutar comandos de la CLI de ONTAP mediante la API DE REST.
++
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api["Utilizando el traspaso de interfaz de línea de comandos privada con la API REST de ONTAP"^]
+
+* Si es nuevo en usar Ansible para la automatización de ONTAP, este es un buen lugar desde el que empezar.
++
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["Introducción a NetApp y Ansible: Instale Ansible"^]
 
 
 
@@ -64,26 +82,32 @@ Proporciona los recursos y la documentación necesarios para usar la API DE REST
 
 == Vídeos
 
-* https://www.youtube.com/watch?v=Wws3SB5d9Ss["Introducción a la biblioteca de clientes ONTAP Python de NetApp"^]
+* Una buena introducción a la biblioteca cliente de NetApp Python y cómo comenzar a escribir código usando la biblioteca.
 +
-Buena introducción a la biblioteca del cliente Python de NetApp y a cómo empezar a escribir código con la biblioteca.
+https://www.youtube.com/watch?v=Wws3SB5d9Ss["Introducción a la biblioteca de clientes ONTAP Python de NetApp"^]
 
+* Este vídeo también está disponible a través de NetApp TV en link:https://tv.netapp.com/detail/video/6217195551001["Módulos certificados de Ansible"^].
++
+video::L5DZBV_Sg9E[youtube,width=848,height=480]
+* Echa un vistazo a los módulos certificados de Ansible.
++
+video::ZlmQ5IuVZD8[youtube,width=848,height=480]
 
 
 
 
 == Recursos de NetApp
 
-* https://mysupport.netapp.com/["Soporte de NetApp"^]
+* Acceda a herramientas de solución de problemas, documentación y asistencia de soporte técnico.
 +
-Acceda a herramientas de solución de problemas, documentación y asistencia de soporte técnico.
+https://mysupport.netapp.com/["Soporte de NetApp"^]
 
-* https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^]
+* Requisitos de acceso e información de compatibilidad relacionados con ONTAP 9 y la API DE REST de ONTAP.
 +
-Requisitos de acceso e información de compatibilidad relacionados con ONTAP 9 y la API DE REST de ONTAP.
+https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^]
 
-* http://www.netapp.com/us/library/index.aspx["Biblioteca de informes técnicos y whitepapers de NetApp"^]
+* Acceda a informes técnicos, whitepapers y otros documentos.
 +
-Acceda a informes técnicos, whitepapers y otros documentos.
+http://www.netapp.com/us/library/index.aspx["Biblioteca de informes técnicos y whitepapers de NetApp"^]
 
 

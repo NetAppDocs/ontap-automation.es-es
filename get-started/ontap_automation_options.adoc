@@ -41,7 +41,7 @@ La biblioteca de clientes Python es un paquete que puede utilizar al escribir sc
 
 == Con Ansible
 
-Asible es una herramienta de software de código abierto que permite el aprovisionamiento, la gestión de la configuración y la puesta en marcha de aplicaciones. Desde su lanzamiento y su posterior adquisición por RedHat, ha seguido creciendo en popularidad. NetApp proporciona módulos certificados con Ansible que pueden utilizar los clientes para automatizar la administración de sus sistemas de almacenamiento de ONTAP. Para empezar, debe revisar la documentación de este sitio, incluidos link:../automate/ontap_ansible.html["Automatización de ONTAP y Ansible"].
+Asible es una herramienta de software de código abierto que permite el aprovisionamiento, la gestión de la configuración y la puesta en marcha de aplicaciones. Desde su lanzamiento y su posterior adquisición por RedHat, ha seguido creciendo en popularidad. NetApp proporciona módulos certificados con Ansible que pueden utilizar los clientes para automatizar la administración de sus sistemas de almacenamiento de ONTAP. Debería empezar revisando la documentación de este sitio.
 
 
 

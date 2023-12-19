@@ -10,7 +10,7 @@ summary: 'La transferencia de estado representacional (REST) es un estilo para c
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

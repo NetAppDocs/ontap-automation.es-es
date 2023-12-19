@@ -20,7 +20,6 @@ sidebar:
   - section: python
   - section: migrate
   - section: reference
-  - section: automate
   - section: additional
   - title: Avisos legales
     url: "/legal-notices.html"
@@ -48,10 +47,6 @@ homepage:
     links:
     - title: Biblioteca de clientes de Python
       url: "/python/overview_pcl.html"
-    - title: ONTAP y Ansible
-      url: "/automate/ontap_ansible.html"
-    - title: Blogs de automatización
-      url: "/automate/blogs.html"
   - title: Migrar a la API DE REST
     links:
     - title: Inhabilitación de ONTAPI
