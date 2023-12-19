@@ -51,5 +51,5 @@ Para obtener más información, consulte https://library.netapp.com/ecm/ecm_down
 
 .Información relacionada
 * link:../rest/input_variables.html["Variables de entrada que controlan una solicitud API"]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["Información de asignación de la API DE REST de ONAPI"^]
+* link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"]
 
