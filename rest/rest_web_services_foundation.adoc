@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_web_services_foundation.html 
-keywords: REST, web services 
-summary: 'La transferencia de estado representacional (REST) es un estilo para crear aplicaciones web distribuidas. Usa protocolos y estándares convencionales para proporcionar una base flexible a la hora de administrar clústeres de ONTAP.' 
+keywords: REST, web services, transaction, API transaction, request, response 
+summary: 'La transferencia de estado representacional (REST) es un estilo para crear aplicaciones web distribuidas. Cuando se aplica al diseño de una API de servicios web, establece un conjunto de tecnologías para exponer recursos basados en servidor y administrar sus estados. Usa protocolos y estándares convencionales para proporcionar una base flexible a la hora de administrar clústeres de ONTAP.' 
 ---
 = Base de servicios web DE REST
 :hardbreaks:
@@ -52,3 +52,28 @@ El Protocolo de transferencia de hipertexto (HTTP) es el protocolo utilizado por
 == Formato JSON
 
 Aunque la información se puede estructurar y transferir entre un cliente de servicios web y un servidor de varias maneras, la opción más popular es la notación de objetos JavaScript (JSON). JSON es un estándar del sector para representar estructuras de datos simples en texto sin formato y se utiliza para transferir información de estado que describe los recursos. La API REST de ONTAP utiliza JSON para formatear los datos transportados en el cuerpo de cada solicitud y respuesta de HTTP.
+
+
+
+== Transacción de API de REST típica
+
+Cada transacción de API consta de una solicitud HTTP y la respuesta asociada. En esta ilustración, se muestra cómo recuperar la versión del software ONTAP que utiliza el clúster.
+
+image:rest_call_01.png["Ilustración de una llamada sencilla de API de REST"]
+
+.Solicitud HTTP
+La solicitud enviada desde el cliente al servidor consta de lo siguiente:
+
+* OBTENER verbo
+* La ruta URL del clúster
+* Parámetro de consulta (campos)
+* Solicitar encabezados, incluida la autorización
+
+
+.Respuesta HTTP
+La respuesta enviada desde el servidor al cliente consta de lo siguiente:
+
+* Código de estado 200
+* Encabezados de respuesta
+* Cuerpo de la respuesta que contiene la versión del software del clúster
+
