@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest rest api, python client library, ansible 
-summary: A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporciona la base para automatizar la puesta en marcha y la administración de sus sistemas de almacenamiento. Puede acceder a la API DE REST directamente o a través de la biblioteca de clientes Python de NetApp. 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog 
+summary: Existen varias opciones disponibles para automatizar la puesta en marcha y administración de sus sistemas de almacenamiento de ONTAP. 
 ---
 = Conozca las opciones de automatización de ONTAP
 :hardbreaks:
@@ -14,37 +14,37 @@ summary: A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporcion
 
 
 [role="lead"]
-A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporciona la base para automatizar la puesta en marcha y la administración de sus sistemas de almacenamiento. Puede acceder a la API DE REST directamente o a través de la biblioteca de clientes Python de NetApp. Además, NetApp admite la automatización de ONTAP mediante Ansible, así como otras abstracciones de software de alto nivel.
-
-
-NOTE: El API ONTAAPI, también conocido como EL SDK o ZAPI de capacidad de gestión de redes, es la tecnología heredada para acceder y administrar mediante programación los sistemas de almacenamiento de ONTAP. La API DE REST de ONTAP ahora es la tecnología estratégica y debe seleccionarse siempre que sea posible.
+Existen varias opciones disponibles para automatizar la puesta en marcha y administración de sus sistemas de almacenamiento de ONTAP.
 
 
 
-== Acceder a la API DE REST de ONTAP de forma nativa
+== API REST de ONTAP
 
-Puede acceder a la API DE REST de ONTAP directamente desde cualquier lenguaje de programación que admita un cliente REST. Entre las opciones de idiomas populares se incluyen Python, PowerShell y Java. Para empezar, debe revisar toda la documentación de este sitio.
+A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporciona la base para automatizar la puesta en marcha y la administración de sus sistemas de almacenamiento. Desde entonces, la API REST ha continuado expandiéndose y madurando. Ahora ofrece la opción preferida y estratégica al automatizar la administración de sus implementaciones de ONTAP. Hay varias consideraciones cuando se usa la API de REST DE ONTAP.
 
+.Acceso a la API de REST de forma nativa
+Puede acceder a la API DE REST de ONTAP directamente desde cualquier lenguaje de programación que admita un cliente REST. Entre las opciones de idiomas populares se incluyen Python, PowerShell y Java.
 
-
-== Adapte el código ONTAAPI heredado para utilizar EL RESTO
-
-Si tiene código existente a través de la API ONTAPI, NetApp le ofrece soporte para convertir su código para utilizar la más reciente API DE REST de ONTAP. Consulte link:../migrate/mapping.html["Asignación de la API DE REST a la API de ONTAP"] Para obtener información acerca de cómo asignar las llamadas de ONTAPI a las llamadas de la API DE REST equivalentes.
-
-
-
-== Uso de la biblioteca de clientes Python de NetApp
-
-La biblioteca de clientes Python es un paquete que puede utilizar al escribir scripts para acceder a la API DE REST de ONTAP. Proporciona compatibilidad con varios servicios subyacentes, incluidos la gestión de conexiones, el procesamiento de solicitudes asincrónicas y la gestión de excepciones. Al utilizar la biblioteca del cliente Python, puede desarrollar rápidamente código robusto para respaldar sus objetivos de automatización de ONTAP. Para empezar, debe revisar la documentación de este sitio, incluidos link:../python/overview_pcl.html["Biblioteca de clientes de Python"].
+.Migrando código ONTAPI heredado para utilizar REST
+La API de ONTAPI (ZAPI) es el conjunto original de llamadas exclusivas que se incluyen con el software ONTAP de NetApp para admitir la automatización de las tareas de administración y gestión del almacenamiento de datos. La interfaz ONTAPI se deshabilitará en futuras versiones de ONTAP. Si tiene código existente usando la API de ONTAPI, debe planificar la migración fuera de ONTAPI. NetApp ofrece soporte para convertir tu código y usar la nueva API de REST DE ONTAP. Consulte link:../migrate/overview.html["Migrar a la API DE REST"] si quiere más información.
 
 
 
-== Con Ansible
+== Kits de herramientas de software de cliente
 
-Asible es una herramienta de software de código abierto que permite el aprovisionamiento, la gestión de la configuración y la puesta en marcha de aplicaciones. Desde su lanzamiento y su posterior adquisición por RedHat, ha seguido creciendo en popularidad. NetApp proporciona módulos certificados con Ansible que pueden utilizar los clientes para automatizar la administración de sus sistemas de almacenamiento de ONTAP. Debería empezar revisando la documentación de este sitio.
+NetApp ofrece kits de herramientas de cliente que abstraen la API DE REST DE ONTAP y facilitan la creación de código de automatización. Debe elegir uno apropiado para su lenguaje y entorno de desarrollo.
+
+.Biblioteca de clientes de Python
+La biblioteca de clientes Python es un paquete que puede utilizar al escribir scripts para acceder a la API DE REST de ONTAP. Proporciona compatibilidad con varios servicios subyacentes, incluidos la gestión de conexiones, el procesamiento de solicitudes asincrónicas y la gestión de excepciones. Al utilizar la biblioteca del cliente Python, puede desarrollar rápidamente código robusto para respaldar sus objetivos de automatización de ONTAP. Consulte link:../python/overview_pcl.html["Biblioteca de clientes de Python"] si quiere más información.
 
 
 
-== Catálogo de automatización de BlueXP
+== Marcos de automatización
 
-La solución de NetApp https://console.bluexp.netapp.com/automationCatalog/["Catálogo de automatización de BlueXP"^] Está disponible a través de la interfaz de usuario web de BlueXP. El catálogo ofrece acceso a soluciones que pueden ayudarle con la implementación e integración automatizadas de ONTAP y otros productos NetApp. Consulte https://docs.netapp.com/us-en/netapp-automation/["Automatización de NetApp"^] documentación para obtener una descripción de las soluciones de automatización.
+Puede crear e implementar código de automatización con uno de varios marcos
+
+.Ansible
+Asible es una herramienta de software de código abierto que permite el aprovisionamiento, la gestión de la configuración y la puesta en marcha de aplicaciones. Desde su lanzamiento y su posterior adquisición por RedHat, ha seguido creciendo en popularidad. NetApp proporciona módulos certificados con Ansible que pueden utilizar los clientes para automatizar la administración de sus sistemas de almacenamiento de ONTAP. Consulte link:../additional/resources.html["Recursos adicionales"] si quiere más información.
+
+.Catálogo de automatización de BlueXP
+La solución de NetApp https://console.bluexp.netapp.com/automationCatalog/["Catálogo de automatización de BlueXP"^] Está disponible a través de la interfaz de usuario web de BlueXP. El catálogo ofrece acceso a soluciones empaquetadas que pueden ayudarle a automatizar la implementación e integración de ONTAP con otros productos. Consulte https://docs.netapp.com/us-en/netapp-automation/["Automatización de NetApp"^] para documentación y más información.

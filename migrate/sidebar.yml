@@ -4,6 +4,8 @@ title: Migrar a la API DE REST
 entries:
 - title: Inhabilitación de ONTAPI
   url: "/migrate/overview.html"
+- title: Consideraciones sobre migración
+  url: "/migrate/migration-considerations.html"
 - title: Asignación de ONTAP A REST
   url: "/migrate/mapping.html"
 - title: Contadores de rendimiento

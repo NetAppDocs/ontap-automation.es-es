@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: migrate/migration-considerations.html 
+keywords: migrate, mirgate to rest api, snapdiff 
+summary: 'Antes de migrar a la API de REST DE ONTAP desde la API ONTAPI (ZAPI) o la CLI de ONTAP, hay varios problemas que debe tener en cuenta.' 
+---
+= Consideraciones sobre migración
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de migrar a la API de REST DE ONTAP desde la API ONTAPI (ZAPI) o la CLI de ONTAP, hay varios problemas que debe tener en cuenta.
+
+
+
+== Diferencias generales de diseño
+
+La API REST y la interfaz de línea de comandos de ONTAP tienen diseños fundamentalmente diferentes. Los comandos y los parámetros de la CLI no se asignan directamente a las llamadas de la API DE REST. E incluso donde puede haber una similitud, los detalles de los parámetros de entrada pueden ser diferentes. Por ejemplo, las unidades numéricas pueden especificarse en bytes o utilizando un sufijo (como KB). Consulte link:../rest/input_variables.html["Variables de entrada que controlan una solicitud API"] y.. link:../reference/api_reference.html["Referencia de API"] si quiere más información.
+
+
+
+== SVM de datos expuestas a través de la API DE REST
+
+ONTAP admite varios tipos de máquinas virtuales de almacenamiento (SVM). Sin embargo, solo las SVM de datos están expuestas directamente a través de la API DE REST de ONTAP. La información de configuración que describe el clúster y los nodos está disponible a través de la API REST. Sin embargo, el clúster y los nodos no se tratan como SVM independientes.
+
+
+
+== Acceda a la interfaz de línea de comandos de ONTAP a través de la API DE REST
+
+Para ayudar a los usuarios de la API de ONTAPI y la interfaz de línea de comandos en su transición a la API de REST de ONTAP, ONTAP proporciona un extremo de REST para acceder a la interfaz de línea de comandos de ONTAP. Puede usar esta función de paso a través para ejecutar cualquier comando de la CLI.  El uso del extremo de REST se devuelve en los datos de AutoSupport para que NetApp pueda identificar lagunas en la API de REST y realizar mejoras en futuras versiones de ONTAP.
+
+Para emitir un comando de la CLI, debe realizar una llamada API DE REST que esté correctamente formada en función de las reglas relacionadas con lo siguiente:
+
+* Rutas de recursos
+* Nombres de campo
+* Métodos HTTP
+
+
+La ruta de recursos base para acceso a la CLI es `/private/cli`. Consulte la página de documentación en línea de API de ONTAP para obtener detalles sobre el acceso a la CLI a través de la API DE REST. NetApp también mantiene un repositorio de GitHub que contiene muestras de código y otra información útil. Consulte https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["Repositorio de GitHub DE REST de ONTAP: Muestras de paso a través de la CLI"^] si quiere más información.
+
+
+
+== Cambios en la disponibilidad de SnapDiff en ONAPI
+
+A partir de ONTAP 9.10.1, no se pueden invocar las llamadas a la API de SnapDiff v1 y v2. Cualquier aplicación de terceros que llame a SnapDiff v1 o a la API ONTv2 no funcionará a partir de ONTAP 9.10.1. Los usuarios de ONTAP deben verificar que su aplicación de backup admite las llamadas DE REST de SnapDiff v3 antes de actualizar a ONTAP 9.10.1.
+
+La disponibilidad de API de SnapDiff en versiones de ONTAP se define de la siguiente manera:
+
+* ONTAP 9.7 y versiones anteriores: v1 y v2 (solo ONTAP)
+* ONTAP 9.8 – 9.9.1: v1, v2 y v3 (tanto ONAPI como API REST)
+* ONTAP 9.10.1: Solo v3 (solo API REST)
+
+
+Consulte también la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^] si quiere más información.
