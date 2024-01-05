@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_prepare.html 
+keywords: support, ems, event management system, event notifications, notifications 
+summary: 'Es posible configurar el procesamiento de Event Management System (EMS) para un clúster de ONTAP y recuperar mensajes de EMS según sea necesario.' 
+---
+= Prepararse para gestionar los servicios de soporte EMS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Es posible configurar el procesamiento de Event Management System (EMS) para un clúster de ONTAP y recuperar mensajes de EMS según sea necesario.
+
+
+
+=== Descripción general
+
+Existen varios flujos de trabajo de ejemplo disponibles que muestran cómo usar los servicios de EMS de ONTAP. Antes de usar los flujos de trabajo y emitir alguna de las llamadas a la API DE REST, asegúrese de revisarlos link:../workflows/prepare_workflows.html["Prepárese para usar los flujos de trabajo"].
+
+Si usas Python, también puedes ver el scripy https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py["events.py"^] Para obtener ejemplos de cómo automatizar algunas de las actividades relacionadas con EMS.
+
+
+
+=== API REST de ONTAP frente a comandos de la CLI de ONTAP
+
+En muchas tareas, si se utiliza la API DE REST DE ONTAP se requieren menos llamadas que los comandos de la CLI de ONTAP equivalentes. La siguiente tabla incluye una lista de llamadas API y el equivalente a los comandos CLI necesarios para cada tarea.
+
+[cols="30,70"]
+|===
+| API REST de ONTAP | CLI de ONTAP 
+
+
+| OBTENGA /support/ems | `event config show` 
+
+
+| POST /support/ems/destinations  a| 
+. `event notification destination create`
+. `event notification create`
+
+
+
+
+| `GET /support/ems/events` | `event log show` 
+
+
+| `POST /support/ems/filters`  a| 
+. `event filter create -filter-name <filtername>`
+. `event filter rule add -filter-name  <filtername>`
+
+
+|===
+.Información relacionada
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py["Script de Python que ilustra EMS"^]
+* https://blog.netapp.com/ontap-rest-apis-automate-notification["API DE REST de ONTAP: Automatice la notificación de eventos de alta gravedad"^]
+

@@ -2,7 +2,5 @@
 section: manage
 title: Gestione ONTAP con la API DE REST
 entries:
-- title: Notificaciones de eventos de EMS
-  url: "/manage/ems-rest-api.html"
 - title: Permisos DACL y SACL
   url: "/manage/dacl-sacl-rest-api.html"
