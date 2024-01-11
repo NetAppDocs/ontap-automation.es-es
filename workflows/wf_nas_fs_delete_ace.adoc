@@ -18,7 +18,7 @@ Puede eliminar una entrada de control de acceso (ACE) existente de un archivo o 
 
 
 
-== Paso 1: Aplique los nuevos permisos
+== Paso 1: Eliminar el ACE
 
 .Método HTTP y punto final
 Esta llamada a la API de REST utiliza el siguiente método y extremo.
