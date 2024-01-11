@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_get_permissions.html 
+keywords: nas, file security, effective permissions 
+summary: Puede recuperar los permisos efectivos actuales para un archivo o carpeta específicos. 
+---
+= Obtenga los permisos efectivos para un archivo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede recuperar los permisos efectivos actuales para un archivo o carpeta específicos.
+
+.Método HTTP y punto final
+Esta llamada a la API de REST utiliza el siguiente método y extremo.
+
+[cols="25,75"]
+|===
+| Método HTTP | Ruta 
+
+
+| OBTENGA | /api/protocols/file-security/effective-permissions/{svm.uuid}/{path} 
+|===
+.Tipo de procesamiento
+Síncrona
+
+.Parámetros de entrada adicionales para ejemplos de cURL
+Además de los parámetros comunes con todas las llamadas a la API REST, los siguientes parámetros también se utilizan en el ejemplo curl de este paso.
+
+[cols="25,10,10,55"]
+|===
+| Parámetro | Tipo | Obligatorio | Descripción 
+
+
+| $SVM_ID | Ruta | Sí | Este es el UUID de la SVM que contiene el archivo. 
+
+
+| RUTA_FILE | Ruta | Sí | Esta es la ruta al archivo o carpeta. 
+|===
+.Ejemplo de curl
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/protocols/file-security/effective-permissions/$SVM_ID/$FILE_PATH" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Ejemplo de resultado JSON
+[listing]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----
