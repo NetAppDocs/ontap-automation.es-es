@@ -1299,10 +1299,6 @@
   <block id="fcecf68c3a713225f78b4de16ac6df03" category="section-title">Ejemplo 4: Fila única en una tabla específica</block>
   <block id="0aeaf5f6b15f47a8487668e4d5e041f2" category="paragraph">Es posible usar esta llamada de API DE REST para ver valores de contadores de rendimiento para una instancia de gestor de contadores específica de la tabla. En este ejemplo, se solicitan los datos de rendimiento de uno de los adaptadores de host.</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">Descripción general</block>
-  <block id="1474d65709aff61f7e01ec29740e4346" category="summary">La referencia de la API contiene los detalles sobre todas las llamadas API DE REST de ONTAP, incluidos los métodos HTTP, los parámetros de entrada y las respuestas. Esta referencia completa es útil cuando se desarrollan aplicaciones de automatización mediante la API DE REST.</block>
-  <block id="485855357f10b438740d2ed039caaa84" category="admonition">Puede acceder al contenido de referencia de API en línea en el sistema ONTAP local o a una copia estática de la documentación que mantiene NetApp.</block>
-  <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">Acceda a la página de documentación de la API de ONTAP</block>
-  <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">Puede acceder a la página de documentación en línea de la API de ONTAP en el sistema ONTAP local.</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">Debe tener lo siguiente:</block>
   <block id="4c00680cb601dcd1be164318ed4c2a88" category="list-text">Nombre de usuario y contraseña para una cuenta con autoridad para acceder a la API DE REST de ONTAP</block>
   <block id="2bc3d06698b6c0a0cff5dd4519390843" category="list-text">Escriba la dirección URL en su navegador y pulse *Intro*:</block>
@@ -1310,18 +1306,9 @@
   <block id="86537fad07b98a84cd28189507075143" category="list-text">Inicie sesión mediante la cuenta de ONTAP.</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">La página de documentación de la API de ONTAP se muestra con las llamadas API organizadas en categorías de recursos principales en la parte inferior.</block>
   <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">Como ejemplo de una llamada individual a la API, desplácese hacia abajo hasta la categoría *cluster* y haga clic en *GET /cluster*.</block>
-  <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">Acceda a una copia de la documentación de referencia de la API de REST de ONTAP</block>
-  <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">Puede acceder a una copia de la documentación de referencia de la API de REST de ONTAP mediante los enlaces proporcionados a continuación. La documentación de referencia de la API se mantiene con la versión de ONTAP.</block>
-  <block id="6a63b53f3b2aa312b323d97ef5f8c1ee" category="inline-link">DevNet de NetApp: API DE REST de ONTAP</block>
-  <block id="3ed5229516b6cbe9a83c3af31dfe7e8f" category="paragraph"><block ref="3ed5229516b6cbe9a83c3af31dfe7e8f" category="inline-link-rx"></block></block>
   <block id="b4cd15e8e24635e4a72a8cce25d314ca" category="sidebar">Documentos de automatización de ONTAP</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Manos a la obra</block>
-  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Notas de la versión</block>
-  <block id="0c5518b5db3a9e2425db3b5de6d30634" category="sidebar">Opciones de automatización de ONTAP</block>
   <block id="e78273b83daaaecb5744859fa531181b" category="sidebar">Detalles de implementación de REST</block>
-  <block id="caea8340e2d186a540518d08602aa065" category="sidebar">Automatización</block>
-  <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">Documentos de ONTAP 9</block>
-  <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">Documentos de ONTAP Select</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">Comprender las opciones de automatización</block>
   <block id="e6b088db24ebe67ed0e9567d309387ec" category="sidebar">Flujos de trabajo</block>
@@ -1501,12 +1488,10 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">Debe sustituir las credenciales adecuadas para su entorno. Las credenciales no están codificadas en base64. Al ejecutar el comando curl con este parámetro, la cadena se codifica y se genera la cabecera de autorización.</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">Establezca los valores de variable incluidos en el ejemplo de cURL que desea ejecutar. Por ejemplo:</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">Paso 3: Confirme la información de contacto del clúster</block>
-  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Resumen de recursos REST</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">Realice el flujo de trabajo <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>. Debe configurar la<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parámetro de consulta a.<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">Recursos adicionales</block>
   <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">Notas de la versión de ONTAP 9 con información sobre la versión actual.</block>
-  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">Consulte <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="9b516c95369c98e15389e58383128a9e" category="inline-link-macro">Flujos de trabajo de RBAC</block>
   <block id="d0ae4474b926ded595a7a12cdb4fa9ca" category="admonition">Consulte <block ref="08b1cfcbf90aa340f0ccb33fbb4649b8" category="inline-link-macro-rx"></block> Para obtener ejemplos de cómo crear y utilizar roles con la API de REST DE ONTAP.</block>
@@ -1684,14 +1669,6 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">Filtrar según el<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> variable para seleccionar los discos de repuesto.</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">Enumerar las cuentas</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">Enumere los agregados</block>
-  <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
-  <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
-  <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
-  <block id="8ec7335e6525b3d07614d1c9c722568f" category="list-text"><block ref="8ec7335e6525b3d07614d1c9c722568f" category="inline-link-rx"></block></block>
-  <block id="6c645a069d50633d36d4e222dc6c9355" category="list-text"><block ref="6c645a069d50633d36d4e222dc6c9355" category="inline-link-rx"></block></block>
-  <block id="fca52401410a3b119815eb6666d6e4a1" category="list-text"><block ref="fca52401410a3b119815eb6666d6e4a1" category="inline-link-rx"></block></block>
-  <block id="3b4dfc8add89b5b87470e0473d10bb44" category="list-text"><block ref="3b4dfc8add89b5b87470e0473d10bb44" category="inline-link-rx"></block></block>
-  <block id="c03c22aa3c11c989e8d97f1d84df52ee" category="list-text"><block ref="c03c22aa3c11c989e8d97f1d84df52ee" category="inline-link-rx"></block></block>
   <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">La funcionalidad de control de acceso basado en roles (RBAC) de ONTAP se ha mejorado para proporcionar granularidad adicional. Puede usar los roles tradicionales o crear roles personalizados nuevos según sea necesario mediante la API DE REST. Cada rol se asocia con uno o más privilegios, cada uno de los cuales identifica una llamada de API DE REST o un comando de la CLI junto con el nivel de acceso. Hay nuevos niveles de acceso disponibles para roles DE REST como<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> y..<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>. Esta mejora se basa en la paridad con la API de Data ONTAP (ONAPI o ZAPI) y permite la migración de clientes a la API DE REST. Consulte <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">Para ayudarle a realizar la transición del código de automatización de ONTAP a la API DE REST, NetApp proporciona documentación de asignación de API. Esta referencia incluye una lista de llamadas de ONTAPI y el equivalente de API DE REST para cada una. El documento de asignación se ha actualizado para incluir los nuevos puntos finales de la API de ONTAP 9.9.1. Consulte <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">Para ayudarle a actualizar la automatización ONTAPI, NetApp proporciona una lista de llamadas ONTAPI que requieren uno o más parámetros de entrada, junto con una asignación de dichas llamadas a la llamada a la API DE REST de ONTAP 9 equivalente. Consulte <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> si quiere más información.</block>
@@ -1718,7 +1695,6 @@
   <block id="74b014305892305348ed02c92ab2a761" category="paragraph">Para emitir un comando de la CLI, debe realizar una llamada API DE REST que esté correctamente formada en función de las reglas relacionadas con lo siguiente:</block>
   <block id="e0b913796ef82dfab8c683cb3688ea8a" category="paragraph">La ruta de recursos base para acceso a la CLI es<block ref="2481cfdbf7d50cf62e7bd1952cb20448" prefix=" " category="inline-code"></block>. Consulte la página de documentación en línea de API de ONTAP para obtener detalles sobre el acceso a la CLI a través de la API DE REST. NetApp también mantiene un repositorio de GitHub que contiene muestras de código y otra información útil. Consulte<block ref="dc2d27bf2003d8059fdb638718a2f7e5" category="inline-link-rx"></block> si quiere más información.</block>
   <block id="b3dc3759cbac62ce0e64726643b40958" category="paragraph">Consulte también la<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> si quiere más información.</block>
-  <block id="f0169c3155d167d08754f46b0e187086" category="list-text"><block ref="f0169c3155d167d08754f46b0e187086" category="inline-link-rx"></block></block>
   <block id="d6631ef35bb40cd64a9a7e6045544867" category="summary">Existen varias opciones disponibles para automatizar la puesta en marcha y administración de sus sistemas de almacenamiento de ONTAP.</block>
   <block id="2b17a7509e874cabf89f09bb638e3133" category="paragraph">A partir de ONTAP 9.6, ONTAP incluye una amplia API REST que proporciona la base para automatizar la puesta en marcha y la administración de sus sistemas de almacenamiento. Desde entonces, la API REST ha continuado expandiéndose y madurando. Ahora ofrece la opción preferida y estratégica al automatizar la administración de sus implementaciones de ONTAP. Hay varias consideraciones cuando se usa la API de REST DE ONTAP.</block>
   <block id="a72eaae2582a47c88e517d12584cddf1" category="paragraph-title">Acceso a la API de REST de forma nativa</block>
@@ -1817,4 +1793,19 @@
   <block id="a0b064f87e86d15d09bd439eeac8859d" category="sidebar">Aplicar permisos</block>
   <block id="982b873024de716ae33d5ad3f5fc8e1a" category="sidebar">Actualizar un descriptor de seguridad</block>
   <block id="db5695cffdc658d54a90f935d7e8495e" category="section-title">Paso 1: Eliminar el ACE</block>
+  <block id="b62a0ce222a32de08e1187e5c25337b3" category="summary">La referencia de API contiene detalles sobre las llamadas API DE REST DE ONTAP, incluidos los métodos HTTP, los parámetros de entrada y las respuestas. Esta referencia completa es útil cuando se desarrollan aplicaciones de automatización mediante la API DE REST.</block>
+  <block id="9ee871a8bdae23bde132bdc475127a91" category="admonition">Es posible acceder a la documentación de referencia de la API de REST en uno de varios sitios de acuerdo con la versión de ONTAP. También hay disponible una copia de la documentación equivalente a través de la interfaz de usuario de Swagger en el sistema ONTAP local.</block>
+  <block id="2b143ad87a879a3f7e0e10f005539f8e" category="section-title">Acceda en línea a la documentación de referencia de API de ONTAP</block>
+  <block id="a82c48b5d06cbcc4f0ba1ae8bdef9c02" category="paragraph">Puede acceder a una copia de la documentación de referencia de la API de REST de ONTAP mediante los enlaces proporcionados a continuación. La versión de ONTAP mantiene la documentación.</block>
+  <block id="6b416daf58339fe33aae71a393fbf571" category="list-text"><block ref="6b416daf58339fe33aae71a393fbf571" category="inline-link-rx"></block></block>
+  <block id="1a7a6021e347b043939d76bcefa6df25" category="list-text"><block ref="1a7a6021e347b043939d76bcefa6df25" category="inline-link-rx"></block></block>
+  <block id="e5b9abf558fec0163b635d6d64f9e7ad" category="list-text"><block ref="e5b9abf558fec0163b635d6d64f9e7ad" category="inline-link-rx"></block></block>
+  <block id="df9ddc7cae6db2b9f03ec9f63e9a15fb" category="list-text"><block ref="df9ddc7cae6db2b9f03ec9f63e9a15fb" category="inline-link-rx"></block></block>
+  <block id="f184911465f21dd8f7c4dcdc711e1ac7" category="list-text"><block ref="f184911465f21dd8f7c4dcdc711e1ac7" category="inline-link-rx"></block></block>
+  <block id="be16bcaaf8f90b15fde4e47a0b2bada9" category="list-text"><block ref="be16bcaaf8f90b15fde4e47a0b2bada9" category="inline-link-rx"></block></block>
+  <block id="6da29242aaec0bfacf4cccc152f3ae17" category="list-text"><block ref="6da29242aaec0bfacf4cccc152f3ae17" category="inline-link-rx"></block></block>
+  <block id="d5653468b803018e1df8a03526ca0dfe" category="list-text"><block ref="d5653468b803018e1df8a03526ca0dfe" category="inline-link-rx"></block></block>
+  <block id="804b12a0b7232fc26053b6e4ef6143e9" category="list-text"><block ref="804b12a0b7232fc26053b6e4ef6143e9" category="inline-link-rx"></block></block>
+  <block id="39d2726aa93bd430df52956407b809b4" category="section-title">Acceda a la documentación de referencia de la API de ONTAP a través de la interfaz de usuario de Swagger</block>
+  <block id="527df4f1ccd81173595bb685c8266938" category="paragraph">Puede acceder a la documentación de la API de REST DE ONTAP a través de la interfaz de usuario de Swagger en el sistema ONTAP local.</block>
 </blocks>
