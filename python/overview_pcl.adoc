@@ -19,5 +19,7 @@ La biblioteca de clientes Python de ONTAP de NetApp es un paquete que puede inst
 
 NOTE: NetApp mantiene un repositorio de GitHub que contiene muestras de código y otra información útil. Puede desplazarse a la carpeta _Examples_ para acceder a las muestras utilizando la biblioteca de clientes de Python.
 
-.Enlaces relacionados
-https://github.com/NetApp/ontap-rest-python["Repositorio de GitHub DE REST de ONTAP"^]
+.Información relacionada
+* https://github.com/NetApp/ontap-rest-python["Repositorio de GitHub DE REST de ONTAP"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Ejemplos de bibliotecas cliente Python REST DE ONTAP"^]
+

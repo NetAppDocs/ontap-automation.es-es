@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: python/packages.html 
+keywords: packages, documentation 
+summary:  
+---
+= Paquetes y documentación
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La biblioteca del cliente de Python está disponible para cada versión de ONTAP que empiece por 9,6. Debe acceder al paquete de PyPI y a la documentación en función de la versión de ONTAP que esté utilizando.
+
+.ONTAP 9.14.1
+* https://pypi.org/project/netapp-ontap/9.14.1.0/["Tipo: NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["Documentación PCL de NetApp para 9.14.1"^]
+
+
+.ONTAP 9.13.1
+* https://pypi.org/project/netapp-ontap/9.13.1.0/["Pypi: ONTAP 9.13.1 de NetApp"^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["Documentación PCL de NetApp para 9.13.1"^]
+
+
+.ONTAP 9.12.1
+* https://pypi.org/project/netapp-ontap/9.12.1.0/["Tipo: NetApp ONTAP 9.12.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["Documentación PCL de NetApp para 9.12.1"^]
+
+
+.ONTAP 9.11.1
+* https://pypi.org/project/netapp-ontap/9.11.1.0/["Tipo: NetApp ONTAP 9.11.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["Documentación PCL de NetApp para 9.11.1"^]
+
+
+.ONTAP 9.10.1
+* https://pypi.org/project/netapp-ontap/9.10.1.0/["PyPI: ONTAP de NetApp 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["Documentación de PCL de NetApp para 9.10.1"^]
+
+
+.ONTAP 9.9.1
+* https://pypi.org/project/netapp-ontap/9.9.1/["Tipo: NetApp ONTAP 9.9.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876965/html/index.html["Documentación PCL de NetApp para 9.9.1"^]
+
+
+.ONTAP 9.8
+* https://pypi.org/project/netapp-ontap/9.8.0/["Tipo: NetApp ONTAP 9,8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874673/html/index.html["Documentación PCL de NetApp para 9,8"^]
+
+
+.ONTAP 9.7
+* https://pypi.org/project/netapp-ontap/9.7.3/["Tipo: NetApp ONTAP 9,7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2858435/html/index.html["Documentación PCL de NetApp para 9,7"^]
+
+
+.ONTAP 9.6
+* https://pypi.org/project/netapp-ontap/9.6.0/["Tipo: NetApp ONTAP 9,6"^]
+* https://library.netapp.com/ecmdocs/ECMLP2870387/html/index.html["Documentación PCL de NetApp para 9,6"^]
+

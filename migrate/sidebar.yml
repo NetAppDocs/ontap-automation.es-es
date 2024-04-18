@@ -1,9 +1,9 @@
 ---
 section: migrate
-title: Migrar a la API DE REST
+title: Migre desde ONTAPI a la API de REST
 entries:
 - title: Inhabilitación de ONTAPI
-  url: "/migrate/overview.html"
+  url: "/migrate/ontapi_disablement.html"
 - title: Consideraciones sobre migración
   url: "/migrate/migration-considerations.html"
 - title: Asignación de ONTAP A REST
@@ -13,4 +13,4 @@ entries:
 - title: Herramientas y software
   url: "/migrate/software.html"
 - title: Artículos de blog
-  url: "/migrate/blogs.html"
+  url: "/migrate/blogs_migrate.html"

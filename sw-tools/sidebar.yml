@@ -8,5 +8,15 @@ entries:
     url: "/python/overview_pcl.html"
   - title: Prepárese para utilizar la biblioteca de clientes de Python
     url: "/python/prepare_pcl.html"
+  - title: Paquetes y documentación
+    url: "/python/packages.html"
   - title: Script para recuperar la configuración del clúster
     url: "/python/script_retrieve_cluster_configuration.html"
+  - title: Artículos de blog
+    url: "/python/blogs_pcl.html"
+- title: Kit de herramientas de PowerShell
+  entries:
+  - title: Descripción general
+    url: "/pstk/overview_pstk.html"
+  - title: Descargue e instale
+    url: "/pstk/install_pstk.html"
