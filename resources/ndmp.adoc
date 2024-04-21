@@ -14,7 +14,7 @@ summary: Puede usar estas llamadas API para gestionar los servicios NDMP.
 
 
 [role="lead"]
-El protocolo de administración de datos de red proporciona un estándar para realizar copias de seguridad de dispositivos NAS. Puede usar estas llamadas API para gestionar los servicios NDMP.
+Puede usar estas llamadas API para gestionar los servicios NDMP.
 
 .Modo NDMP
 El modo operativo NDMP puede ser tanto ámbito de SVM como de nodo. Este tipo de recurso se introdujo con ONTAP 9.7.

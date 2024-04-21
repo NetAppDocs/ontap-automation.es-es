@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: resources/overview_categories.html 
 keywords: resources, resource categories 
-summary: Los recursos disponibles a través de la API DE REST de ONTAP están organizados en categorías, como se muestra en la página de documentación de API ONTAP. 
+summary:  
 ---
 = Descripción general de las categorías de recursos
 :hardbreaks:
@@ -14,14 +14,13 @@ summary: Los recursos disponibles a través de la API DE REST de ONTAP están or
 
 
 [role="lead"]
-Los recursos disponibles mediante la API DE REST de ONTAP se organizan en categorías, como se muestra en la documentación en línea de la API de ONTAP. A continuación se presenta una breve descripción de cada uno de los recursos, junto con consideraciones de uso adicionales si procede.
+Los recursos disponibles a través de la API DE REST DE ONTAP se organizan en categorías. Cada una de las categorías de recursos incluye una breve descripción junto con consideraciones de uso adicionales, cuando sea necesario.
 
-Los recursos DE RESTO descritos en este resumen se basan en la versión más reciente del producto. Si necesita comprender los cambios realizados en versiones anteriores, consulte link:../whats_new.html["Novedades de la API DE REST de ONTAP"] así como la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^].
+Los recursos REST descritos en el resumen se basan en la última versión del producto. Si necesita una comprensión más detallada de los cambios realizados en versiones anteriores, consulte link:../whats_new.html["Novedades de la API DE REST de ONTAP"] así como la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^].
 
 
-TIP: Para muchos de los extremos DE REST, puede incluir una clave UUID como parte de la cadena de ruta para acceder a una instancia de objeto específica. Sin embargo, también puede tener acceso a los objetos utilizando un valor de propiedad en un parámetro de consulta.
+TIP: Para muchos de los extremos DE REST, puede incluir una clave UUID como parte de la cadena de ruta para acceder a una instancia de objeto específica. Sin embargo, en muchos casos también puede acceder a objetos utilizando un valor de propiedad en un parámetro de consulta.
 
 .Información relacionada
-* link:../rest/object_references_and_access.html["Consideraciones adicionales sobre EL RESTO"]
 * link:../reference/api_reference.html["Referencia de API"]
 

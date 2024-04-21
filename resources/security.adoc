@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Estas llamadas API se pueden usar para gestionar la configuración de seguridad del clúster y de la SVM.
+Es posible utilizar estas llamadas API para gestionar la configuración de seguridad del clúster y de la SVM.
 
 .Cuentas
 Hay una colección de cuentas de usuario para el clúster y las SVM. Este tipo de recurso se introdujo con ONTAP 9.6.
