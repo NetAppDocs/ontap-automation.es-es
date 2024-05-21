@@ -16,7 +16,7 @@ summary:
 [role="lead"]
 Los recursos disponibles a través de la API DE REST DE ONTAP se organizan en categorías. Cada una de las categorías de recursos incluye una breve descripción junto con consideraciones de uso adicionales, cuando sea necesario.
 
-Los recursos REST descritos en el resumen se basan en la última versión del producto. Si necesita una comprensión más detallada de los cambios realizados en versiones anteriores, consulte link:../whats_new.html["Novedades de la API DE REST de ONTAP"] así como la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^].
+Los recursos REST descritos en el resumen se basan en la última versión del producto. Si necesita una comprensión más detallada de los cambios realizados en versiones anteriores, consulte link:../whats-new.html["Novedades de la API DE REST de ONTAP"] así como la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^].
 
 
 TIP: Para muchos de los extremos DE REST, puede incluir una clave UUID como parte de la cadena de ruta para acceder a una instancia de objeto específica. Sin embargo, en muchos casos también puede acceder a objetos utilizando un valor de propiedad en un parámetro de consulta.

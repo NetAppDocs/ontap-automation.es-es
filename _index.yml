@@ -1,0 +1,56 @@
+---
+indexpage:
+  title: Automatización de ONTAP
+  summary: Puede automatizar la puesta en marcha y administración de los sistemas
+    de almacenamiento de ONTAP mediante una de las varias opciones disponibles.
+  keywords: automation, ontap automation, rest, rest api, migrate, migration
+  lead: Puede automatizar la puesta en marcha y administración de los sistemas de
+    almacenamiento de ONTAP mediante una de las varias opciones disponibles. La API
+    de REST DE ONTAP proporciona la base principal para las tecnologías de automatización.
+  tiles:
+  - title: Manos a la obra
+    links:
+    - title: Notas de la versión
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: Opciones de automatización de ONTAP
+      url: "/get-started/ontap_automation_options.html"
+    - title: Su primera llamada API
+      url: "/get-started/first_call.html"
+  - title: API REST de ONTAP
+    links:
+    - title: Detalles de implementación de REST
+      url: "/rest/rest_web_services_foundation.html"
+    - title: Seguridad RBAC
+      url: "/rest/rbac_overview.html"
+    - title: Resumen de recursos REST
+      url: "/resources/overview_categories.html"
+    - title: Referencia de API
+      url: "/reference/api_reference.html"
+  - title: Automatización
+    links:
+    - title: Flujos de trabajo
+      url: "/workflows/prepare_workflows.html"
+    - title: Biblioteca de clientes de Python
+      url: "/python/overview_pcl.html"
+    - title: Kit de herramientas PowerShell
+      url: "/pstk/overview_pstk.html"
+    - title: SDK de gestión de NetApp
+      url: "/sw-tools/nmsdk.html"
+  - title: Migrar a la API DE REST
+    links:
+    - title: Inhabilitación de ONTAPI
+      url: "/migrate/ontapi_disablement.html"
+    - title: Asignación de ONTAP A REST
+      url: "/migrate/mapping.html"
+    - title: Contadores de rendimiento
+      url: "/migrate/performance-counters.html"
+    - title: Artículos de blog
+      url: "/migrate/blogs_migrate.html"
+  - title: Conocimiento y apoyo
+    links:
+    - title: Leer más
+      url: "/additional/learn_more.html"
+    - title: Documentos de ONTAP 9
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: Documentos de ONTAP Select
+      url: https://docs.netapp.com/us-en/ontap-select/

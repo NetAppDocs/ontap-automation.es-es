@@ -109,6 +109,9 @@ Los ajustes de configuración de una interfaz de Kerberos. Este tipo de recurso 
 .Dominios Kerberos de NFS
 Los ajustes de configuración para los dominios Kerberos. Este tipo de recurso se introdujo con ONTAP 9.6.
 
+.NFS sobre TLS
+Este recurso le permite recuperar y actualizar la configuración de la interfaz cuando se usa NFS sobre TLS. Este tipo de recurso se introdujo con ONTAP 9,15.
+
 .Servicios NFS
 La configuración central del servidor NFS. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.7.
 

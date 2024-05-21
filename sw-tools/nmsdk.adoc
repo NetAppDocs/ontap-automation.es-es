@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: sw-tools/nmsdk.html 
+keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, ontap rest api 
+summary: El SDK para facilitar la gestión de NetApp proporciona un conjunto de llamadas API de ONTAPI para desarrollar aplicaciones que supervisen y gestionen su almacenamiento de ONTAP. Junto con el paquete OnCommand Workflow Automation, el SDK respalda sus esfuerzos para automatizar la gestión de sus sistemas ONTAP. 
+---
+= SDK de gestión de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El SDK para facilitar la gestión de NetApp proporciona un conjunto de llamadas API de ONTAPI para desarrollar aplicaciones que supervisen y gestionen su almacenamiento de ONTAP. Junto con el paquete OnCommand Workflow Automation, el SDK respalda sus esfuerzos para automatizar la gestión de sus sistemas ONTAP.
+
+
+NOTE: Aunque OnCommand Workflow Automation y el kit de desarrollo de software para facilitar la gestión de NetApp siguen siendo compatibles, la API REST DE ONTAP es la tecnología estratégica preferida que debe usarse en la automatización de sus sistemas de ONTAP. Consulte link:../migrate/ontapi_disablement.html["Inhabilitación de ONTAPI"] si quiere más información.
+
+.Descargue el SDK
+Puede descargar el SDK para facilitar la gestión del NetApp en el sitio de soporte de NetApp. El SDK admite varios lenguajes en el lado del cliente, incluyendo: Python, PowerShell, C, C++, Java, C#, VB. NET, y Ruby. Asegúrese de revisar la herramienta de matriz de interoperabilidad para obtener información sobre el SDK de capacidad de gestión de NetApp y su compatibilidad con su versión de ONTAP.
+
+.Utilizar OnCommand Workflow Automation
+También puede usar la API proporcionada con el SDK para automatizar tareas de administración sin escribir ningún script. OnCommand Workflow Automation (OnCommand WFA) proporciona varios flujos de trabajo preconfigurados para poner en marcha y ejecutar las tareas de gestión. Puede descargar el paquete WFA de OnCommand en el almacén de automatización del almacenamiento de NetApp.
+
+.Información relacionada
+* https://mysupport.netapp.com/site/["Sitio de soporte de NetApp"^]
+* https://www.netapp.com/company/interoperability/["Herramienta de matriz de interoperabilidad de NetApp"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US["Documentación del SDK de capacidad de gestión de NetApp"^]
+* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/["Recursos de documentación de OnCommand Workflow Automation"^]
+* https://automationstore.netapp.com/home.shtml["Automation Store de NetApp"^]
+
