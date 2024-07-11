@@ -23,13 +23,16 @@ TIP: También debe revisar el https://library.netapp.com/ecm/ecm_download_file/E
 
 == ONTAP 9.15.1
 
-ONTAP 9.15.1 sigue ampliando las funcionalidades de la API de REST DE ONTAP. La actualización de esta versión es relativamente modesta, con tres nuevos puntos finales que admiten una nueva función.
+ONTAP 9.15.1 sigue ampliando las funcionalidades de la API de REST DE ONTAP. La actualización de esta versión es relativamente modesta y admite dos nuevas funciones.
 
 NFS sobre TLS:: Hay tres nuevos puntos finales disponibles con esta función. Puede emitir estas llamadas API para recuperar todas las interfaces de NFS sobre TLS, recuperar una interfaz específica mediante UUID y actualizar las propiedades de configuración de una interfaz TLS. Colectivamente, estas llamadas API proporcionan un equivalente al conjunto de `vserver nfs tls interface` Comandos de la CLI.
 
 
 
 CAUTION: NFS con TLS está disponible en ONTAP 9.15.1 como versión preliminar pública. Como oferta de vista previa, esta función no se admite para cargas de trabajo de producción con ONTAP 9.15.1.
+
+Aplicaciones de backup de Windows y symlinks de tipo Unix:: Cuando una aplicación de copia de seguridad de Windows encuentra un enlace simbólico de estilo Unix (symlink), el enlace se atraviesa y ONTAP devuelve los datos y se realiza una copia de seguridad. A partir de ONTAP 9.15.1, también tiene la opción de hacer una copia de seguridad del symlink en lugar de los datos a los que apunta. Esto puede ofrecer varios beneficios, como un mejor rendimiento de sus aplicaciones de backup. El punto final `/protocols/cifs/services/{svm.uuid}` se ha actualizado para incluir el nuevo parámetro `backup-symlink-enabled` en el `options` objeto.
+
 
 
 
