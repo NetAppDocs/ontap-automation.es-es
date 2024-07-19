@@ -37,7 +37,6 @@
   <block id="d15c7ef669111b1c40233338c66dfc44" category="inline-link-macro">Asignación de la API DE REST a la API de ONTAP</block>
   <block id="554cfab3938e21d9270bd6b75931f96f" category="section-title">Vídeos</block>
   <block id="b5ad0fadac714409796245d1b58f5199" category="summary">NetApp actualiza periódicamente la API DE REST de ONTAP para ofrecerle nuevas funciones, mejoras y correcciones de errores.</block>
-  <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">Novedades de la API DE REST de ONTAP y la automatización</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="section-title">ONTAP 9.12.1</block>
   <block id="eb0cda77424e206695a7e1df680678f7" category="paragraph">ONTAP 9.12.1 sigue ampliando las capacidades de la API REST de ONTAP con más de cuarenta nuevas llamadas API. Estos extremos admiten las nuevas funciones de ONTAP, así como mejoras en las funciones existentes. Esta versión se centra en las mejoras en la seguridad y las funciones NAS.</block>
   <block id="5f6c185eb38c56187fc699dfbe62654b" category="list-text">Mejoras de seguridad</block>
@@ -1879,7 +1878,6 @@
   <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">Los recursos disponibles a través de la API DE REST DE ONTAP se organizan en categorías. Cada una de las categorías de recursos incluye una breve descripción junto con consideraciones de uso adicionales, cuando sea necesario.</block>
   <block id="0ea16c1b878b2cbbbc3d0b12297d9b11" category="admonition">Para muchos de los extremos DE REST, puede incluir una clave UUID como parte de la cadena de ruta para acceder a una instancia de objeto específica. Sin embargo, en muchos casos también puede acceder a objetos utilizando un valor de propiedad en un parámetro de consulta.</block>
   <block id="72cb412397232628600f03c53da4faf9" category="paragraph">Es posible utilizar estas llamadas API para gestionar la configuración de seguridad del clúster y de la SVM.</block>
-  <block id="12149ef13bbca8b5b9ef6c7969b51bdb" category="admonition">La funcionalidad de control de acceso basado en roles de ONTAP ha seguido expandiéndose y se mejoró significativamente con ONTAP 9.11.1 (y versiones posteriores). Consulte <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> y.. <block ref="719fb5b8ac08da8fa53ff24d277d30a0" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="list-title">ONTAP 9.15.1</block>
   <block id="75d0655a3007155c5cee6673326640b8" category="inline-link">Tipo: NetApp ONTAP 9.15.1</block>
   <block id="88f0364b032c766b6224cbd9e9d86861" category="list-text"><block ref="88f0364b032c766b6224cbd9e9d86861" category="inline-link-rx"></block></block>
@@ -1933,5 +1931,6 @@
   <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">Cuando una aplicación de copia de seguridad de Windows encuentra un enlace simbólico de estilo Unix (symlink), el enlace se atraviesa y ONTAP devuelve los datos y se realiza una copia de seguridad. A partir de ONTAP 9.15.1, también tiene la opción de hacer una copia de seguridad del symlink en lugar de los datos a los que apunta. Esto puede ofrecer varios beneficios, como un mejor rendimiento de sus aplicaciones de backup. El punto final<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> se ha actualizado para incluir el nuevo parámetro<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block> en el<block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> objeto.</block>
   <block id="d239da172f3ae62623c76921d1e69cef" category="paragraph"><block ref="d239da172f3ae62623c76921d1e69cef" category="inline-link-rx"></block></block>
   <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
-  <block id="a6fd48ff460bdb9f9b5bd42c615526ae" category="sidebar">¿Qué novedades tiene la API de REST DE ONTAP</block>
+  <block id="b61d835a52b302e3c0dbeedac89aecec" category="inline-link-macro">Novedades de la API de REST DE ONTAP</block>
+  <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">La funcionalidad de control de acceso basado en roles de ONTAP ha seguido expandiéndose y se mejoró significativamente con ONTAP 9.11.1 (y versiones posteriores). Consulte <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> y <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> para obtener más información.</block>
 </blocks>
