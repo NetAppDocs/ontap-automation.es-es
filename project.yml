@@ -12,7 +12,9 @@ sidebar:
   - title: Documentos de automatización de ONTAP
     url: "/index.html"
   - title: Novedades
-    url: "/whats-new.html"
+    entries:
+    - title: "¿Qué novedades tiene la API de REST DE ONTAP"
+      url: "/whats-new.html"
   - section: get-started
   - section: rest
   - section: workflows
