@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/labs.html 
-keywords:  
-summary:  
+keywords: ONTAP REST API labs, lab resources 
+summary: NetApp ofrece un entorno de laboratorio para que pruebe la API de REST DE ONTAP y otras tecnologías de automatización relacionadas. 
 ---
-= Recursos de laboratorio de NetApp
+= Recursos de laboratorio de la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
