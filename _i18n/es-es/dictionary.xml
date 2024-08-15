@@ -1501,7 +1501,6 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
-  <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">También debe revisar el<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> para obtener información adicional, incluidos los problemas o las limitaciones conocidas.</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">Documentación PCL de NetApp para 9.14.1</block>
   <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
   <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">Opciones de CALIDAD DE servicio</block>
@@ -1935,4 +1934,19 @@
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp Kit de herramientas PowerShell de ONTAP</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="7aa552dc681d656a7dca492830d13523" category="paragraph"><block ref="7aa552dc681d656a7dca492830d13523" category="inline-link-rx"></block></block>
+  <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetApp sigue mejorando y actualizando la API REST DE ONTAP con cada versión principal del producto. En ocasiones, estas actualizaciones pueden incluir cambios en las llamadas API existentes, como los parámetros y los valores predeterminados utilizados. Estos cambios pueden afectar al software que accede a la API de REST.</block>
+  <block id="9edc7f95e01deb6ba7b3322cd44aded4" category="doc">Cambios en las llamadas de la API DE REST DE ONTAP</block>
+  <block id="cdfb2103aa97d64dff8d54de4cce7a03" category="section-title">Cambios en las llamadas de la API DE REST DE ONTAP existentes</block>
+  <block id="c54d88e796967d1b66714295a3511fe0" category="paragraph">Cualquier cambio en las llamadas API existentes puede afectar al software que accede a la API REST. Debe revisar la lista de cambios de la tabla siguiente para determinar si afecta a su entorno de automatización de ONTAP. Cada entrada incluye el punto final de API aplicable, una descripción del cambio y la versión de ONTAP que se introdujo.</block>
+  <block id="c46f7e527391f67f3805bf7d784fc003" category="cell">Descripción del cambio</block>
+  <block id="b15340b33a8b3cfed1967fb759a31d3a" category="cell"><block ref="653abe1298f355e168ee1393257c84cd" prefix="" category="inline-code"></block><block ref="8b19fc37f7c6865add16f7d29be42f8e" prefix=" " category="inline-code"></block></block>
+  <block id="32ad5449f355fd85efafb34fde71a1a6" category="cell">El campo *_links* de la respuesta se eliminó del duogrupo para estos puntos finales. No se recomienda que el cliente realice ninguna acción ni solución alternativa. Se espera que el campo vuelva a añadirse en una versión de ONTAP futura.</block>
+  <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
+  <block id="8b5316cbd81290ae3e906370a7f93751" category="section-title">Errores en la documentación de referencia de la API de REST DE ONTAP</block>
+  <block id="06da39e83216b4cbe300f130aae4c4f2" category="paragraph">Tal y como NetApp mejora y actualiza la API REST DE ONTAP, a veces se pueden introducir errores en la documentación de referencia en línea. Estos errores pueden crear confusión cuando se utiliza la API, pero generalmente no afectan ni interrumpen el software o el entorno de automatización de ONTAP.</block>
+  <block id="df8a5d4721acfa7407625ef7e4c36dc6" category="paragraph">Debe revisar la lista de errores en la siguiente tabla. Esto te ayudará a comprender mejor y desplazarse por la documentación de referencia de la API de REST DE ONTAP. Cada entrada incluye el extremo de API aplicable, una descripción del error y la versión de ONTAP que se introdujo.</block>
+  <block id="37b6d443585283b17a6c4bb5dcd6e38f" category="cell"><block ref="33829ee32ee08b76bc7ed5eeada2cd50" prefix="" category="inline-code"></block></block>
+  <block id="79d1f0bd73ced50c557a63343981d432" category="cell">La documentación de la API REST para el punto final indica que *specifier* es un campo válido. Sin embargo, el especificador de cuota no está soportado con este punto final. No se recomienda que el cliente realice ninguna acción ni solución alternativa. Este campo se eliminará de la documentación de la API en una versión de ONTAP futura.</block>
+  <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
+  <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">También debe revisar el<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> para obtener información adicional, como las limitaciones o los problemas conocidos. Consulte <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> también si hay cambios que puedan afectar a su software de automatización.</block>
 </blocks>

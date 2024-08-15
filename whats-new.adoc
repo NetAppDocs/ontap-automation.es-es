@@ -17,7 +17,7 @@ summary: NetApp actualiza periódicamente la API DE REST de ONTAP para ofrecerle
 NetApp actualiza periódicamente la API DE REST de ONTAP para ofrecerle nuevas funciones, mejoras y correcciones de errores.
 
 
-TIP: También debe revisar el https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^] para obtener información adicional, incluidos los problemas o las limitaciones conocidas.
+TIP: También debe revisar el https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^] para obtener información adicional, como las limitaciones o los problemas conocidos. Consulte link:api-changes.html["Cambios en las llamadas de la API DE REST DE ONTAP"] también si hay cambios que puedan afectar a su software de automatización.
 
 
 
