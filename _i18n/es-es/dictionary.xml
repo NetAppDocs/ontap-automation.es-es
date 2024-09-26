@@ -1890,7 +1890,6 @@
   <block id="d87719184e085166d3d845048810dd21" category="paragraph-title">Descargue el SDK</block>
   <block id="100168388acf5b00a071ca6e015323e0" category="paragraph">Puede descargar el SDK para facilitar la gestión del NetApp en el sitio de soporte de NetApp. El SDK admite varios lenguajes en el lado del cliente, incluyendo: Python, PowerShell, C, C++, Java, C#, VB. NET, y Ruby. Asegúrese de revisar la herramienta de matriz de interoperabilidad para obtener información sobre el SDK de capacidad de gestión de NetApp y su compatibilidad con su versión de ONTAP.</block>
   <block id="8a9c78330b74df288ffa23c3c916c9d4" category="paragraph-title">Utilizar OnCommand Workflow Automation</block>
-  <block id="5e956e5c034d62bc54b3db5e88c7f216" category="paragraph">También puede usar la API proporcionada con el SDK para automatizar tareas de administración sin escribir ningún script. OnCommand Workflow Automation (OnCommand WFA) proporciona varios flujos de trabajo preconfigurados para poner en marcha y ejecutar las tareas de gestión. Puede descargar el paquete WFA de OnCommand en el almacén de automatización del almacenamiento de NetApp.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">Sitio de soporte de NetApp</block>
   <block id="74ca9f2037f85f9bee172d20503c7375" category="list-text"><block ref="74ca9f2037f85f9bee172d20503c7375" category="inline-link-rx"></block></block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">Herramienta de matriz de interoperabilidad de NetApp</block>
@@ -1949,4 +1948,5 @@
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">También debe revisar el<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> para obtener información adicional, como las limitaciones o los problemas conocidos. Consulte <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> también si hay cambios que puedan afectar a su software de automatización.</block>
   <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">Anuncio de fin de disponibilidad de ONTAPI (ZAPI) CPC-00410</block>
   <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
+  <block id="22c2d1f13363659c32e6085b79534d7a" category="paragraph">También puede usar la API proporcionada con el SDK para automatizar tareas de administración sin escribir ningún script. OnCommand Workflow Automation (OnCommand WFA) proporciona varios flujos de trabajo preconfigurados para poner en marcha y ejecutar las tareas de gestión.</block>
 </blocks>
