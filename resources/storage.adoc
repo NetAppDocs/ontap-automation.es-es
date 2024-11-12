@@ -62,7 +62,7 @@ Se han introducido extremos para permitirle recuperar y establecer opciones de Q
 Una carga de trabajo DE CALIDAD de SERVICIO representa un objeto de almacenamiento cuyo seguimiento se realiza mediante LA CALIDAD de SERVICIO. Puede recuperar los flujos de trabajo de CALIDAD de SERVICIO. Este tipo de recurso se introdujo con ONTAP 9.10.
 
 .Qtrees
-Puede utilizar estas llamadas API a qtrees de gestión, un tipo de sistema de archivos dividido lógicamente. Este tipo de recurso se introdujo con ONTAP 9.6.
+Puede utilizar estas llamadas API a qtrees de gestión, un tipo de sistema de archivos dividido lógicamente. Este tipo de recurso se introdujo con ONTAP 9,6. La función de supervisión del rendimiento ampliado para qtrees se ha añadido con ONTAP 9.16,1.
 
 .Informes de cuotas
 Informe sobre cuotas, que es una técnica para restringir o realizar un seguimiento de archivos o uso del espacio. Este tipo de recurso se introdujo con ONTAP 9.6.

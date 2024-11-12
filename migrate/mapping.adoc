@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/mapping.html 
-keywords: ONTAPI, REST API, mapping, mapping documentation 
-summary: NetApp proporciona documentación que describe la asignación desde las llamadas API ONTAPI a las llamadas API DE REST equivalentes. 
+keywords: ontapi, rest api, mapping, mapping documentation, zapi 
+summary: La API REST de ONTAP incluye una funcionalidad equivalente a ONAPI en la mayoría de las áreas. NetApp proporciona documentación que describe la asignación desde las llamadas API ONTAPI a las llamadas API DE REST equivalentes. 
 ---
 = Asignación de la API DE REST a la API de ONTAP
 :hardbreaks:
@@ -16,14 +16,4 @@ summary: NetApp proporciona documentación que describe la asignación desde las
 [role="lead"]
 La API REST de ONTAP incluye una funcionalidad equivalente a ONAPI en la mayoría de las áreas. NetApp proporciona documentación que describe la asignación desde las llamadas API ONTAPI a las llamadas API DE REST equivalentes.
 
-La documentación de asignación de la API depende de la versión de ONTAP:
-
-* https://docs.netapp.com/us-en/ontap-restmap["ONTAP 9.15.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9141["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9131["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9121["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9111["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9101["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-991["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-98["ONTAP 9.8"^]
-
+Puede acceder a la documentación actual https://docs.netapp.com/us-en/ontap-restmap/["Asignación de ONTAPI a REST DE ONTAP"^] en línea. También hay un selector de versiones disponible para acceder a versiones anteriores de la documentación basada en la versión de ONTAP.

@@ -19,6 +19,9 @@ Puede usar estas llamadas API para acceder al almacenamiento de objetos basado e
 .Cucharones
 Un bucket es un contenedor de objetos y está estructurado mediante un espacio de nombres de objeto. Cada servidor de objetos S3 puede tener varios bloques. Este tipo de recurso se introdujo con ONTAP 9.7 y se actualizó con ONTAP 9.8.
 
+.Instantáneas de bloque
+Puede crear y administrar instantáneas de sus cubos S3. Esta función se agregó con ONTAP 9.16,1.
+
 .Servicios
 Es posible crear y gestionar la configuración de ONTAP S3, incluidos los servidores y las configuraciones de bloques. Este tipo de recurso se introdujo con ONTAP 9.7.
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: pstk/install_pstk.html 
-keywords: install, powershell, powershell toolkit 
-summary:  
+keywords: powershell, powershell toolkit, install powershell toolkit 
+summary: Hay dos opciones disponibles para descargar e instalar el kit de herramientas de PowerShell de NetApp ONTAP. 
 ---
 = Descargue e instale el kit de herramientas PowerShell de ONTAP
 :hardbreaks:
@@ -10,7 +10,7 @@ summary:
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -24,4 +24,4 @@ https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit["NetA
 .Galería de PowerShell
 Puede descargar el kit de herramientas de PowerShell desde la Galería de PowerShell:
 
-https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302["NetApp Kit de herramientas PowerShell de ONTAP"^]
+https://www.powershellgallery.com/packages/NetApp.ONTAP/9.15.1.2410["NetApp Kit de herramientas PowerShell de ONTAP"^]

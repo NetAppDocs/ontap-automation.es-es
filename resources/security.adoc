@@ -26,7 +26,7 @@ La configuración de una cuenta de usuario con ámbito. Este tipo de recurso se 
 La información de la cuenta de SVM se puede administrar en el servidor de Active Directory. Este tipo de recurso se introdujo con ONTAP 9.7.
 
 .Antiransomware
-ONTAP detecta archivos que potencialmente contienen una amenaza de ransomware. Existen varias categorías de extremos. Puede recuperar una lista de estos archivos sospechosos, así como eliminarlos de un volumen. Este tipo de recurso se introdujo con ONTAP 9.10.1.
+ONTAP detecta archivos que potencialmente contienen una amenaza de ransomware. Existen varias categorías de extremos. Puede recuperar una lista de estos archivos sospechosos, así como eliminarlos de un volumen. Este tipo de recurso se introdujo con ONTAP 9.10.1. Se agregó soporte para mostrar la versión y actualizar el paquete anti-ransomware con ONTAP 9.16.
 
 .Auditoría
 La configuración para determinar qué se registra en los archivos del registro de auditoría. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -52,8 +52,17 @@ Duo proporciona autenticación de dos factores para inicios de sesión SSH. Pued
 .Seguridad del clúster
 Puede recuperar detalles de la seguridad para todo el clúster y actualizar ciertos parámetros. Este tipo de recurso se introdujo con ONTAP 9.7 y se actualizó con ONTAP 9.8.
 
+.Roles externos
+Un rol externo se define en un proveedor de identificación de OAUTH 2,0. Es posible crear y administrar relaciones de asignación entre estos roles externos y los roles de ONTAP. Este tipo de recurso se introdujo con ONTAP 9,16.
+
 .KMS PARA GCP
 Este conjunto de llamadas API le permite utilizar el servicio de gestión de claves de Google Cloud Platform para almacenar y gestionar las claves de cifrado ONTAP. Este tipo de recurso se introdujo inicialmente con la API DE REST de ONTAP 9.8. Sin embargo, esta función se ha rediseñado y, por lo tanto, se considera nueva, con nuevos tipos de recursos, en ONTAP 9.9.
+
+.Grupos
+Puede administrar configuraciones de grupo, incluidos los grupos representados con UUID. Este tipo de recurso se introdujo con ONTAP 9,16.
+
+.Asignaciones de roles de grupos
+Puede crear y administrar relaciones de asignación entre grupos y roles. Este tipo de recurso se introdujo con ONTAP 9,16.
 
 .IPSec
 Seguridad de protocolo de Internet (IPSec) es un conjunto de protocolos que proporcionan seguridad entre dos puntos finales a través de una red IP subyacente. Este tipo de recurso es nuevo en ONTAP 9.8.
@@ -96,7 +105,7 @@ Al ofrecer la opción de que varios administradores aprueben el acceso, se mejor
 Estos ajustes se utilizan para recuperar y gestionar la configuración del servidor NIS de clúster. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .OAuth 2,0
-La autorización abierta (OAuth 2,0) es un marco basado en tokens que se puede utilizar para restringir el acceso a sus recursos de almacenamiento de ONTAP. Puede usarlo con clientes que acceden a ONTAP a través de la API DE REST. La configuración se puede realizar con cualquiera de las interfaces administrativas de ONTAP, incluida la API de REST. Este tipo de recurso se introdujo con ONTAP 9,14.
+La autorización abierta (OAuth 2,0) es un marco basado en tokens que se puede utilizar para restringir el acceso a sus recursos de almacenamiento de ONTAP. Puede usarlo con clientes que acceden a ONTAP a través de la API DE REST. Este tipo de recurso se introdujo con ONTAP 9,14. Se mejoró con ONTAP 9.16 a través del soporte del servidor de autorización de Microsoft Entra ID (anteriormente Azure AD) con las afirmaciones estándar de OAuth 2,0. Además, las reclamaciones de grupo estándar Entra ID basadas en valores de estilo UUID se admiten mediante nuevas capacidades de asignación de grupos y roles. También se ha introducido una nueva función de asignación de roles externos. También vea *Roles externos*, *Grupos*, y *Asignaciones de roles grupales*.
 
 .Autenticación de contraseña
 Esto incluye la llamada API utilizada para cambiar la contraseña de una cuenta de usuario. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -124,3 +133,6 @@ Estos extremos permiten recuperar la configuración de seguridad SSH de todas la
 
 .TOTPS
 Es posible usar la API de REST para configurar perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Este tipo de recurso se introdujo con ONTAP 9,13.
+
+.Autenticación web
+La autenticación web (WebAuthn) es un estándar web para autenticar usuarios de forma segura basado en la criptografía de clave pública. Con ONTAP, es compatible con la administración de MFA resistentes a phishing a través del Administrador del sistema y la API REST DE ONTAP. Esta función se agregó con ONTAP 9.16.

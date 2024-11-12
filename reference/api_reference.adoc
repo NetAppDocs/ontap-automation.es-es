@@ -23,19 +23,7 @@ NOTE: Es posible acceder a la documentación de referencia de la API de REST en 
 
 == Acceda en línea a la documentación de referencia de API de ONTAP
 
-Puede acceder a una copia de la documentación de referencia de la API de REST de ONTAP mediante los enlaces proporcionados a continuación. La versión de ONTAP mantiene la documentación.
-
-* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.15.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9141/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.8"^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.7"^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.6"^]
-
+Puede acceder a la documentación actual https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["Referencia de API de REST de ONTAP"^] en línea. También hay un selector de versiones disponible para acceder a versiones anteriores de la documentación basada en la versión de ONTAP.
 
 
 

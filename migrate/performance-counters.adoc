@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
 keywords: performance, performance counters, mapping 
-summary: El Counter Manager de ONTAP mantiene amplia información sobre el rendimiento de cada sistema ONTAP. Exporta estos datos como contadores de rendimiento que puede utilizar para evaluar el rendimiento de su sistema ONTAP y ayudarle a alcanzar sus objetivos de rendimiento. 
+summary: El Counter Manager de ONTAP mantiene amplia información sobre el rendimiento de cada sistema ONTAP. Exporta estos datos como un conjunto de contadores de rendimiento que puede utilizar para evaluar el rendimiento de su sistema ONTAP y ayudar a cumplir sus objetivos de rendimiento. 
 ---
 = Contadores de rendimiento
 :hardbreaks:
@@ -98,14 +98,7 @@ Devuelve una fila específica de una tabla de contadores con nombre.
 
 NetApp proporciona un amplio soporte para migrar el código de automatización desde ONAPI a la API DE REST de ONTAP. Esto incluye documentación de asignación para identificar la tabla de contadores de rendimiento equivalente disponible en la API DE REST para un objeto ONTAPI determinado.
 
-Consulte la documentación de asignación adecuada en función de la versión de ONTAP que utilice:
-
-* https://docs.netapp.com/us-en/ontap-pcmap/["Asignación de contador de rendimiento de ONTAP 9.15.1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9141/["Asignación de contador de rendimiento de ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9131/["Asignación de contador de rendimiento de ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9121/["Asignación de contadores de rendimiento de ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9111/["Asignación de contadores de rendimiento de ONTAP 9.11.1"^]
-
+Puede acceder a la documentación actual https://docs.netapp.com/us-en/ontap-pcmap/["Asignación de contador de rendimiento de ONTAP"^] en línea. También hay un selector de versiones disponible para acceder a versiones anteriores de la documentación basada en la versión de ONTAP.
 
 
 
