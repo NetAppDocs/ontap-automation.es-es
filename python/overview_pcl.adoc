@@ -10,7 +10,7 @@ summary: La biblioteca de clientes Python de ONTAP de NetApp es un paquete que p
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Puede recuperar toda la información de auditoría de un archivo o carp
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

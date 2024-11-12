@@ -10,7 +10,7 @@ summary: Puede recuperar una lista de discos en el clúster. Puede hacerlo para 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

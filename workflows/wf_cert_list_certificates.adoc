@@ -10,7 +10,7 @@ summary: Es posible enumerar los certificados instalados en el clúster de ONTAP
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

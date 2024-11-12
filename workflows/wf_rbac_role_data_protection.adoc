@@ -10,7 +10,7 @@ summary: Puede proporcionar a un usuario funcionalidades de protección de datos
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

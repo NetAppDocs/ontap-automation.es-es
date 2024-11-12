@@ -10,7 +10,7 @@ summary: Debe estar familiarizado con la estructura y el formato de los flujos d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

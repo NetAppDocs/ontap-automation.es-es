@@ -10,7 +10,7 @@ summary: Puede recuperar los permisos efectivos actuales para un archivo o carpe
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

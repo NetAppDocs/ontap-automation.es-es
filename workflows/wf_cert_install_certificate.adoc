@@ -10,7 +10,7 @@ summary: Puede instalar un certificado X,509 firmado en el clúster de ONTAP. Pu
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

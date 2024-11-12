@@ -10,7 +10,7 @@ summary: Puede aplicar un nuevo descriptor de seguridad a un archivo o carpeta e
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Puede gestionar los permisos y las políticas de auditoría para los ar
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

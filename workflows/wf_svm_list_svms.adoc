@@ -10,7 +10,7 @@ summary: 'Puede mostrar las máquinas virtuales de almacenamiento (SVM) definida
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

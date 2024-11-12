@@ -10,7 +10,7 @@ summary: 'Es posible configurar el procesamiento de Event Management System (EMS
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

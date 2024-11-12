@@ -10,7 +10,7 @@ summary: Puede recuperar todos los mensajes de notificación de eventos o aquell
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

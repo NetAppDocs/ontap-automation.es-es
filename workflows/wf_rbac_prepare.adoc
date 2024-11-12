@@ -10,7 +10,7 @@ summary: Es posible usar la funcionalidad de control de acceso basado en roles d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

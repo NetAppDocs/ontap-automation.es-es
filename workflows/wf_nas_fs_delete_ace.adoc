@@ -10,7 +10,7 @@ summary: 'Puede eliminar una entrada de control de acceso (ACE) existente de un 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

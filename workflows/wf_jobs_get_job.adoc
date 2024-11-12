@@ -10,7 +10,7 @@ summary: Puede recuperar la instancia de un trabajo de ONTAP específico. Normal
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Puede crear un rol DE REST para proporcionar a los usuarios la capacida
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Puede definir un rol para restringir la administración de volúmenes d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

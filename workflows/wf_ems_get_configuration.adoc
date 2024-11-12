@@ -10,7 +10,7 @@ summary: Puede recuperar la configuración actual de EMS para un clúster de ONT
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

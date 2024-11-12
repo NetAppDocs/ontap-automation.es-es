@@ -10,7 +10,7 @@ summary: Puede actualizar un descriptor de seguridad específico a un archivo o 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

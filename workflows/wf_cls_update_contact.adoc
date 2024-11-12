@@ -10,7 +10,7 @@ summary: Puede actualizar la información de contacto de un clúster de. Debido 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

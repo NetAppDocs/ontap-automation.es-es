@@ -10,7 +10,7 @@ summary: Puede utilizar el siguiente flujo de trabajo para crear un nuevo destin
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
