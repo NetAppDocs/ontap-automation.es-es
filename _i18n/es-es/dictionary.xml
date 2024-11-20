@@ -826,9 +826,6 @@
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">Cambios en la disponibilidad de SnapDiff en ONAPI</block>
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">A partir de ONTAP 9.10.1, no se pueden invocar las llamadas a la API de SnapDiff v1 y v2. Cualquier aplicación de terceros que llame a SnapDiff v1 o a la API ONTv2 no funcionará a partir de ONTAP 9.10.1. Los usuarios de ONTAP deben verificar que su aplicación de backup admite las llamadas DE REST de SnapDiff v3 antes de actualizar a ONTAP 9.10.1.</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">La disponibilidad de API de SnapDiff en versiones de ONTAP se define de la siguiente manera:</block>
-  <block id="c731207305059b4146b7b02e506607f9" category="list-text">ONTAP 9.7 y versiones anteriores: v1 y v2 (solo ONTAP)</block>
-  <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">ONTAP 9.8 – 9.9.1: v1, v2 y v3 (tanto ONAPI como API REST)</block>
-  <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">ONTAP 9.10.1: Solo v3 (solo API REST)</block>
   <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">Base de servicios web DE REST</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">La transferencia de estado representacional (REST) es un estilo para crear aplicaciones web distribuidas. Cuando se aplica al diseño de una API de servicios web, establece un conjunto de tecnologías para exponer recursos basados en servidor y administrar sus estados. Usa protocolos y estándares convencionales para proporcionar una base flexible a la hora de administrar clústeres de ONTAP.</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">Mientras QUE REST establece un conjunto común de tecnologías y prácticas recomendadas, los detalles de cada API pueden variar en función de las opciones que se tomen durante el desarrollo. Debe conocer las características de diseño de la API DE REST de ONTAP antes de utilizarla con una implementación activa.</block>
@@ -1954,4 +1951,7 @@
   <block id="5002d79d77c997408c96270b3cd46237" category="list-text">Se ha añadido compatibilidad con las nuevas funciones de ONTAP 9.8 no disponibles a través de ONTAPI a la API DE REST. Esto incluye soporte de API DE REST para bloques y servicios de ONTAP S3, sincronización activa de SnapMirror (anteriormente, SnapMirror Business Continuity) y análisis de sistemas de archivos.</block>
   <block id="982a944cf7d3a2f28ae7bfcc8755ec2c" category="list-text">ONTAP 9.8 ofrece flujos de trabajo más eficientes y modernos utilizando la API REST. Por ejemplo, las actualizaciones de firmware con un solo clic ahora están disponibles para varios tipos diferentes de firmware.</block>
   <block id="c408f623f341094b81899c67b52a1051" category="list-text">La página de documentación en línea de ONTAP incluye etiquetas que indican la versión de ONTAP de que se introdujo cada extremo o parámetro REST, incluidos los nuevos de 9,8.</block>
+  <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 y versiones anteriores: v1 y v2 (solo ONTAP)</block>
+  <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9.1: v1, v2 y v3 (tanto ONAPI como API REST)</block>
+  <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9.10,1 y versiones posteriores: Solo v3 (solo API REST)</block>
 </blocks>
