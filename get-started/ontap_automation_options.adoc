@@ -38,7 +38,7 @@ NetApp ofrece kits de herramientas de cliente que abstraen la API DE REST DE ONT
 La biblioteca de clientes Python es un paquete que puede utilizar al escribir scripts para acceder a la API DE REST de ONTAP. Proporciona compatibilidad con varios servicios subyacentes, incluidos la gestión de conexiones, el procesamiento de solicitudes asincrónicas y la gestión de excepciones. Al utilizar la biblioteca del cliente Python, puede desarrollar rápidamente código robusto para respaldar sus objetivos de automatización de ONTAP. Consulte link:../python/overview_pcl.html["Biblioteca de clientes de Python"] si quiere más información.
 
 .Kit de herramientas de PowerShell
-Es posible usar el kit de herramientas NetApp.ONTAP PowerShell para automatizar la administración de un clúster de ONTAP desde un host Windows. Consulte https://review.docs.netapp.com/us-en/ontap-automation_devnet-update/pstk/overview_pstk.html["Descripción general del kit de herramientas PowerShell"^] si quiere más información.
+Es posible usar el kit de herramientas NetApp.ONTAP PowerShell para automatizar la administración de un clúster de ONTAP desde un host Windows. Consulte link:../pstk/overview_pstk.html["Descripción general del kit de herramientas PowerShell"] para obtener más información.
 
 
 

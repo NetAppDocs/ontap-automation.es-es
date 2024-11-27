@@ -1762,7 +1762,6 @@
   <block id="14e68e201b8f0e56ae0d9578c982a27e" category="inline-link">Preparación de Lab on Demand para ejecutar los scripts de ejemplo</block>
   <block id="44285685546e8a285061253138136305" category="paragraph">También revise<block ref="5a0195c863eb934ee5e5002fb412c453" category="inline-link-rx"></block> para empezar.</block>
   <block id="895d9f6334617339bb786f62f4a5c67f" category="paragraph-title">Kit de herramientas de PowerShell</block>
-  <block id="600c764bdcc8f9d03c6a1f6ddeb1eb60" category="paragraph">Es posible usar el kit de herramientas NetApp.ONTAP PowerShell para automatizar la administración de un clúster de ONTAP desde un host Windows. Consulte<block ref="a392538979ff10b567cebfb1b03839f9" category="inline-link-rx"></block> si quiere más información.</block>
   <block id="b2ee0232c3d3f9b1b42c01b23f2304c4" category="paragraph">Asible es una herramienta de software de código abierto que permite el aprovisionamiento, la gestión de la configuración y la puesta en marcha de aplicaciones. Desde su lanzamiento y su posterior adquisición por RedHat, ha seguido creciendo en popularidad. NetApp proporciona módulos certificados con Ansible que pueden utilizar los clientes para automatizar la administración de sus sistemas de almacenamiento de ONTAP. Consulte <block ref="8e7a6d97666e30efff2393bbc1610342" category="inline-link-macro-rx"></block> y..<block ref="1b4969cc73ff961c9b216f73f676bf04" category="inline-link-rx"></block> para obtener más información.</block>
   <block id="3bf379567e5ff2ee0ebd31f7d516b365" category="summary">Hay varios artículos de blog y videos disponibles para ayudarte a entender mejor cómo usar la biblioteca cliente de Python.</block>
   <block id="86670b28b0a0c13eeda3cbeec2b6362d" category="paragraph">Hay varios artículos de blog disponibles para ayudarle a entender mejor cómo usar la biblioteca cliente de Python.</block>
@@ -1954,4 +1953,5 @@
   <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 y versiones anteriores: v1 y v2 (solo ONTAP)</block>
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9.1: v1, v2 y v3 (tanto ONAPI como API REST)</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9.10,1 y versiones posteriores: Solo v3 (solo API REST)</block>
+  <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">Es posible usar el kit de herramientas NetApp.ONTAP PowerShell para automatizar la administración de un clúster de ONTAP desde un host Windows. Consulte <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> para obtener más información.</block>
 </blocks>
