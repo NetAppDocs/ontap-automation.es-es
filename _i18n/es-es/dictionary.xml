@@ -1848,8 +1848,6 @@
   <block id="2d11c1e0261953683085b8e4bbb5c6b3" category="list-text"><block ref="2d11c1e0261953683085b8e4bbb5c6b3" category="inline-link-rx"></block></block>
   <block id="adb8bbc4797b2c4786a7cc39e81b6f80" category="inline-link">Documentación del SDK de capacidad de gestión de NetApp</block>
   <block id="e63dbec97e259e045c2bdaab696ebe25" category="list-text"><block ref="eb9fd5adf45f5072855c8bbbb18ec1d3" category="inline-link-rx"></block></block>
-  <block id="15ed38b5d48d9edf37f82cc89687f17e" category="inline-link">Recursos de documentación de OnCommand Workflow Automation</block>
-  <block id="f8e4512adc37ddf24d285dd82223a4d9" category="list-text"><block ref="f8e4512adc37ddf24d285dd82223a4d9" category="inline-link-rx"></block></block>
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">Hay tres nuevos puntos finales disponibles con esta función. Puede emitir estas llamadas API para recuperar todas las interfaces de NFS sobre TLS, recuperar una interfaz específica mediante UUID y actualizar las propiedades de configuración de una interfaz TLS. Colectivamente, estas llamadas API proporcionan un equivalente al conjunto de<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> Comandos de la CLI.</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">NFS con TLS está disponible en ONTAP 9.15.1 como versión preliminar pública. Como oferta de vista previa, esta función no se admite para cargas de trabajo de producción con ONTAP 9.15.1.</block>
   <block id="b302321652be9f7bc5eab2d6b2eb58f6" category="sidebar">Puede automatizar la puesta en marcha y administración de los sistemas de almacenamiento de ONTAP mediante una de las varias opciones disponibles. La API de REST DE ONTAP proporciona la base principal para las tecnologías de automatización.</block>
@@ -1954,4 +1952,6 @@
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9.1: v1, v2 y v3 (tanto ONAPI como API REST)</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9.10,1 y versiones posteriores: Solo v3 (solo API REST)</block>
   <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">Es posible usar el kit de herramientas NetApp.ONTAP PowerShell para automatizar la administración de un clúster de ONTAP desde un host Windows. Consulte <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> para obtener más información.</block>
+  <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">Documentación de OnCommand Workflow Automation</block>
+  <block id="ad717655f6134a7a7b1257cccf5f85ba" category="list-text"><block ref="ad717655f6134a7a7b1257cccf5f85ba" category="inline-link-rx"></block></block>
 </blocks>
