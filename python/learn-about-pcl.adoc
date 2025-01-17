@@ -16,6 +16,9 @@ summary: La biblioteca del cliente de Python de NetApp ONTAP es un paquete que p
 [role="lead"]
 La biblioteca del cliente de Python de NetApp ONTAP es un paquete que puede instalar y utilizar para escribir rápidamente scripts que accedan a la API DE REST DE ONTAP. Deberá preparar el entorno de tiempo de ejecución local antes de utilizarlo.
 
+
+NOTE: También debe revisar los recursos disponibles en link:../additional/learn_more.html["Obtenga más información sobre la API de REST DE ONTAP"].
+
 .Beneficios y funciones
 Puede utilizar la biblioteca cliente de Python para desarrollar rápidamente código robusto para automatizar la administración de sus implementaciones de ONTAP. Proporciona varios servicios subyacentes, como:
 
