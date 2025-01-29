@@ -4,7 +4,7 @@ permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping 
 summary: El Counter Manager de ONTAP mantiene amplia información sobre el rendimiento de cada sistema ONTAP. Exporta estos datos como un conjunto de contadores de rendimiento que puede utilizar para evaluar el rendimiento de su sistema ONTAP y ayudar a cumplir sus objetivos de rendimiento. 
 ---
-= Contadores de rendimiento
+= Uso de contadores de rendimiento con la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

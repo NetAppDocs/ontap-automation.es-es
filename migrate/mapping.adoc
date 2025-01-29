@@ -4,7 +4,7 @@ permalink: migrate/mapping.html
 keywords: ontapi, rest api, mapping, mapping documentation, zapi 
 summary: La API REST de ONTAP incluye una funcionalidad equivalente a ONAPI en la mayoría de las áreas. NetApp proporciona documentación que describe la asignación desde las llamadas API ONTAPI a las llamadas API DE REST equivalentes. 
 ---
-= Asignación de la API DE REST a la API de ONTAP
+= Asignación de ONTAPI a la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

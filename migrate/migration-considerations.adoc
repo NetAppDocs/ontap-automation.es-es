@@ -4,7 +4,7 @@ permalink: migrate/migration-considerations.html
 keywords: migrate, mirgate to rest api, snapdiff 
 summary: 'Antes de migrar a la API de REST DE ONTAP desde la API ONTAPI (ZAPI) o la CLI de ONTAP, hay varios problemas que debe tener en cuenta.' 
 ---
-= Consideraciones sobre migración
+= Consideraciones sobre la migración de la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
