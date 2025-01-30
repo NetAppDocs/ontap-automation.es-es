@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_prepare.html
 keywords: security, rbac, prepare rbac, rbac workflows 
 summary: Es posible usar la funcionalidad de control de acceso basado en roles de ONTAP de varias formas diferentes, según el entorno. En esta sección se presentan algunos escenarios comunes como flujos de trabajo. En cada caso, el enfoque se centra en un objetivo administrativo y de seguridad específico. 
 ---
-= Prepárese para el uso de RBAC
+= Prepare el uso de RBAC mediante la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: workflows/wf_stor_list_disks.html
 keywords: workflow, storage, disks, list disks 
 summary: Puede recuperar una lista de discos en el clúster. Puede hacerlo para localizar uno o varios repuestos para usar como parte de la creación de un agregado. 
 ---
-= Enumere los discos
+= Enumere los discos que usan la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

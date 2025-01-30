@@ -4,7 +4,7 @@ permalink: resources/cluster.html
 keywords: cluster resources 
 summary: Puede usar estas llamadas API para gestionar clústeres de ONTAP y los recursos relacionados. 
 ---
-= Clúster
+= Los recursos del clúster en la API REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

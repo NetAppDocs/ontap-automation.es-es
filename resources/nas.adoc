@@ -4,7 +4,7 @@ permalink: resources/nas.html
 keywords: nas resources 
 summary: Puede usar estas llamadas API para gestionar la configuración de CIFS y NFS del clúster y las SVM. 
 ---
-= NAS
+= Recursos NAS en la API REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: workflows/wf_cert_install_certificate.html
 keywords: workflow, install certificate, x509, x.509 
 summary: Puede instalar un certificado X,509 firmado en el clúster de ONTAP. Puede hacerlo como parte de la configuración de una característica o un protocolo ONTAP que requiera una autenticación fuerte. 
 ---
-= Instalar un certificado
+= Instale un certificado mediante la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

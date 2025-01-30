@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_prepare.html
 keywords: nas, file security, sacl, dacl, prepare 
 summary: Puede gestionar los permisos y las políticas de auditoría para los archivos disponibles a través de las máquinas virtuales de almacenamiento en un clúster de ONTAP. 
 ---
-= Prepárese para gestionar la seguridad de archivos y las políticas de auditoría
+= Prepararse para gestionar la seguridad de archivos y las políticas de auditoría mediante la API DE REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
