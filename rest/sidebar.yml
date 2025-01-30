@@ -6,17 +6,17 @@ entries:
   entries:
   - title: Base de servicios web DE REST
     url: "/rest/rest_web_services_foundation.html"
-  - title: Características operativas básicas
+  - title: Características operativas
     url: "/rest/operational_characteristics.html"
   - title: Variables de entrada
     url: "/rest/input_variables.html"
   - title: Interpretar una respuesta API
     url: "/rest/interpret_api_response.html"
-  - title: Procesamiento asíncrono mediante el objeto de trabajo
+  - title: Procesamiento asíncrono
     url: "/rest/asynchronous_processing.html"
   - title: Referencias de objeto y acceso
     url: "/rest/object_references_and_access.html"
-  - title: Métricas de rendimiento para los recursos de almacenamiento
+  - title: Métricas de rendimiento
     url: "/rest/performance_metrics.html"
 - title: Seguridad RBAC
   entries:

@@ -4,7 +4,7 @@ permalink: rest/object_references_and_access.html
 keywords: objects, access paths, uuid, uuidv4, collections, object collection 
 summary: Es posible hacer referencia a las instancias o los objetos de recursos expuestos mediante la API DE REST de ONTAP y acceder a ellos de varias maneras diferentes. 
 ---
-= Referencias de objeto y acceso
+= Acceso y referencias de objetos de la API de REST DE ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
