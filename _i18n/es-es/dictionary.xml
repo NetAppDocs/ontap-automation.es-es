@@ -820,7 +820,6 @@
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">Cambios en la disponibilidad de SnapDiff en ONAPI</block>
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">A partir de ONTAP 9.10.1, no se pueden invocar las llamadas a la API de SnapDiff v1 y v2. Cualquier aplicación de terceros que llame a SnapDiff v1 o a la API ONTv2 no funcionará a partir de ONTAP 9.10.1. Los usuarios de ONTAP deben verificar que su aplicación de backup admite las llamadas DE REST de SnapDiff v3 antes de actualizar a ONTAP 9.10.1.</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">La disponibilidad de API de SnapDiff en versiones de ONTAP se define de la siguiente manera:</block>
-  <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">Base de servicios web DE REST</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">La transferencia de estado representacional (REST) es un estilo para crear aplicaciones web distribuidas. Cuando se aplica al diseño de una API de servicios web, establece un conjunto de tecnologías para exponer recursos basados en servidor y administrar sus estados. Usa protocolos y estándares convencionales para proporcionar una base flexible a la hora de administrar clústeres de ONTAP.</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">Mientras QUE REST establece un conjunto común de tecnologías y prácticas recomendadas, los detalles de cada API pueden variar en función de las opciones que se tomen durante el desarrollo. Debe conocer las características de diseño de la API DE REST de ONTAP antes de utilizarla con una implementación activa.</block>
   <block id="b0fcdfb2c58efafaace08609d3e95f6d" category="section-title">Recursos y representación estatal</block>
@@ -1982,4 +1981,5 @@
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell es otra opción para automatizar la administración de sus clústeres de ONTAP.</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell es un lenguaje de programación de Microsoft que puede utilizar para la automatización de tareas y la gestión de la configuración. Incluye un entorno de shell de línea de comandos, así como un lenguaje de scripting.</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">Obtenga más información sobre el SDK para facilitar la gestión de NetApp</block>
+  <block id="40165cda75e3c737682e919501eec98c" category="doc">Obtenga información sobre los servicios web REST</block>
 </blocks>

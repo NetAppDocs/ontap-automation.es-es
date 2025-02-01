@@ -4,6 +4,8 @@ title: Manos a la obra
 entries:
 - title: Comprender las opciones de automatización
   url: "/get-started/ontap_automation_options.html"
+- title: Obtenga información sobre los servicios web REST
+  url: "/get-started/learn-about-rest.html"
 - title: Cómo acceder a la API de REST
   url: "/get-started/access_rest_api.html"
 - title: Tu primera llamada a la API de REST DE ONTAP

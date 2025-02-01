@@ -19,7 +19,7 @@ indexpage:
   - title: API REST de ONTAP
     links:
     - title: Detalles de implementación de REST
-      url: "/rest/rest_web_services_foundation.html"
+      url: "/rest/operational_characteristics.html"
     - title: Seguridad RBAC
       url: "/rest/rbac_overview.html"
     - title: Resumen de recursos REST
@@ -33,9 +33,9 @@ indexpage:
     - title: Biblioteca de clientes de Python
       url: "/python/learn-about-pcl.html"
     - title: Kit de herramientas PowerShell
-      url: "/pstk/overview_pstk.html"
+      url: "/pstk/learn-about-pstk.html"
     - title: SDK de gestión de NetApp
-      url: "/sw-tools/nmsdk.html"
+      url: "/sw-tools/learn-about-nmsdk.html"
   - title: Migrar a la API DE REST
     links:
     - title: Inhabilitación de ONTAPI
