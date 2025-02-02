@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: python/learn-about-pcl.html 
 keywords: learn about python client library, learn about pcl, pcl overview, pcl 
-summary: 'La biblioteca del cliente de Python de NetApp ONTAP es un paquete que puede instalar y utilizar para escribir rápidamente scripts que accedan a la API DE REST DE ONTAP. Deberá preparar el entorno de tiempo de ejecución local antes de utilizarlo. Debe utilizar la utilidad _pip_ para instalar el paquete NetApp_ONTAP desde el sitio de índice de paquetes de Python (Pypi).' 
+summary: 'La biblioteca del cliente de Python de NetApp ONTAP es un paquete que puede instalar y utilizar para escribir rápidamente scripts que accedan a la API DE REST DE ONTAP. Deberá preparar el entorno de tiempo de ejecución local antes de utilizarlo. Puede utilizar la utilidad _pip_ para instalar el paquete desde el sitio Python Package Index (PyPI).' 
 ---
 = Obtenga información sobre la biblioteca cliente de Python de ONTAP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'La biblioteca del cliente de Python de NetApp ONTAP es un paquete que 
 
 
 [role="lead"]
-La biblioteca del cliente de Python de NetApp ONTAP es un paquete que puede instalar y utilizar para escribir rápidamente scripts que accedan a la API DE REST DE ONTAP. Deberá preparar el entorno de tiempo de ejecución local antes de utilizarlo. Debe utilizar la utilidad _pip_ para instalar el paquete NetApp_ONTAP desde el sitio de índice de paquetes de Python (Pypi).
+La biblioteca del cliente de Python de NetApp ONTAP es un paquete que puede instalar y utilizar para escribir rápidamente scripts que accedan a la API DE REST DE ONTAP. Deberá preparar el entorno de tiempo de ejecución local antes de utilizarlo. Puede utilizar la utilidad _pip_ para instalar el paquete desde el sitio Python Package Index (PyPI).
 
 .Información relacionada
 * link:../additional/learn_more.html["Obtenga más información sobre la API de REST DE ONTAP"].
@@ -34,15 +34,11 @@ Puede utilizar la biblioteca cliente de Python para desarrollar rápidamente có
 
 
 
-== Paquetes separados por versión de ONTAP
+== Paquetes y documentación
 
-El nombre del paquete de biblioteca de clientes Python es *netapp-ontap*. La versión asociada al paquete es una combinación de los números de versión principal y secundario de ONTAP a partir de los cuales se ha generado la biblioteca, junto con una versión secundaria para la biblioteca cliente dentro de la versión de ONTAP. Por ejemplo, los números de versión válidos incluyen 9,6.1, 9,6.2 y 9,7.1.
+El nombre del paquete de la biblioteca cliente de Python es _NetApp-ONTAP_. La versión asociada al paquete es una combinación de los números de versión principal y secundario de ONTAP a partir de los cuales se ha generado la biblioteca, junto con una versión secundaria para la biblioteca cliente dentro de la versión de ONTAP. Por ejemplo, los números de versión válidos incluyen 9,6.1, 9,6.2 y 9,7.1.
 
-
-
-=== Paquetes y documentación
-
-Cada versión de ONTAP que empieza por 9,6 tiene un paquete de PyPI y documentación asociada. Los requisitos de instalación se incluyen con cada paquete y especifican diferentes versiones de: python, Requests, toolbelt y marshmallow.
+Cada versión de ONTAP que empieza por 9,6 tiene un paquete de PyPI con documentación asociada. Los requisitos de instalación se incluyen con cada paquete y especifican las versiones de las bibliotecas de soporte como python, requests, requests-toolbelt y marshmallow.
 
 .Lista de paquetes y documentación
 [%collapsible]
