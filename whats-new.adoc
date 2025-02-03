@@ -10,7 +10,7 @@ summary: Cada versión de ONTAP actualiza la API de REST DE ONTAP para incorpora
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
