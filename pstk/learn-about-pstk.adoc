@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: pstk/learn-about-pstk.html 
 keywords: overview, powershell, powershell toolkit, install powershell toolkit 
-summary: NetApp proporciona compatibilidad con PowerShell que puede utilizar para administrar sus sistemas de almacenamiento de ONTAP. 
+summary: NetApp proporciona un kit de herramientas para aplicaciones de PowerShell que se puede usar para administrar sus sistemas de almacenamiento de ONTAP. El kit de herramientas ha sido creado por desarrolladores de NetApp y cuenta con soporte de la comunidad de clientes. 
 ---
 = Obtenga más información sobre el kit de herramientas PowerShell de NetApp
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp proporciona compatibilidad con PowerShell que puede utilizar par
 
 
 [role="lead"]
-NetApp proporciona compatibilidad con PowerShell que puede utilizar para administrar sus sistemas de almacenamiento de ONTAP.
+NetApp proporciona un kit de herramientas para aplicaciones de PowerShell que se puede usar para administrar sus sistemas de almacenamiento de ONTAP. El kit de herramientas ha sido creado por desarrolladores de NetApp y cuenta con soporte de la comunidad de clientes.
 
 
 
