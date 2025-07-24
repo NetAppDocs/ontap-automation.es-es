@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/security.html 
-keywords:  
-summary:  
+keywords: rest, rest api, security, security resources 
+summary: Puede utilizar estas llamadas API para administrar la configuración de seguridad del clúster y las SVM. 
 ---
 = Recursos de seguridad en la API de REST DE ONTAP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Es posible utilizar estas llamadas API para gestionar la configuración de seguridad del clúster y de la SVM.
+Puede utilizar estas llamadas API para administrar la configuración de seguridad del clúster y las SVM.
 
 .Cuentas
 Hay una colección de cuentas de usuario para el clúster y las SVM. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -27,6 +27,9 @@ La información de la cuenta de SVM se puede administrar en el servidor de Activ
 
 .Antiransomware
 ONTAP detecta archivos que potencialmente contienen una amenaza de ransomware. Existen varias categorías de extremos. Puede recuperar una lista de estos archivos sospechosos, así como eliminarlos de un volumen. Este tipo de recurso se introdujo con ONTAP 9.10.1. Se agregó soporte para mostrar la versión y actualizar el paquete anti-ransomware con ONTAP 9.16.
+
+.Estadísticas de entropía anti-ransomware
+Se encuentran disponibles estadísticas detalladas de entropía para el funcionamiento de la función de Protección Autónoma contra Ransomware (ARP). Este tipo de recurso se añadió con ONTAP 9.17.1.
 
 .Auditoría
 La configuración para determinar qué se registra en los archivos del registro de auditoría. Este tipo de recurso se introdujo con ONTAP 9.6.
@@ -42,6 +45,9 @@ Amazon Web Services incluye un servicio de gestión de claves que proporciona al
 
 .Almacén de claves de Azure
 Este conjunto de llamadas API le permite utilizar el almacén de claves de Azure para almacenar las claves de cifrado de ONTAP. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Barbican KMS
+Se ha añadido compatibilidad con el administrador de claves Barbican de OpenStack para mantener las claves de NetApp Volume Encryption (NVE). Este tipo de recurso se añadió con ONTAP 9.17.1.
 
 .Certificados
 Las llamadas API se pueden usar para instalar, mostrar y eliminar certificados que usa ONTAP. Este tipo de recurso se introdujo con ONTAP 9.7.
@@ -75,6 +81,9 @@ Puede utilizar este conjunto de llamadas API para administrar las directivas en 
 
 .Asociaciones de seguridad IPSec
 Puede utilizar este conjunto de llamadas API para administrar las asociaciones de seguridad vigentes para una implementación IPSec. Este tipo de recurso es nuevo en ONTAP 9.8.
+
+.Elevación de privilegios justo a tiempo (JIT)
+La elevación de privilegios (JIT) es una mejora del control de acceso basado en roles (RBAC). Los administradores de clústeres pueden solicitar la elevación temporal a un rol existente. Este tipo de recurso se añadió con ONTAP 9.17.1.
 
 .Configuraciones del gestor de claves
 Estos extremos permiten recuperar y actualizar las configuraciones de los gestores de claves. Este tipo de recurso es nuevo en ONTAP 9.10.
@@ -124,6 +133,9 @@ Instancia específica de un rol. Este tipo de recurso se introdujo con ONTAP 9.6
 
 .Proveedor de servicios SAML
 Puede mostrar y gestionar la configuración del proveedor de servicios SAML. Este tipo de recurso se introdujo con ONTAP 9.6.
+
+.Metadatos predeterminados del proveedor de servicios SAML
+Puede administrar la configuración predeterminada de metadatos SAML para un clúster. Este tipo de recurso se añadió con ONTAP 9.17.1.
 
 .SSH
 Estas llamadas permiten definir la configuración de SSH. Este tipo de recurso se introdujo con ONTAP 9.7.

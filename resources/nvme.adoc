@@ -35,4 +35,4 @@ Las controladoras del subsistema NVMe representan conexiones dinámicas entre ho
 Una asignación de subsistema NVMe es una asociación de un espacio de nombres NVMe con un subsistema NVMe. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Subsistemas NVMe
-Un subsistema NVMe mantiene el estado de configuración y el control de acceso al espacio de nombres de un conjunto de hosts conectados a NVMe. Este tipo de recurso se introdujo con ONTAP 9.6.
+Un subsistema NVMe mantiene el estado de configuración y el control de acceso al espacio de nombres para un conjunto de hosts conectados a NVMe. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con la versión 9.17.1.
