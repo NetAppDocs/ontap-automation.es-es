@@ -17,7 +17,7 @@ summary: El SDK para facilitar la gestión de NetApp proporciona un conjunto de 
 El SDK para facilitar la gestión de NetApp proporciona un conjunto de llamadas API de ONTAPI para desarrollar aplicaciones que supervisen y gestionen su almacenamiento de ONTAP. Junto con el paquete OnCommand Workflow Automation, el SDK respalda sus esfuerzos para automatizar la gestión de sus sistemas ONTAP.
 
 
-NOTE: Aunque OnCommand Workflow Automation y el kit de desarrollo de software para facilitar la gestión de NetApp siguen siendo compatibles, la API REST DE ONTAP es la tecnología estratégica preferida que debe usarse en la automatización de sus sistemas de ONTAP. Consulte link:../migrate/ontapi_disablement.html["Inhabilitación de ONTAPI"] si quiere más información.
+NOTE: Si bien NetApp Manageability SDK y OnCommand Workflow Automation siguen recibiendo soporte, la API REST de ONTAP es la tecnología preferida y estratégica para usar al automatizar sus sistemas ONTAP . Ver link:../migrate/migration-considerations.html["Migre desde ONTAPI a la API de REST"] Para más información.
 
 .Descargue el SDK
 Puede descargar el SDK para facilitar la gestión del NetApp en el sitio de soporte de NetApp. El SDK admite varios lenguajes en el lado del cliente, incluyendo: Python, PowerShell, C, C++, Java, C#, VB. NET, y Ruby. Asegúrese de revisar la herramienta de matriz de interoperabilidad para obtener información sobre el SDK de capacidad de gestión de NetApp y su compatibilidad con su versión de ONTAP.

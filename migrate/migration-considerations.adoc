@@ -14,7 +14,13 @@ summary: 'Antes de migrar a la API de REST DE ONTAP desde la API ONTAPI (ZAPI) o
 
 
 [role="lead"]
-Antes de migrar a la API de REST DE ONTAP desde la API ONTAPI (ZAPI) o la CLI de ONTAP, hay varios problemas que debe tener en cuenta.
+La API ONTAPI (ZAPI) es el conjunto original de llamadas propietarias incluidas con el software ONTAP de NetApp .  La API se proporciona a través del SDK de capacidad de administración de red y admite la automatización de las tareas de gestión y administración del almacenamiento de datos.  Si está utilizando ONTAPI, debe planificar su migración a la API REST de ONTAP para aprovechar el conjunto ampliado de funciones de ONTAP disponible con la API REST.
+
+.Información relacionada
+* link:../get-started/ontap_automation_options.html["Conozca las opciones de automatización de ONTAP"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["Anuncio de fin de disponibilidad de ONTAPI (ZAPI) CPC-00410"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Preguntas frecuentes sobre la transformación de ZAPI a ONTAP REST API para CPC"^]
+
 
 
 
@@ -57,9 +63,3 @@ La disponibilidad de API de SnapDiff en versiones de ONTAP se define de la sigui
 
 
 El soporte fue retirado en diferentes puntos en cada lanzamiento. Esto incluye ONTAP 9.10.1 P11 y versiones posteriores, 9.11.1 P7 y versiones posteriores, y 9.12.1 GA y versiones posteriores. Consulte la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^] para obtener más información.
-
-
-
-== Envíe su ONTAPI a las brechas de la API DE REST
-
-NetApp se compromete a apoyar a los clientes en su migración de ONTAPI a la API de REST DE ONTAP. Si notas que falta algo en la API de REST, por favor háznoslo saber. Puede enviar estas lagunas y cualquier otra idea en el https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u["ONTAPI A LA API DE REST"^] página.
