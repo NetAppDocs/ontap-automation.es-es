@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console 
 summary: Existen varias opciones disponibles para automatizar la puesta en marcha y administración de sus sistemas de almacenamiento de ONTAP. 
 ---
 = Conozca las opciones de automatización de ONTAP
@@ -49,5 +49,5 @@ Puede crear e implementar código de automatización utilizando uno de varios ma
 .Ansible
 Asible es una herramienta de software de código abierto que permite el aprovisionamiento, la gestión de la configuración y la puesta en marcha de aplicaciones. Desde su lanzamiento y su posterior adquisición por RedHat, ha seguido creciendo en popularidad. NetApp proporciona módulos certificados con Ansible que pueden utilizar los clientes para automatizar la administración de sus sistemas de almacenamiento de ONTAP. Consulte link:../additional/learn_more.html["Leer más"] y.. https://www.netapp.com/devops-solutions/ansible/["Soluciones de DevOps de Ansible de NetApp"^] para obtener más información.
 
-.Catálogo de automatización de BlueXP
-La solución de NetApp https://console.bluexp.netapp.com/automationCatalog/["Catálogo de automatización de BlueXP"^] Está disponible a través de la interfaz de usuario web de BlueXP. El catálogo ofrece acceso a soluciones empaquetadas que pueden ayudarle a automatizar la implementación e integración de ONTAP con otros productos. Consulte https://docs.netapp.com/us-en/netapp-automation/["Automatización de NetApp"^] para documentación y más información.
+.Catálogo de automatización de la consola de NetApp
+La NetApp https://console.netapp.com/automationCatalog/["Catálogo de automatización de la consola de NetApp"^] Está disponible a través de la interfaz de usuario web de la consola.  El catálogo proporciona acceso a soluciones empaquetadas que pueden ayudarle a automatizar la implementación y la integración de ONTAP con otros productos.  Ver https://docs.netapp.com/us-en/netapp-automation/["Automatización de NetApp"^] Para documentación y más información.

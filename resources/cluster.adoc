@@ -44,7 +44,7 @@ Es posible gestionar la configuración y otra información relacionada con cada 
 Las licencias permiten implementar funciones y funcionalidades específicas de ONTAP. Este tipo de recurso se introdujo con ONTAP 9.6.
 
 .Ping del mediador
-Puedes hacer ping al servicio en la nube BlueXP . Este tipo de recurso es nuevo en ONTAP 9.17.1.
+Puede hacer ping al servicio de nube de la consola NetApp . Este tipo de recurso es nuevo en ONTAP 9.17.1.
 
 .Mediadores
 Puede administrar el mediador asociado a MetroCluster, lo que incluye agregar o eliminar la instancia del mediador. Este tipo de recurso es nuevo en ONTAP 9.8 y se actualizó en la versión 9.17.1.
