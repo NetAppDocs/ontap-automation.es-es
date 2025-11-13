@@ -55,6 +55,9 @@ Las llamadas API se pueden usar para instalar, mostrar y eliminar certificados q
 .Cisco Duo
 Duo proporciona autenticación de dos factores para inicios de sesión SSH. Puede configurar Duo para que funcione a nivel de clúster de ONTAP o SVM. Este tipo de recurso se introdujo con ONTAP 9,14.
 
+.seguridad de la red del clúster
+Puede recuperar y actualizar la configuración de seguridad de la red del clúster, incluidos los certificados. Este tipo de recurso se introdujo con ONTAP 9.18.
+
 .Seguridad del clúster
 Puede recuperar detalles de la seguridad para todo el clúster y actualizar ciertos parámetros. Este tipo de recurso se introdujo con ONTAP 9.7 y se actualizó con ONTAP 9.8.
 
@@ -69,6 +72,9 @@ Puede administrar configuraciones de grupo, incluidos los grupos representados c
 
 .Asignaciones de roles de grupos
 Puede crear y administrar relaciones de asignación entre grupos y roles. Este tipo de recurso se introdujo con ONTAP 9,16.
+
+.Seguridad de red de alta disponibilidad
+Puede recuperar y actualizar la configuración de seguridad de la red HA. Este tipo de recurso se introdujo con ONTAP 9.18.
 
 .IPSec
 Seguridad de protocolo de Internet (IPSec) es un conjunto de protocolos que proporcionan seguridad entre dos puntos finales a través de una red IP subyacente. Este tipo de recurso es nuevo en ONTAP 9.8.

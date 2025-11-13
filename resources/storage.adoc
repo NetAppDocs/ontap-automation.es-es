@@ -40,6 +40,9 @@ Es posible usar estos extremos de la API DE REST para mover un archivo entre dos
 .FlexCache
 Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.8.
 
+.Estado de conexión de FlexCache
+Puede recuperar el estado de la conexión FlexCache . Este tipo de recurso se introdujo con ONTAP 9.18.
+
 .Orígenes de FlexCache
 FlexCache es una caché persistente de un volumen de origen. Este tipo de recurso se introdujo originalmente con ONTAP 9.6. Se ha mejorado la compatibilidad con la API DE REST de ONTAP 9.9 para admitir la modificación mediante el método de REVISIÓN HTTP.
 
