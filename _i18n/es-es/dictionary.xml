@@ -602,8 +602,6 @@
   <block id="7db6d7f1ace6c9d73c6c9ef5b0744a8d" category="paragraph">Estos tipos de recursos se introdujeron con ONTAP 9.11.</block>
   <block id="b06d186d36b68be654fee4adc22d7f69" category="paragraph">Se pueden usar estos extremos para actualizar y recuperar la configuración de seguridad de los servicios web de cada SVM de datos. Este tipo de recurso se introdujo con ONTAP 9.10.</block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">Utilizando el traspaso de interfaz de línea de comandos privada con la API REST de ONTAP</block>
-  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">Introducción a NetApp y Ansible: Instale Ansible</block>
-  <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">Si es nuevo en usar Ansible para la automatización de ONTAP, este es un buen lugar desde el que empezar.</block>
   <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">Soluciones de DevOps de Ansible de NetApp</block>
   <block id="6215c70dd9ed027468957f47be27bee7" category="paragraph-title">¿Qué versión de ONTAP utiliza?</block>
   <block id="379385ed06cff6b981e905026b8488d8" category="paragraph">La versión de ONTAP determina qué extremos DE REST y las funciones RBAC están disponibles.</block>
@@ -1526,7 +1524,6 @@
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">Para ayudarle a actualizar la automatización ONTAPI, NetApp proporciona una lista de llamadas ONTAPI que requieren uno o más parámetros de entrada, junto con una asignación de dichas llamadas a la llamada a la API DE REST de ONTAP 9 equivalente. Consulte <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> si quiere más información.</block>
   <block id="a45cab230f2297dd4eb30fef224dd154" category="section-title">Transacción de API de REST típica</block>
   <block id="f53d66bdb1fa04bbb3f2f929505e7427" category="paragraph">Existen varios recursos adicionales disponibles para ayudarle a automatizar la implementación y la administración de sus sistemas de almacenamiento de ONTAP.</block>
-  <block id="940b33dd3ba3d167b07b98a018af32be" category="paragraph"><block ref="940b33dd3ba3d167b07b98a018af32be" category="inline-link-rx"></block></block>
   <block id="0937dacc143a9ef9a8e961bb05d706cb" category="list-text">Una buena introducción a la biblioteca cliente de NetApp Python y cómo comenzar a escribir código usando la biblioteca.</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">Echa un vistazo a los módulos certificados de Ansible.</block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">Preguntas frecuentes sobre la transformación de ZAPI a ONTAP REST API para CPC</block>
@@ -1996,4 +1993,8 @@
   <block id="98480199e938c1b0182ce374c8874655" category="paragraph">La versión ONTAP 9.18.1 continúa ampliando las capacidades de la API REST de ONTAP con once nuevas llamadas a la API. Las mejoras se centran principalmente en la seguridad, pero también incluyen una mejora relacionada con la administración del almacenamiento.</block>
   <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">Hay dos mejoras de seguridad importantes introducidas con la API REST de ONTAP 9.18.1. Puede utilizar los nuevos puntos de conexión de la API de red del clúster para visualizar y actualizar la configuración de seguridad de la red del clúster. Se incluye un soporte robusto para la gestión de certificados con la red del clúster. Además, puede visualizar y actualizar la configuración de seguridad de la red HA para el tráfico NVLog.</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCache es una caché persistente de un volumen de origen. Admite la función fan-out, de modo que se puede crear más de un FlexCache a partir de un único volumen de origen. La API REST incluye soporte para la recuperación del estado de la conexión entre las instancias de caché y los volúmenes de origen.</block>
+  <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI: NetApp ONTAP 9.17.1</block>
+  <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
+  <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">Documentación de NetApp PCL para la versión 9.17.1</block>
+  <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
 </blocks>
