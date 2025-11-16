@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/access_rest_api.html 
-keywords: accessing the rest api, lif 
+keywords: access rest api, lif, cluster lif, svm lif, node lif 
 summary: Es posible acceder a la API de REST de ONTAP de diferentes maneras. 
 ---
 = Cómo acceder a la API de REST de ONTAP
@@ -20,17 +20,14 @@ Es posible acceder a la API de REST de ONTAP de diferentes maneras.
 
 == Consideraciones sobre la red
 
-Es posible conectarse a la API DE REST a través de las siguientes interfaces:
+Puedes conectarte a la API REST de ONTAP utilizando uno de varios tipos de interfaces. El LIF que elija debe estar configurado para admitir el protocolo de gestión HTTPS. Además, la configuración del firewall de su red debe permitir el tráfico HTTPS. Se admiten las siguientes interfaces:
 
 * LIF de gestión de clústeres
 * LIF de gestión de nodos
 * LIF de gestión de SVM
 
 
-La LIF que elija utilizar debe estar configurada para admitir el protocolo de gestión HTTPS. Además, la configuración del firewall en la red debe permitir el tráfico HTTPS.
-
-
-TIP: Siempre debe utilizar una LIF de gestión de clúster. Esto equilibrará la carga de las solicitudes de API en todos los nodos y evitará que los nodos estén desconectados o tengan problemas de conectividad. Si tiene configuradas varias LIF de gestión de clústeres, todas son equivalentes en cuanto al acceso a la API DE REST.
+Si bien puede utilizar cualquiera de estos LIF, la práctica recomendada es utilizar el LIF de administración de clústeres. Esto permite que el clúster se trate como una única unidad lógica y proporciona el máximo nivel de resiliencia y equilibrio de carga. Un LIF de clúster puede reubicarse dentro del clúster según sea necesario para gestionar actualizaciones planificadas, eventos de quórum y otros problemas de conectividad. Si tiene configuradas varias LIF de administración de clústeres, todas son equivalentes en lo que respecta al acceso a la API REST. Las LIF de gestión de SVM también están balanceadas de carga, pero las solicitudes enviadas a LIF con alcance a nivel de nodo se manejan localmente.
 
 
 
