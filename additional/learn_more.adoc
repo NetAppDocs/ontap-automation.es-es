@@ -119,28 +119,6 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["Automa
 
 
 
-== Formación técnica y eventos
-
-* Presentación de Insight 2022 (26 minutos).
-+
-https://media.netapp.com/video-detail/152137a0-4153-59dc-ad7d-232af1785dd5/modernize-your-ontap-storage-management-with-ontap-rest-apis-1837["Moderniza la gestión del almacenamiento de ONTAP con la API de REST DE ONTAP"^]
-
-
-
-* Presentación de Insight 2021 (31 minutos).
-+
-https://media.netapp.com/video-detail/f353c28a-2364-5e5e-bf86-5d7ef66360fe/netapp-ontap-save-time-and-simplify-using-rest-apis-brk-1103-3["NetApp ONTAP: Ahorre tiempo y simplifique con las API de REST"^]
-
-
-
-* Servicios de aprendizaje de NetApp.
-+
-https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI["Automatiza la administración del almacenamiento con la API de REST DE ONTAP y Ansible"^]
-
-
-
-
-
 == Base de conocimientos de NetApp
 
 * Si se encuentra con un problema con la API DE REST DE ONTAP, puede notificarlo en NetApp.
