@@ -28,6 +28,9 @@ La información de la cuenta de SVM se puede administrar en el servidor de Activ
 .Antiransomware
 ONTAP detecta archivos que potencialmente contienen una amenaza de ransomware. Existen varias categorías de extremos. Puede recuperar una lista de estos archivos sospechosos, así como eliminarlos de un volumen. Este tipo de recurso se introdujo con ONTAP 9.10.1. Se agregó soporte para mostrar la versión y actualizar el paquete anti-ransomware con ONTAP 9.16.
 
+.Habilitación de anti-ransomware
+Puedes controlar el funcionamiento de la función de habilitación de Autonomous Ransomware Protection (ARP). Esto incluye la recuperación y modificación de los ajustes de configuración. Este tipo de recurso se introdujo con ONTAP 9.18.1.
+
 .Estadísticas de entropía anti-ransomware
 Se encuentran disponibles estadísticas detalladas de entropía para el funcionamiento de la función de Protección Autónoma contra Ransomware (ARP). Este tipo de recurso se añadió con ONTAP 9.17.1.
 
