@@ -24,7 +24,7 @@ Esta llamada a la API de REST utiliza el siguiente método y extremo.
 | Método HTTP | Ruta 
 
 
-| OBTENGA | /api/storage/disks 
+| OBTENGA | /api/storage/aggregates 
 |===
 .Tipo de procesamiento
 Síncrona
