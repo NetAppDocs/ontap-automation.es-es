@@ -156,4 +156,7 @@ Estos extremos permiten recuperar la configuración de seguridad SSH de todas la
 Es posible usar la API de REST para configurar perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Este tipo de recurso se introdujo con ONTAP 9,13.
 
 .Autenticación web
-La autenticación web (WebAuthn) es un estándar web para autenticar usuarios de forma segura basado en la criptografía de clave pública. Con ONTAP, es compatible con la administración de MFA resistentes a phishing a través del Administrador del sistema y la API REST DE ONTAP. Esta función se agregó con ONTAP 9.16.
+La autenticación web (WebAuthn) es un estándar web para autenticar usuarios de forma segura basado en criptografía de clave pública. Con ONTAP, admite la administración de MFAs resistentes al phishing a través de System Manager y la API de REST de ONTAP. Esta función se añadió con ONTAP 9.16 y se actualizó con ONTAP 9.19.1.
+
+.Whoami
+Se dispone de un endpoint para mostrar los detalles del usuario autenticado, incluyendo nombre de usuario, rol y permisos. Este tipo de recurso se introdujo con ONTAP 9.19.1.

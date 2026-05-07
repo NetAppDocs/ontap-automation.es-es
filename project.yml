@@ -15,7 +15,7 @@ sidebar:
     entries:
     - title: Novedades de la API DE REST de ONTAP
       url: "/whats-new.html"
-    - title: Cambios en las llamadas de la API DE REST DE ONTAP
+    - title: Cambios y consideraciones sobre la API de REST de ONTAP
       url: "/api-changes.html"
   - section: get-started
   - section: rest

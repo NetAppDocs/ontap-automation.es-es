@@ -46,7 +46,7 @@ Una sesión iSCSI es una o varias conexiones TCP que vinculan un iniciador iSCSI
 Los atributos de LUN son parejas de nombre/valor definidas por el autor de la llamada que se pueden almacenar de forma opcional con una LUN. Los atributos están disponibles para guardar pequeñas cantidades de metadatos específicos de una aplicación y ONTAP no los interpreta. Los extremos permiten crear, actualizar, eliminar y detectar atributos de una LUN. Este tipo de recurso se introdujo con ONTAP 9.10.
 
 .Mapas de LUN
-Una asignación de LUN es una asociación entre una LUN y un iGroup. Este tipo de recurso se introdujo con ONTAP 9.6.
+Un mapa LUN es una asociación entre un LUN y un grupo iniciador. Este tipo de recurso se introdujo con ONTAP 9.6 y se actualizó con ONTAP 9.19.1.
 
 .LUN asigna nodos de generación de informes
 Los nodos de generación de informes son los nodos de clúster desde los que se anuncian las rutas de red a un LUN asignado mediante los protocolos SAN como parte de la función de asignación selectiva de LUN (SLM) de ONTAP. Los nuevos extremos permiten añadir, quitar y detectar los nodos de informes de un mapa de LUN. Este tipo de recurso se introdujo con ONTAP 9.10.
