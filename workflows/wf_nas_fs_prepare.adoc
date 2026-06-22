@@ -23,7 +23,7 @@ Puede gestionar los permisos y las políticas de auditoría para los archivos di
 ONTAP utiliza las listas de control de acceso del sistema (SACL) y las listas de control de acceso discrecional (DACL) para asignar permisos a los objetos de archivo. A partir de ONTAP 9,9.1, la API DE REST incluye soporte para gestionar los permisos SACL y DACL. Puede utilizar la API para automatizar la administración de los permisos de seguridad de archivos. En muchos casos, puede usar una sola llamada a la API DE REST en lugar de varios comandos de la CLI o llamadas a ONTAPI (ZAPI).
 
 
-NOTE: Para versiones de ONTAP anteriores a 9,9.1, puede automatizar la administración de los permisos SACL y DACL mediante la función de paso de CLI. Consulte link:../migrate/migration-considerations.html["Consideraciones sobre migración"] y.. https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["Utilizando el traspaso de interfaz de línea de comandos privada con la API REST de ONTAP"^] si quiere más información.
+NOTE: En las versiones de ONTAP anteriores a la 9.9.1, puedes automatizar la administración de los permisos SACL y DACL usando la función de passthrough de la CLI. Consulta link:../migrate/migration-considerations.html["Consideraciones sobre migración"] para más información.
 
 Hay varios ejemplos de flujos de trabajo disponibles para ilustrar cómo se gestionan los servicios de seguridad de archivos ONTAP mediante la API de REST. Antes de usar los flujos de trabajo y emitir alguna de las llamadas a la API DE REST, asegúrese de revisarlos link:../workflows/prepare_workflows.html["Prepárese para usar los flujos de trabajo"].
 
@@ -69,6 +69,4 @@ En muchas tareas, el uso de la API DE REST DE ONTAP requiere menos llamadas que 
 |===
 .Información relacionada
 * https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["Script de Python que ilustra los permisos de archivo"^]
-* https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/["Gestión simplificada de permisos de seguridad de archivos con API DE REST de ONTAP"^]
-* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["Utilizando el traspaso de interfaz de línea de comandos privada con la API REST de ONTAP"^]
 
