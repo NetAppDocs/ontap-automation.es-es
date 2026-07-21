@@ -18,6 +18,7 @@ NetApp continúa mejorando y actualizando la API de REST de ONTAP con cada lanza
 
 
 
+[[changes-to-existing-ontap-rest-api-calls]]
 == Cambios en las llamadas de la API DE REST DE ONTAP existentes
 
 Los cambios en las llamadas existentes a la API de REST de ONTAP, como los endpoints y los parámetros, pueden afectar al software que usa la API. En la mayoría de las situaciones, dependiendo de tu entorno, estos se consideran _breaking changes_. Deberías revisar la lista en la tabla de abajo para determinar si hay algún impacto en tu entorno de automatización. Cada entrada incluye el endpoint o área de la API aplicable, una descripción del cambio y la versión de ONTAP en la que se introdujo.
@@ -35,6 +36,7 @@ Los cambios en las llamadas existentes a la API de REST de ONTAP, como los endpo
 |===
 
 
+[[additional-rest-api-usage-considerations]]
 == Consideraciones adicionales sobre el uso de la API de REST
 
 Además de los cambios disruptivos o de ruptura, existen varias consideraciones adicionales cuando se utiliza la API de REST de ONTAP. Existen diferentes tipos de problemas, incluyendo la introducción de llamadas a la API nuevas o alternativas, así como cambios en el procesamiento interno de ONTAP. Cada entrada incluye el endpoint o área de la API aplicable, una descripción del comportamiento y la versión de ONTAP en la que se introdujo.
@@ -51,6 +53,7 @@ Además de los cambios disruptivos o de ruptura, existen varias consideraciones 
 |===
 
 
+[[ontap-rest-api-reference-documentation-errors]]
 == Errores en la documentación de referencia de la API de REST DE ONTAP
 
 A medida que NetApp mejora y actualiza la API de REST de ONTAP, a veces se pueden introducir errores en la documentación de referencia en línea. Estos errores pueden crear confusión al usar la API, pero generalmente no afectan ni interrumpen tu software o entorno de automatización de ONTAP. Deberías revisar la lista de errores en la tabla a continuación. Esto te ayudará a comprender y navegar mejor la documentación de referencia de la API de REST de ONTAP. Cada entrada incluye el endpoint o área de la API aplicable, una descripción del error y la versión de ONTAP en la que se introdujo.

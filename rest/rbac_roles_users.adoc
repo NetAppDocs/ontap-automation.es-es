@@ -21,12 +21,14 @@ NOTE: Consulte link:../workflows/wf_rbac_prepare.html["Flujos de trabajo de RBAC
 
 
 
+[[administrative-access]]
 == Acceso administrativo
 
 Es posible crear y gestionar los roles ONTAP mediante la API DE REST o la interfaz de línea de comandos. Los detalles de acceso se describen a continuación.
 
 
 
+[[rest-api]]
 === API REST
 
 Existen varios extremos que se pueden usar cuando se trabajan con roles de RBAC y cuentas de usuario. Los primeros cuatro de la tabla se utilizan para crear y gestionar los roles. Las dos últimas se utilizan para crear y administrar cuentas de usuario.
@@ -58,6 +60,7 @@ TIP: Puede acceder a la ONTAP en línea link:../reference/api_reference.html["Re
 |===
 
 
+[[command-line-interface]]
 === Interfaz de línea de comandos
 
 A continuación se describen los comandos de la CLI de ONTAP relevantes. A todos los comandos se accede en el nivel del clúster mediante una cuenta de administrador.
@@ -77,6 +80,7 @@ A continuación se describen los comandos de la CLI de ONTAP relevantes. A todos
 |===
 
 
+[[role-definitions]]
 == Definiciones de roles
 
 El RESTO y los roles tradicionales se definen mediante un conjunto de atributos.
@@ -95,12 +99,14 @@ Cada función contiene un conjunto de uno o más privilegios. Cada privilegio id
 
 
 
+[[privileges]]
 == Privilegios
 
 Un rol puede contener uno o más privilegios. Cada definición de privilegio es una tupla y establece el nivel de acceso a un recurso o una operación específica.
 
 
 
+[[resource-path]]
 === Ruta de recursos
 
 La ruta de recursos se identifica como extremo DE REST o como ruta de acceso al directorio de comandos/comandos de la CLI.
@@ -113,6 +119,7 @@ Un comando de la CLI identifica el destino para un rol tradicional. También se 
 
 
 
+[[access-level]]
 === Nivel de acceso
 
 El nivel de acceso define el tipo de acceso que tiene la función a la ruta de acceso o el comando de recursos específicos. Los niveles de acceso se identifican mediante un conjunto de palabras clave predefinidas. Con ONTAP 9.6 se introdujeron tres niveles de acceso. Se pueden usar para roles tradicionales y de REST. Además, se han añadido tres nuevos niveles de acceso con ONTAP 9.11.1. Estos nuevos niveles de acceso solo se pueden usar con roles DE REST.
@@ -144,18 +151,21 @@ NOTE: Los niveles de acceso siguen el modelo CRUD. Con REST, se basa en los mét
 |===
 
 
+[[optional-query]]
 === Consulta opcional
 
 Al crear una función tradicional, puede incluir opcionalmente un valor *query* para identificar el subconjunto de objetos aplicables para el directorio de comandos o comandos.
 
 
 
+[[summary-of-the-built-in-roles]]
 == Resumen de los roles incorporados
 
 Hay varios roles predefinidos incluidos en ONTAP que se pueden usar en el nivel del clúster o de SVM.
 
 
 
+[[cluster-scoped-roles]]
 === Roles de ámbito del clúster
 
 Hay varios roles integrados disponibles en el ámbito del clúster.
@@ -186,6 +196,7 @@ Consulte https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-clu
 |===
 
 
+[[svm-scoped-roles]]
 === Roles con ámbito de SVM
 
 Hay varios roles integrados disponibles en el ámbito de SVM. El *vsadmin* proporciona acceso a las capacidades más generales y poderosas. Existen varios roles adicionales adaptados a tareas administrativas específicas, como:
@@ -201,6 +212,7 @@ Consulte https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-svm
 
 
 
+[[comparing-the-role-types]]
 == Comparación de los tipos de funciones
 
 Antes de seleccionar un rol *REST* o *tradicional*, debe ser consciente de las diferencias. A continuación se describen algunas de las formas en que se pueden comparar los dos tipos de funciones.
@@ -210,6 +222,7 @@ NOTE: Para casos de uso de RBAC más avanzados o complejos, normalmente debería
 
 
 
+[[how-the-user-accesses-ontap]]
 === Cómo accede el usuario a ONTAP
 
 Antes de crear un rol, es importante saber cómo accederá el usuario al sistema ONTAP. Se puede determinar en función de esto un tipo de función.
@@ -229,6 +242,7 @@ Antes de crear un rol, es importante saber cómo accederá el usuario al sistema
 |===
 
 
+[[precision-of-the-access-path]]
 === Precisión de la ruta de acceso
 
 La ruta de acceso definida para un rol DE REST se basa en un extremo de REST. La ruta de acceso de un rol tradicional se basa en un comando de la CLI o un directorio de comandos. Además, puede incluir un parámetro de consulta opcional con un rol tradicional para restringir aún más el acceso en función de los valores de parámetros del comando.

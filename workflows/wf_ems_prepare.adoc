@@ -18,6 +18,7 @@ Es posible configurar el procesamiento de Event Management System (EMS) para un 
 
 
 
+[[overview]]
 === Descripción general
 
 Existen varios flujos de trabajo de ejemplo disponibles que muestran cómo usar los servicios de EMS de ONTAP. Antes de usar los flujos de trabajo y emitir alguna de las llamadas a la API DE REST, asegúrese de revisarlos link:../workflows/prepare_workflows.html["Prepárese para usar los flujos de trabajo"].
@@ -26,6 +27,7 @@ Si usas Python, también puedes ver el scripy https://github.com/NetApp/ontap-re
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === API REST de ONTAP frente a comandos de la CLI de ONTAP
 
 En muchas tareas, si se utiliza la API DE REST DE ONTAP se requieren menos llamadas que los comandos de la CLI de ONTAP equivalentes. La siguiente tabla incluye una lista de llamadas API y el equivalente a los comandos CLI necesarios para cada tarea.

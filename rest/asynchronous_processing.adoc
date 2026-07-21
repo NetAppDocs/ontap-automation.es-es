@@ -20,6 +20,7 @@ Consulte link:../reference/api_reference.html["Referencia de API"] Para determin
 
 
 
+[[controlling-how-a-request-is-processed]]
 == Controlar el modo en que se procesa una solicitud
 
 Puede utilizar el `return_timeout` Parámetro de consulta para controlar cómo se procesa una llamada API asíncrona. Hay dos resultados posibles cuando se usa este parámetro.
@@ -36,6 +37,7 @@ NOTE: El valor predeterminado para `return_timeout` el parámetro es cero segund
 
 
 
+[[querying-the-job-object-associated-with-an-api-request]]
 == Consulta del objeto Job asociado a una solicitud API
 
 El objeto Job devuelto en la respuesta HTTP contiene varias propiedades. Puede consultar la propiedad state en una llamada API posterior para determinar si la solicitud se completó correctamente. Un objeto Job siempre está en uno de los estados siguientes:
@@ -61,6 +63,7 @@ estados de terminal::
 
 
 
+[[general-procedure-for-issuing-an-asynchronous-request]]
 == Procedimiento general para emitir una solicitud asincrónica
 
 Puede utilizar el siguiente procedimiento de alto nivel para completar una llamada API asíncrona. En este ejemplo se asume el `return_timeout` no se utiliza el parámetro o que la hora caduca antes de que finalice el trabajo en segundo plano.

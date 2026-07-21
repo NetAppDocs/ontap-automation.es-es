@@ -21,12 +21,14 @@ NOTE: La funcionalidad de control de acceso basado en roles de ONTAP ha seguido 
 
 
 
+[[ontap-roles]]
 == Roles de ONTAP
 
 Un rol es un conjunto de privilegios que definen colectivamente qué acciones puede realizar el usuario. Cada privilegio identifica una ruta de acceso específica y el nivel de acceso asociado. Los roles se asignan a cuentas de usuario y ONTAP los aplica cuando se toman decisiones sobre el control de acceso.
 
 
 
+[[types-of-roles]]
 === Tipos de roles
 
 Hay dos tipos de roles. Se introdujeron y se adaptaron a diferentes entornos a medida que ONTAP ha evolucionado.
@@ -46,6 +48,7 @@ NOTE: Hay ventajas y desventajas cuando se usa cada tipo de rol. Consulte link:.
 |===
 
 
+[[scope]]
 === Ámbito
 
 Cada función tiene un ámbito o contexto dentro del cual se define y aplica. El ámbito determina dónde y cómo se utiliza una función específica.
@@ -65,6 +68,7 @@ NOTE: Las cuentas de usuario de ONTAP también tienen un ámbito similar que det
 |===
 
 
+[[source-of-the-role-definitions]]
 === Origen de las definiciones de roles
 
 Hay dos formas de definir un rol de ONTAP.
@@ -81,6 +85,7 @@ Hay dos formas de definir un rol de ONTAP.
 |===
 
 
+[[role-mapping-and-ontap-processing]]
 == Asignación de roles y procesamiento de ONTAP
 
 Según la versión de ONTAP que utilice, todas o casi todas las llamadas de la API DE REST se asignan a uno o más comandos de la CLI. Al crear un rol DE REST, también se crea un rol tradicional o heredado. Esta función tradicional *asignada* se basa en los comandos CLI correspondientes y no se puede manipular ni modificar.
@@ -90,6 +95,7 @@ NOTE: No se admite la asignación de roles en sentido inverso. Es decir, la crea
 
 
 
+[[summary-of-rbac-evolution]]
 == Resumen de la evolución de RBAC
 
 Se incluyen los roles tradicionales en todas las versiones de ONTAP 9. Las funciones RESTANTES se introdujeron más tarde y han evolucionado como se describe a continuación.

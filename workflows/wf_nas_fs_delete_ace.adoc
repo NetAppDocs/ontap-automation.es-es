@@ -18,6 +18,7 @@ Puede eliminar una entrada de control de acceso (ACE) existente de un archivo o 
 
 
 
+[[step-1-delete-the-ace]]
 == Paso 1: Eliminar el ACE
 
 .Método HTTP y punto final
@@ -67,6 +68,7 @@ curl --request DELETE --location "https://$FQDN_IP/api/protocols/file-security/p
 ----
 
 
+[[step-2-retrieve-the-status-of-the-job]]
 == Paso 2: Recuperar el estado del trabajo
 
 Realice el flujo de trabajo link:../workflows/wf_jobs_get_job.html["Obtener instancia de trabajo"] y confirme el `state` el valor es `success`.

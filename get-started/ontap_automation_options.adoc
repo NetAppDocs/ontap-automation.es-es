@@ -18,6 +18,7 @@ Existen varias opciones disponibles para automatizar la puesta en marcha y admin
 
 
 
+[[ontap-rest-api]]
 == API REST de ONTAP
 
 A partir de ONTAP 9.6, ONTAP incluye una sólida API REST que proporciona la base para automatizar la implementación y la administración de sus sistemas de almacenamiento.  Desde entonces, la API REST ha seguido expandiéndose y madurando.  Ahora proporciona la opción preferida y estratégica al automatizar la administración de sus implementaciones de ONTAP .
@@ -30,6 +31,7 @@ La API de ONTAPI (API de Zephyr o ZAPI) es el conjunto original de llamadas prop
 
 
 
+[[client-software-toolkits]]
 == Kits de herramientas de software de cliente
 
 NetApp ofrece kits de herramientas de cliente que abstraen la API DE REST DE ONTAP y facilitan la creación de código de automatización. Debe elegir uno apropiado para su lenguaje y entorno de desarrollo.
@@ -42,6 +44,7 @@ Es posible usar el kit de herramientas NetApp.ONTAP PowerShell para automatizar 
 
 
 
+[[automation-frameworks]]
 == Marcos de automatización
 
 Puede crear e implementar código de automatización utilizando uno de varios marcos.

@@ -86,10 +86,10 @@ Seguridad de protocolo de Internet (IPSec) es un conjunto de protocolos que prop
 Puede agregar, quitar y recuperar certificados de CA IPSec. Este tipo de recurso es nuevo en ONTAP 9.10.
 
 .Directivas IPSec
-Puede utilizar este conjunto de llamadas API para administrar las directivas en vigor para una implementación IPSec. Este tipo de recurso es nuevo en ONTAP 9.8.
+Puedes utilizar este conjunto de llamadas a la API para gestionar las políticas vigentes en una implementación de IPSec. Este tipo de recurso es nuevo en ONTAP 9.8. Se han actualizado con la 9.19 para recuperar las políticas utilizadas en la red del clúster.
 
 .Asociaciones de seguridad IPSec
-Puede utilizar este conjunto de llamadas API para administrar las asociaciones de seguridad vigentes para una implementación IPSec. Este tipo de recurso es nuevo en ONTAP 9.8.
+Puedes usar este conjunto de llamadas a la API para gestionar las asociaciones de seguridad vigentes en una implementación de IPSec. Este tipo de recurso es nuevo con ONTAP 9.8. Se actualizaron con la 9.19 para recuperar las asociaciones de seguridad usadas para la red del clúster.
 
 .Elevación de privilegios justo a tiempo (JIT)
 La elevación de privilegios (JIT) es una mejora del control de acceso basado en roles (RBAC). Los administradores de clústeres pueden solicitar la elevación temporal a un rol existente. Este tipo de recurso se añadió con ONTAP 9.17.1.
@@ -156,7 +156,7 @@ Estos extremos permiten recuperar la configuración de seguridad SSH de todas la
 Es posible usar la API de REST para configurar perfiles de contraseña de un solo uso (TOTP) basados en tiempo para las cuentas que inician sesión y acceden a ONTAP mediante SSH. Este tipo de recurso se introdujo con ONTAP 9,13.
 
 .Autenticación web
-La autenticación web (WebAuthn) es un estándar web para autenticar usuarios de forma segura basado en criptografía de clave pública. Con ONTAP, admite la administración de MFAs resistentes al phishing a través de System Manager y la API de REST de ONTAP. Esta función se añadió con ONTAP 9.16 y se actualizó con ONTAP 9.19.1.
+La autenticación web (WebAuthn) es un estándar web para autenticar de forma segura a los usuarios basándose en la criptografía de clave pública. Con ONTAP, admite la administración de MFAs resistentes al phishing a través de System Manager y la API de REST de ONTAP. Esta función se añadió con ONTAP 9.16 y se actualizó con ONTAP 9.19.
 
 .Whoami
-Se dispone de un endpoint para mostrar los detalles del usuario autenticado, incluyendo nombre de usuario, rol y permisos. Este tipo de recurso se introdujo con ONTAP 9.19.1.
+Existe un endpoint que permite mostrar los detalles del usuario autenticado, incluyendo el nombre de usuario, el rol y los permisos. Este tipo de recurso se introdujo con ONTAP 9.19.

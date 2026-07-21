@@ -18,12 +18,14 @@ Existen varios recursos adicionales disponibles para ayudarle a automatizar la i
 
 
 
+[[blog-articles]]
 == Artículos de blog
 
 Los artículos del blog se organizan en varias secciones basadas en el tema.
 
 
 
+[[general]]
 === Generales
 
 * Un buen resumen de las tecnologías actuales de automatización de ONTAP.
@@ -48,6 +50,7 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification["API DE REST de ON
 
 
 
+[[python-client-library]]
 === Biblioteca de clientes de Python
 
 * Este blog ofrece una buena introducción a las características de la biblioteca cliente de Python de ONTAP.
@@ -58,6 +61,7 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Simplifique el 
 
 
 
+[[migrating-to-the-rest-api]]
 === Migrar a la API de REST
 
 * Existen varias tecnologías disponibles para ayudarle a transformar su entorno de automatización de ONTAP según la API DE REST.
@@ -68,6 +72,7 @@ https://www.netapp.com/blog/transform-automation-ontap-rest-api/["Transforme su 
 
 
 
+[[videos]]
 == Vídeos
 
 * Una buena introducción a la biblioteca cliente de NetApp Python y cómo comenzar a escribir código usando la biblioteca.
@@ -86,6 +91,7 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["Automa
 
 
 
+[[netapp-knowledge-base]]
 == Base de conocimientos de NetApp
 
 * Si se encuentra con un problema con la API DE REST DE ONTAP, puede notificarlo en NetApp.

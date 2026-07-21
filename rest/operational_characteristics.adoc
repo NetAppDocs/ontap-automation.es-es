@@ -18,12 +18,14 @@ Mientras QUE REST establece un conjunto común de tecnologías y prácticas reco
 
 
 
+[[request-and-response-api-transaction]]
 == Transacción de API de solicitud y respuesta
 
 Cada llamada de API REST se realiza como una solicitud HTTP al sistema ONTAP, que genera una respuesta asociada al cliente. Este par de solicitud/respuesta se considera una transacción de API. Antes de utilizar la API, debería estar familiarizado con las variables de entrada disponibles para controlar una solicitud y el contenido de la salida de la respuesta.
 
 
 
+[[support-for-crud-operations]]
 == Compatibilidad con operaciones CRUD
 
 Se accede a cada uno de los recursos disponibles a través de la API REST de ONTAP en función del modelo CRUD:
@@ -38,6 +40,7 @@ Para algunos de los recursos, solo se admite un subconjunto de las operaciones. 
 
 
 
+[[object-identifiers]]
 == Identificadores de objeto
 
 A cada instancia u objeto de recurso se le asigna un identificador único cuando se crea. En la mayoría de los casos, el identificador es un UUID de 128 bits. Estos identificadores son únicos globalmente dentro de un clúster ONTAP específico. Después de emitir una llamada API que crea una nueva instancia de objeto, se devuelve una dirección URL con el valor de id asociado a la persona que llama en el encabezado de ubicación de la respuesta HTTP. Puede extraer el identificador y utilizarlo en llamadas posteriores cuando haga referencia a la instancia del recurso.
@@ -47,12 +50,14 @@ NOTE: El contenido y la estructura interna de los identificadores de objeto pued
 
 
 
+[[object-instances-and-collections]]
 == Instancias y colecciones de objetos
 
 Dependiendo de la ruta de recursos y del método HTTP, una llamada API puede aplicarse a una instancia de objeto específica o a una colección de objetos.
 
 
 
+[[synchronous-and-asynchronous-operations]]
 == Operaciones síncronas y asíncronas
 
 Hay dos maneras en que ONTAP realiza una solicitud HTTP recibida desde un cliente.
@@ -76,6 +81,7 @@ NOTE: La `return_timeout` El parámetro de consulta está disponible con llamada
 
 
 
+[[security]]
 == Seguridad
 
 La seguridad proporcionada con la API DE REST se basa principalmente en las funciones de seguridad existentes disponibles con ONTAP. La API utiliza la siguiente seguridad:

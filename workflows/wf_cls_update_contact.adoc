@@ -18,6 +18,7 @@ Puede actualizar la información de contacto de un clúster de. Debido a que la 
 
 
 
+[[step-1-update-the-cluster-contact-information]]
 == Paso 1: Actualice la información de contacto del clúster
 
 Puede emitir una llamada API para actualizar la información de contacto del clúster.
@@ -70,12 +71,14 @@ Se devuelve un objeto de trabajo. Debe guardar el identificador de trabajo para 
 ----
 
 
+[[step-2-retrieve-the-status-of-the-job]]
 == Paso 2: Recuperar el estado del trabajo
 
 Realice el flujo de trabajo link:../workflows/wf_jobs_get_job.html["Obtener instancia de trabajo"] y confirme el `state` el valor es `success`.
 
 
 
+[[step-3-confirm-the-cluster-contact-information]]
 == Paso 3: Confirme la información de contacto del clúster
 
 Realice el flujo de trabajo link:../workflows/wf_cls_get_cluster.html["Obtener la configuración del clúster"]. Debe configurar la `fields` parámetro de consulta a. `contact`.

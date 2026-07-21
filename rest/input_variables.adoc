@@ -18,6 +18,7 @@ Puede controlar cómo se procesa una llamada API mediante parámetros y variable
 
 
 
+[[http-methods]]
 == Métodos HTTP
 
 En la siguiente tabla, se muestran los métodos HTTP compatibles con la API DE REST de ONTAP.
@@ -49,12 +50,14 @@ NOTE: No todos los métodos HTTP están disponibles en cada extremo DE REST. Ade
 |===
 
 
+[[path-variables]]
 == Variables de ruta
 
 La ruta de punto final que se usa con cada llamada API DE REST puede incluir varios identificadores. Cada ID corresponde a una instancia de recurso específica. Entre los ejemplos se incluyen el ID del clúster y el ID de SVM.
 
 
 
+[[request-headers]]
 == Solicitar encabezados
 
 Debe incluir varios encabezados en la solicitud HTTP.
@@ -71,6 +74,7 @@ Autorización:: La autenticación básica se debe establecer con el nombre de us
 
 
 
+[[request-body]]
 == Solicitar el cuerpo
 
 El contenido del cuerpo de la solicitud varía en función de la llamada específica. El cuerpo de la solicitud HTTP consta de uno de los siguientes elementos:
@@ -81,6 +85,7 @@ El contenido del cuerpo de la solicitud varía en función de la llamada especí
 
 
 
+[[filtering-objects]]
 == Filtrando objetos
 
 Al emitir una llamada a la API con el método GET, puede limitar o filtrar los objetos devueltos en función de cualquier atributo mediante un parámetro de consulta.
@@ -141,6 +146,7 @@ Filtrar según el `state` variable para seleccionar los discos de repuesto.
 
 
 
+[[requesting-specific-object-fields]]
 == Solicitando campos de objeto específicos
 
 De forma predeterminada, al emitir una llamada API mediante GET, sólo se devuelven los atributos que identifican de forma única el objeto o los objetos, junto con un vínculo de HAL. Este conjunto mínimo de campos actúa como clave para cada objeto y varía según el tipo de objeto. Puede seleccionar propiedades de objeto adicionales mediante la `fields` parámetro de consulta de las siguientes formas:
@@ -165,6 +171,7 @@ TIP: Como práctica recomendada, siempre debe identificar los campos específico
 
 
 
+[[sorting-objects-in-the-output-set]]
 == Ordenar objetos del conjunto de resultados
 
 Los registros de una colección de recursos se devuelven en el orden predeterminado definido por el objeto. Puede cambiar el pedido mediante `order_by` consulte el parámetro con el nombre del campo y la dirección de ordenación de la siguiente manera:
@@ -183,6 +190,7 @@ Tenga en cuenta lo siguiente:
 
 
 
+[[pagination-when-retrieving-objects-in-a-collection]]
 == Paginación al recuperar objetos de una colección
 
 Al emitir una llamada API mediante GET para acceder a una colección de objetos del mismo tipo, ONTAP intenta devolver tantos objetos como sea posible basándose en dos restricciones. Puede controlar cada una de estas restricciones utilizando parámetros de consulta adicionales en la solicitud. La primera restricción alcanzada para una solicitud GET específica termina la solicitud y, por lo tanto, limita el número de registros devueltos.
@@ -218,6 +226,7 @@ Puede emitir varias solicitudes para desplazarse por los objetos. Cada llamada A
 
 
 
+[[size-properties]]
 == Propiedades de tamaño
 
 Los valores de entrada utilizados con algunas llamadas API, así como ciertos parámetros de consulta son numéricos. En lugar de proporcionar un entero en bytes, puede usar de manera opcional un sufijo como se muestra en la siguiente tabla.

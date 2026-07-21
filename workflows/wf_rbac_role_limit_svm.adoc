@@ -27,6 +27,7 @@ A continuación, puede actualizar opcionalmente el rol según sea necesario. En 
 
 
 
+[[step-1-create-the-role]]
 == Paso 1: Crear el rol
 
 Puede emitir una llamada API para crear el rol de RBAC.
@@ -68,6 +69,7 @@ curl --request POST \
 ----
 
 
+[[step-2-update-the-role]]
 == Paso 2: Actualice el rol
 
 Puede emitir una llamada API para actualizar el rol existente.

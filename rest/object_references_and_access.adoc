@@ -18,6 +18,7 @@ Es posible hacer referencia a las instancias o los objetos de recursos expuestos
 
 
 
+[[object-access-paths]]
 == Rutas de acceso a objetos
 
 En un nivel alto, hay dos tipos de ruta al acceder a un objeto:
@@ -34,6 +35,7 @@ El objeto no es la referencia principal de la llamada API, sino que está vincul
 
 
 
+[[accessing-an-object-using-the-uuid]]
 == Acceder a un objeto mediante el UUID
 
 A cada objeto se le asigna un identificador único cuando se crea, que en la mayoría de los casos es un UUID de 128 bits. Los valores de UUID asignados son inmutables y se utilizan internamente en ONTAP para acceder a los recursos y gestionarlos. Por este motivo, el UUID generalmente proporciona la forma más rápida y estable de acceder a los objetos.
@@ -42,6 +44,7 @@ Para muchos de los tipos de recursos, se puede proporcionar un valor de UUID com
 
 
 
+[[accessing-an-object-using-an-object-property]]
 == Obtener acceso a un objeto mediante una propiedad de objeto
 
 Además de un UUID, también puede tener acceso a un objeto mediante una propiedad de objeto. En la mayoría de los casos, es conveniente utilizar la propiedad name. Por ejemplo, puede utilizar el siguiente parámetro de consulta en la cadena URL para acceder a una instancia de nodo por su nombre: `/cluster/nodes?name=node_one`. Además de un parámetro de consulta, se puede tener acceso a un objeto extraño a través de una propiedad del objeto primario.
@@ -65,6 +68,7 @@ En concreto, es posible una degradación del rendimiento cuando se da alguna de 
 
 
 
+[[cluster-versus-svm-context]]
 == Contexto de clúster frente a SVM
 
 Existen varios extremos DE REST que admiten tanto un clúster como una SVM. Cuando se usa uno de estos extremos, se puede indicar el contexto de la llamada API a través de `scope=[svm|cluster]` valor. Entre los ejemplos de extremos que admiten un contexto doble se incluyen interfaces IP y roles de seguridad.
@@ -74,6 +78,7 @@ NOTE: El valor de ámbito tiene un valor predeterminado base en las propiedades 
 
 
 
+[[using-patch-and-delete-on-a-collection-of-objects]]
 == Uso DE PATCH y DELETE en una colección de objetos
 
 Todos los extremos REST que admiten PARCHE o ELIMINACIÓN en una instancia de recurso también admiten el mismo método en una colección de objetos. El único requisito es que se debe proporcionar al menos un campo a través de un parámetro de consulta en la cadena URL. Al emitir UN PARCHE o ELIMINARLO sobre una colección, esto equivale a realizar lo siguiente internamente:

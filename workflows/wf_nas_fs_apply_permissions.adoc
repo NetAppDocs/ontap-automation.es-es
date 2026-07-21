@@ -18,6 +18,7 @@ Puede aplicar un nuevo descriptor de seguridad a un archivo o carpeta específic
 
 
 
+[[step-1-apply-the-new-permissions]]
 == Paso 1: Aplique los nuevos permisos
 
 .Método HTTP y punto final
@@ -67,6 +68,7 @@ curl --request POST --location "https://$FQDN_IP/api/protocols/file-security/per
 ----
 
 
+[[step-2-retrieve-the-status-of-the-job]]
 == Paso 2: Recuperar el estado del trabajo
 
 Realice el flujo de trabajo link:../workflows/wf_jobs_get_job.html["Obtener instancia de trabajo"] y confirme el `state` el valor es `success`.
